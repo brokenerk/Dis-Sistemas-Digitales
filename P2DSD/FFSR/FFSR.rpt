@@ -1,0 +1,257 @@
+
+     | | | | | | |
+   _________________
+  -|               |-
+  -|               |-
+  -|               |-
+  -|    CYPRESS    |-
+  -|               |-
+  -|               |-   Warp VHDL Synthesis Compiler: Version 6.3 IR 35
+  -|               |-   Copyright (C) 1991-2001 Cypress Semiconductor
+   |_______________|
+     | | | | | | |
+
+======================================================================
+Compiling:  FFSR.vhd
+Options:    -m -yu -e10 -w100 -o0 -ygs -fP -v10 -yw -dc22v10 -ppalc22v10d-15pc -b FFSR.vhd -u FFSR.hie
+======================================================================
+
+vhdlfe V6.3 IR 35:  VHDL parser
+Fri Mar 02 07:11:22 2018
+
+Library 'work' => directory 'lc22v10'
+Linking 'C:\Archivos de programa\Cypress\Warp\bin\std.vhd'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\common\cypress.vhd'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\common\work\cypress.vif'.
+Library 'ieee' => directory 'C:\Archivos de programa\Cypress\Warp\lib\ieee\work'
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\ieee\work\stdlogic.vif'.
+
+vhdlfe:  No errors.
+
+
+tovif V6.3 IR 35:  High-level synthesis
+Fri Mar 02 07:11:22 2018
+
+Linking 'C:\Archivos de programa\Cypress\Warp\bin\std.vhd'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\common\cypress.vhd'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\common\work\cypress.vif'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\ieee\work\stdlogic.vif'.
+
+tovif:  No errors.
+
+
+topld V6.3 IR 35:  Synthesis and optimization
+Fri Mar 02 07:11:23 2018
+
+Linking 'C:\Archivos de programa\Cypress\Warp\bin\std.vhd'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\common\cypress.vhd'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\common\work\cypress.vif'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\ieee\work\stdlogic.vif'.
+
+----------------------------------------------------------
+Detecting unused logic.
+----------------------------------------------------------
+
+
+
+------------------------------------------------------
+Alias Detection
+------------------------------------------------------
+
+------------------------------------------------------
+Aliased 0 equations, 0 wires.
+------------------------------------------------------
+Created 11 PLD nodes.
+
+topld:  No errors.
+
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+DESIGN HEADER INFORMATION  (07:11:24)
+
+Input File(s): FFSR.pla
+Device       : C22V10
+Package      : palc22v10d-15pc
+ReportFile   : FFSR.rpt
+
+Program Controls:
+    COMMAND LANGUAGE_VHDL 
+    COMMAND PROPERTY BUS_HOLD ENABLE 
+
+Signal Requests:
+    GROUP NOMIN ALL
+    GROUP USEPOL ALL
+    GROUP SLOW_SLEW ALL
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+OPTIMIZATION OPTIONS       (07:11:24)
+
+Messages:
+  Information: Virtual signal qtD must be used as device Node signal.
+  Information: Selected logic optimization OFF for signals:
+         nq q qt.D qt.AR qt.C qtD
+
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Optimizer Software:       MINOPT.EXE     01/NOV/1999  [v4.02 ] 6.3 IR 35
+
+LOGIC MINIMIZATION         ()
+
+Messages:
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+OPTIMIZATION OPTIONS       (07:11:24)
+
+Messages:
+  Information: Optimizing Banked Preset/Reset requirements.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+<CYPRESSTAG name="Equations" icon=FILE_RPT_EQUATION>
+DESIGN EQUATIONS           (07:11:24)
+</CYPRESSTAG>
+
+    nq =
+          /qt.Q 
+
+    q =
+          qt.Q 
+
+    qt.D =
+          qtD 
+
+    qt.AR =
+          /clr 
+
+    qt.C =
+          clk 
+
+    qtD =
+          qt.Q * /r 
+        + s 
+        + pre 
+
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+DESIGN RULE CHECK          (07:11:24)
+
+Messages:
+                 None.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+<CYPRESSTAG name="Pinout" icon=FILE_RPT_PINOUT>
+PINOUT INFORMATION   (07:11:24)
+</CYPRESSTAG>
+Messages:
+  Information: Checking for duplicate NODE logic.
+                 None.
+
+
+                                 C22V10
+                 __________________________________________
+            clk =| 1|                                  |24|* not used       
+              s =| 2|                                  |23|= qt             
+              r =| 3|                                  |22|= nq             
+            pre =| 4|                                  |21|* not used       
+            clr =| 5|                                  |20|* not used       
+       not used *| 6|                                  |19|* not used       
+       not used *| 7|                                  |18|* not used       
+       not used *| 8|                                  |17|* not used       
+       not used *| 9|                                  |16|* not used       
+       not used *|10|                                  |15|= q              
+       not used *|11|                                  |14|= (qtD)          
+       not used *|12|                                  |13|* not used       
+                 __________________________________________
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+<CYPRESSTAG name="Utilization" icon=FILE_RPT_UTILIZATION>
+RESOURCE UTILIZATION (07:11:24)
+</CYPRESSTAG>
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    4  |   11  |
+                 | Clock/Inputs       |    1  |    1  |
+                 | I/O Macrocells     |    4  |   10  |
+                 ______________________________________
+                                           9  /   22   = 40  %
+
+
+  Information: Output Logic Product Term Utilization.
+
+                  Node#  Output Signal Name  Used   Max
+                 ________________________________________
+                 | 14  |  qtD             |   3  |   8  |
+                 | 15  |  q               |   1  |  10  |
+                 | 16  |  Unused          |   0  |  12  |
+                 | 17  |  Unused          |   0  |  14  |
+                 | 18  |  Unused          |   0  |  16  |
+                 | 19  |  Unused          |   0  |  16  |
+                 | 20  |  Unused          |   0  |  14  |
+                 | 21  |  Unused          |   0  |  12  |
+                 | 22  |  nq              |   1  |  10  |
+                 | 23  |  qt              |   1  |   8  |
+                 | 25  |  Unused          |   0  |   1  |
+                 ________________________________________
+                                              6  / 121   = 4   %
+
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+JEDEC ASSEMBLE             (07:11:24)
+
+Messages:
+  Information: Output file 'FFSR.pin' created.
+  Information: Output file 'FFSR.jed' created.
+
+  Usercode:    
+  Checksum:    3AB4
+
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully at 07:11:24

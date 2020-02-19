@@ -1,0 +1,47 @@
+//
+// Software Version :  ispLEVER Classic 2.0.00.17.20.15  
+// Project Name	    :  contador
+// Targeted Device  :  LC4256ZE-5TN144C
+// Date             :  Mon May 07 19:24:36 2018
+//
+                      GND          SYS           1
+                   VCCIO0          SYS           3
+                        C          IN            4
+                      CLR          IN            5
+                   GNDIO0          SYS           10
+                   VCCIO0          SYS           19
+                   GNDIO0          SYS           27
+                   VCCIO0          SYS           34
+                      VCC          SYS           36
+                      GND          SYS           37
+                   GNDIO0          SYS           46
+                   VCCIO0          SYS           47
+                   GNDIO1          SYS           55
+                      VCC          SYS           57
+                   VCCIO1          SYS           64
+                   GNDIO1          SYS           65
+                      GND          SYS           73
+                   VCCIO1          SYS           75
+                   GNDIO1          SYS           82
+                   VCCIO1          SYS           91
+                   GNDIO1          SYS           99
+                     Q_0_          OUT           101
+                     Q_1_          OUT           102
+                     Q_2_          OUT           103
+                     Q_3_          OUT           104
+                     Q_4_          OUT           105
+                   VCCIO1          SYS           106
+                      VCC          SYS           108
+                      GND          SYS           109
+                     Q_5_          OUT           111
+                     Q_6_          OUT           112
+                     Q_7_          OUT           113
+                     Q_8_          OUT           114
+                     Q_9_          OUT           115
+                   GNDIO1          SYS           118
+                   VCCIO1          SYS           119
+                   GNDIO0          SYS           127
+                      CLK          IN            128
+                      VCC          SYS           129
+                   VCCIO0          SYS           136
+                   GNDIO0          SYS           137

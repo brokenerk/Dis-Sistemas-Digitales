@@ -1,0 +1,29 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY FFD IS PORT(
+PRE, CLR, CLK, D: IN STD_LOGIC;
+Q, NQ: OUT STD_LOGIC
+);
+END ENTITY;
+
+ARCHITECTURE A_FFD OF FFD IS BEGIN
+	PROCESS (CLR, CLK, PRE, D) BEGIN
+		
+		IF (CLR='0') THEN
+			Q <= '0';
+			NQ <= '1';
+		ELSIF (CLK'EVENT AND CLK='1') THEN
+			IF (PRE='1') THEN
+				Q <= '1';
+				NQ <= '0';
+			ELSIF (D='0') THEN
+				Q <= '0';
+				NQ <= '1';
+			ELSE
+				Q <= '1';
+				NQ <= '0';
+			END IF;
+		END IF;
+	END PROCESS;
+END A_FFD;

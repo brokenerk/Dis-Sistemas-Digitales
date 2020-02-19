@@ -1,0 +1,312 @@
+|--------------------------------------------------- ----------|
+|- ispLEVER Classic 2.0.00.17.20.15 Equations File            -|
+|- Copyright(C), 1992-2012, Lattice Semiconductor Corporation -|
+|- All Rights Reserved.                                       -|
+|--------------------------------------------------------------|
+
+
+Equations:
+
+DISPLAY_0_ = PRE_i2.Q & PRE_i1.Q & !PRE_i0.Q ; (1 pterm, 3 signals)
+
+DISPLAY_1_ = 0 ; (0 pterm, 0 signal)
+
+DISPLAY_2_ = 0 ; (0 pterm, 0 signal)
+
+DISPLAY_3_ = PRE_i2.Q & PRE_i1.Q & !PRE_i0.Q ; (1 pterm, 3 signals)
+
+DISPLAY_4_ = PRE_i2.Q & PRE_i1.Q & !PRE_i0.Q ; (1 pterm, 3 signals)
+
+DISPLAY_5_ = PRE_i2.Q & PRE_i1.Q & !PRE_i0.Q ; (1 pterm, 3 signals)
+
+DISPLAY_6_ = !( PRE_i2.Q & PRE_i1.Q & PRE_i0.Q ) ; (1 pterm, 3 signals)
+
+FUT_2_N_38_2 = ENTRADA_4_ & I_i2.Q & !I_i1.Q & !I_i0.Q
+    # ENTRADA_2_ & !I_i2.Q & I_i1.Q & !I_i0.Q
+    # ENTRADA_5_ & I_i2.Q & !I_i1.Q & I_i0.Q
+    # ENTRADA_3_ & !I_i2.Q & I_i1.Q & I_i0.Q
+    # ENTRADA_0_ & !I_i2.Q & !I_i1.Q & !I_i0.Q
+    # ENTRADA_1_ & !I_i2.Q & !I_i1.Q & I_i0.Q ; (6 pterms, 9 signals)
+
+I_i0.D = !( !I_i31.Q & I_i0.Q ) ; (1 pterm, 2 signals)
+I_i0.C = CLK ; (1 pterm, 1 signal)
+I_i0.AP = !CLR ; (1 pterm, 1 signal)
+
+I_i1.D = !( I_i31.Q
+    # !I_i1.Q & I_i0.Q
+    # I_i1.Q & !I_i0.Q
+    # !I_i30.Q & !I_i29.Q & !I_i28.Q & !I_i27.Q & !I_i25.Q & !I_i24.Q
+       & !I_i23.Q & !I_i21.Q & !I_i19.Q & !I_i17.Q & !I_i16.Q & !I_i15.Q
+       & !I_i14.Q & !I_i13.Q & !I_i12.Q & !I_i11.Q & !I_i9.Q & !I_i8.Q
+       & !I_i7.Q & !I_i5.Q & !I_i2.Q & !I_i1.Q & !n58 ) ; (4 pterms, 25 signals)
+I_i1.C = CLK ; (1 pterm, 1 signal)
+I_i1.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i10.D = !n18 & !I_i31.Q & !I_i10.Q & !I_i9.Q & n602
+    # !I_i31.Q & I_i10.Q & I_i9.Q & n602
+    # n18 & !I_i31.Q & I_i10.Q & n602 ; (3 pterms, 5 signals)
+I_i10.C = CLK ; (1 pterm, 1 signal)
+I_i10.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i11.D = !n18 & !I_i31.Q & !I_i11.Q & !I_i10.Q & !I_i9.Q & n602
+    # !I_i31.Q & I_i11.Q & I_i9.Q & n602
+    # !I_i31.Q & I_i11.Q & I_i10.Q & n602
+    # n18 & !I_i31.Q & I_i11.Q & n602 ; (4 pterms, 6 signals)
+I_i11.C = CLK ; (1 pterm, 1 signal)
+I_i11.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i12.D = !( I_i31.Q
+    # !I_i12.Q & n24
+    # I_i12.Q & !n24
+    # !I_i30.Q & !I_i29.Q & !I_i28.Q & !I_i27.Q & !I_i25.Q & !I_i24.Q
+       & !I_i23.Q & !I_i21.Q & !I_i19.Q & !I_i17.Q & !I_i16.Q & !I_i15.Q
+       & !I_i14.Q & !I_i13.Q & !I_i12.Q & !I_i11.Q & !I_i9.Q & !I_i8.Q
+       & !I_i7.Q & !I_i5.Q & !I_i2.Q & !I_i1.Q & !I_i0.Q & !n58 ) ; (4 pterms, 26 signals)
+I_i12.C = CLK ; (1 pterm, 1 signal)
+I_i12.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i13.D = !( I_i31.Q
+    # !I_i13.Q & I_i12.Q
+    # !I_i13.Q & n24
+    # I_i13.Q & !I_i12.Q & !n24
+    # !I_i30.Q & !I_i29.Q & !I_i28.Q & !I_i27.Q & !I_i25.Q & !I_i24.Q
+       & !I_i23.Q & !I_i21.Q & !I_i19.Q & !I_i17.Q & !I_i16.Q & !I_i15.Q
+       & !I_i14.Q & !I_i13.Q & !I_i11.Q & !I_i9.Q & !I_i8.Q & !I_i7.Q
+       & !I_i5.Q & !I_i2.Q & !I_i1.Q & !I_i0.Q & !n58 ) ; (5 pterms, 26 signals)
+I_i13.C = CLK ; (1 pterm, 1 signal)
+I_i13.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i14.T = !( !I_i30.Q & !I_i29.Q & !I_i28.Q & !I_i27.Q & !I_i25.Q & !I_i24.Q
+       & !I_i23.Q & !I_i21.Q & !I_i19.Q & !I_i17.Q & !I_i16.Q & !I_i15.Q
+       & !I_i14.Q & !I_i11.Q & !I_i9.Q & !I_i8.Q & !I_i7.Q & !I_i5.Q & !I_i2.Q
+       & !I_i1.Q & !I_i0.Q & !n58
+    # !I_i31.Q & I_i12.Q
+    # !I_i31.Q & I_i13.Q
+    # I_i31.Q & !I_i14.Q
+    # !I_i31.Q & n24 ) ; (5 pterms, 26 signals)
+I_i14.C = CLK ; (1 pterm, 1 signal)
+I_i14.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i15.D = !( I_i31.Q
+    # !I_i15.Q & n30
+    # I_i15.Q & !n30
+    # !I_i30.Q & !I_i29.Q & !I_i28.Q & !I_i27.Q & !I_i25.Q & !I_i24.Q
+       & !I_i23.Q & !I_i21.Q & !I_i19.Q & !I_i17.Q & !I_i16.Q & !I_i15.Q
+       & !I_i14.Q & !I_i13.Q & !I_i12.Q & !I_i11.Q & !I_i9.Q & !I_i8.Q
+       & !I_i7.Q & !I_i5.Q & !I_i2.Q & !I_i1.Q & !I_i0.Q & !n58 ) ; (4 pterms, 26 signals)
+I_i15.C = CLK ; (1 pterm, 1 signal)
+I_i15.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i16.D = !( I_i31.Q
+    # !I_i16.Q & I_i15.Q
+    # !I_i16.Q & n30
+    # I_i16.Q & !I_i15.Q & !n30
+    # !I_i30.Q & !I_i29.Q & !I_i28.Q & !I_i27.Q & !I_i25.Q & !I_i24.Q
+       & !I_i23.Q & !I_i21.Q & !I_i19.Q & !I_i17.Q & !I_i16.Q & !I_i14.Q
+       & !I_i13.Q & !I_i12.Q & !I_i11.Q & !I_i9.Q & !I_i8.Q & !I_i7.Q
+       & !I_i5.Q & !I_i2.Q & !I_i1.Q & !I_i0.Q & !n58 ) ; (5 pterms, 26 signals)
+I_i16.C = CLK ; (1 pterm, 1 signal)
+I_i16.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i17.T = !( !I_i30.Q & !I_i29.Q & !I_i28.Q & !I_i27.Q & !I_i25.Q & !I_i24.Q
+       & !I_i23.Q & !I_i21.Q & !I_i19.Q & !I_i17.Q & !I_i14.Q & !I_i13.Q
+       & !I_i12.Q & !I_i11.Q & !I_i9.Q & !I_i8.Q & !I_i7.Q & !I_i5.Q & !I_i2.Q
+       & !I_i1.Q & !I_i0.Q & !n58
+    # !I_i31.Q & I_i15.Q
+    # !I_i31.Q & I_i16.Q
+    # I_i31.Q & !I_i17.Q
+    # !I_i31.Q & n30 ) ; (5 pterms, 26 signals)
+I_i17.C = CLK ; (1 pterm, 1 signal)
+I_i17.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i18.D.X1 = !I_i31.Q & I_i18.Q & n602 ; (1 pterm, 3 signals)
+I_i18.D.X2 = !I_i31.Q & !I_i17.Q & !I_i16.Q & !I_i15.Q & n602 & !n30 ; (1 pterm, 6 signals)
+I_i18.C = CLK ; (1 pterm, 1 signal)
+I_i18.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i19.T = !I_i31.Q & !I_i18.Q & !I_i17.Q & !I_i16.Q & !I_i15.Q & !I_i14.Q
+       & !I_i13.Q & !I_i12.Q & n602 & !n24
+    # I_i19.Q & !n602
+    # I_i31.Q & I_i19.Q ; (3 pterms, 11 signals)
+I_i19.C = CLK ; (1 pterm, 1 signal)
+I_i19.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i2.D = !( !I_i31.Q & I_i2.Q & !I_i1.Q & !I_i0.Q
+    # !I_i31.Q & !I_i2.Q & I_i1.Q
+    # !I_i31.Q & !I_i2.Q & I_i0.Q ) ; (3 pterms, 4 signals)
+I_i2.C = CLK ; (1 pterm, 1 signal)
+I_i2.AP = !CLR ; (1 pterm, 1 signal)
+
+I_i20.T = !I_i31.Q & !I_i19.Q & !I_i18.Q & !I_i17.Q & !I_i16.Q & !I_i15.Q
+       & !I_i14.Q & !I_i13.Q & !I_i12.Q & n602 & !n24
+    # I_i20.Q & !n602
+    # I_i31.Q & I_i20.Q ; (3 pterms, 12 signals)
+I_i20.C = CLK ; (1 pterm, 1 signal)
+I_i20.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i21.D = !( I_i31.Q
+    # !I_i21.Q & n42
+    # I_i21.Q & !n42
+    # !I_i30.Q & !I_i29.Q & !I_i28.Q & !I_i27.Q & !I_i25.Q & !I_i24.Q
+       & !I_i23.Q & !I_i21.Q & !I_i19.Q & !I_i17.Q & !I_i16.Q & !I_i15.Q
+       & !I_i14.Q & !I_i13.Q & !I_i12.Q & !I_i11.Q & !I_i9.Q & !I_i8.Q
+       & !I_i7.Q & !I_i5.Q & !I_i2.Q & !I_i1.Q & !I_i0.Q & !n58 ) ; (4 pterms, 26 signals)
+I_i21.C = CLK ; (1 pterm, 1 signal)
+I_i21.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i22.D = !I_i31.Q & !I_i22.Q & !I_i21.Q & !n42 & n602
+    # !I_i31.Q & I_i22.Q & n42 & n602
+    # !I_i31.Q & I_i22.Q & I_i21.Q & n602 ; (3 pterms, 5 signals)
+I_i22.C = CLK ; (1 pterm, 1 signal)
+I_i22.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i23.D = !I_i31.Q & !I_i23.Q & !I_i22.Q & !I_i21.Q & !n42 & n602
+    # !I_i31.Q & I_i23.Q & n42 & n602
+    # !I_i31.Q & I_i23.Q & I_i21.Q & n602
+    # !I_i31.Q & I_i23.Q & I_i22.Q & n602 ; (4 pterms, 6 signals)
+I_i23.C = CLK ; (1 pterm, 1 signal)
+I_i23.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i24.D.X1 = !I_i31.Q & I_i24.Q & n602 ; (1 pterm, 3 signals)
+I_i24.D.X2 = !I_i31.Q & !I_i23.Q & !I_i22.Q & !I_i21.Q & !n42 & n602 ; (1 pterm, 6 signals)
+I_i24.C = CLK ; (1 pterm, 1 signal)
+I_i24.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i25.T = !I_i31.Q & !I_i24.Q & !I_i23.Q & !I_i22.Q & !I_i21.Q & !n42 & n602
+    # I_i31.Q & I_i25.Q
+    # I_i25.Q & !n602 ; (3 pterms, 8 signals)
+I_i25.C = CLK ; (1 pterm, 1 signal)
+I_i25.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i26.T = !I_i31.Q & !I_i25.Q & !I_i24.Q & !I_i23.Q & !I_i22.Q & !I_i21.Q
+       & !n42 & n602
+    # I_i31.Q & I_i26.Q
+    # I_i26.Q & !n602 ; (3 pterms, 9 signals)
+I_i26.C = CLK ; (1 pterm, 1 signal)
+I_i26.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i27.T = !I_i31.Q & !I_i26.Q & !I_i25.Q & !I_i24.Q & !I_i23.Q & !I_i22.Q
+       & !I_i21.Q & !n42 & n602
+    # I_i31.Q & I_i27.Q
+    # I_i27.Q & !n602 ; (3 pterms, 10 signals)
+I_i27.C = CLK ; (1 pterm, 1 signal)
+I_i27.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i28.T = !I_i31.Q & !I_i27.Q & !I_i26.Q & !I_i25.Q & !I_i24.Q & !I_i23.Q
+       & !I_i22.Q & !I_i21.Q & !n42 & n602
+    # I_i31.Q & I_i28.Q
+    # I_i28.Q & !n602 ; (3 pterms, 11 signals)
+I_i28.C = CLK ; (1 pterm, 1 signal)
+I_i28.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i29.T = !I_i31.Q & !I_i28.Q & !I_i27.Q & !I_i26.Q & !I_i25.Q & !I_i24.Q
+       & !I_i23.Q & !I_i22.Q & !I_i21.Q & !n42 & n602
+    # I_i31.Q & I_i29.Q
+    # I_i29.Q & !n602 ; (3 pterms, 12 signals)
+I_i29.C = CLK ; (1 pterm, 1 signal)
+I_i29.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i3.T = !( !I_i30.Q & !I_i29.Q & !I_i28.Q & !I_i27.Q & !I_i25.Q & !I_i24.Q
+       & !I_i23.Q & !I_i21.Q & !I_i19.Q & !I_i17.Q & !I_i16.Q & !I_i15.Q
+       & !I_i14.Q & !I_i13.Q & !I_i12.Q & !I_i11.Q & !I_i9.Q & !I_i8.Q
+       & !I_i7.Q & !I_i5.Q & !I_i3.Q & !n58
+    # !I_i31.Q & I_i0.Q
+    # !I_i31.Q & I_i1.Q
+    # !I_i31.Q & I_i2.Q
+    # I_i31.Q & !I_i3.Q ) ; (5 pterms, 26 signals)
+I_i3.C = CLK ; (1 pterm, 1 signal)
+I_i3.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i30.T = !I_i31.Q & !I_i29.Q & !I_i28.Q & !I_i27.Q & !I_i26.Q & !I_i25.Q
+       & !I_i24.Q & !I_i23.Q & !I_i22.Q & !I_i21.Q & !n42 & n602
+    # I_i31.Q & I_i30.Q
+    # I_i30.Q & !n602 ; (3 pterms, 13 signals)
+I_i30.C = CLK ; (1 pterm, 1 signal)
+I_i30.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i31.D = !I_i31.Q & !I_i30.Q & !I_i29.Q & !I_i28.Q & !I_i27.Q & !I_i26.Q
+       & !I_i25.Q & !I_i24.Q & !I_i23.Q & !I_i22.Q & !I_i21.Q & !n42 & n602 ; (1 pterm, 13 signals)
+I_i31.C = CLK ; (1 pterm, 1 signal)
+I_i31.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i4.D = !I_i31.Q & !I_i4.Q & !n8 & n602
+    # !I_i31.Q & I_i4.Q & n8 & n602 ; (2 pterms, 4 signals)
+I_i4.C = CLK ; (1 pterm, 1 signal)
+I_i4.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i5.D = !I_i31.Q & !I_i5.Q & !I_i4.Q & !n8 & n602
+    # !I_i31.Q & I_i5.Q & n8 & n602
+    # !I_i31.Q & I_i5.Q & I_i4.Q & n602 ; (3 pterms, 5 signals)
+I_i5.C = CLK ; (1 pterm, 1 signal)
+I_i5.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i6.D = !I_i31.Q & !I_i6.Q & !I_i5.Q & !I_i4.Q & !n8 & n602
+    # !I_i31.Q & I_i6.Q & n8 & n602
+    # !I_i31.Q & I_i6.Q & I_i4.Q & n602
+    # !I_i31.Q & I_i6.Q & I_i5.Q & n602 ; (4 pterms, 6 signals)
+I_i6.C = CLK ; (1 pterm, 1 signal)
+I_i6.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i7.D.X1 = !I_i31.Q & I_i7.Q & n602 ; (1 pterm, 3 signals)
+I_i7.D.X2 = !I_i31.Q & !I_i6.Q & !I_i5.Q & !I_i4.Q & !n8 & n602 ; (1 pterm, 6 signals)
+I_i7.C = CLK ; (1 pterm, 1 signal)
+I_i7.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i8.T = !I_i31.Q & !I_i7.Q & !I_i6.Q & !I_i5.Q & !I_i4.Q & !n8 & n602
+    # I_i31.Q & I_i8.Q
+    # I_i8.Q & !n602 ; (3 pterms, 8 signals)
+I_i8.C = CLK ; (1 pterm, 1 signal)
+I_i8.AR = !CLR ; (1 pterm, 1 signal)
+
+I_i9.T = !I_i31.Q & !I_i8.Q & !I_i7.Q & !I_i6.Q & !I_i5.Q & !I_i4.Q & !n8
+       & n602
+    # I_i31.Q & I_i9.Q
+    # I_i9.Q & !n602 ; (3 pterms, 9 signals)
+I_i9.C = CLK ; (1 pterm, 1 signal)
+I_i9.AR = !CLR ; (1 pterm, 1 signal)
+
+PRE_i0.D = !PRE_i2.Q & PRE_i1.Q & !FUT_2_N_38_2
+    # !PRE_i1.Q & !PRE_i0.Q & FUT_2_N_38_2
+    # PRE_i2.Q & !PRE_i1.Q & FUT_2_N_38_2 ; (3 pterms, 4 signals)
+PRE_i0.C = CLK ; (1 pterm, 1 signal)
+PRE_i0.AR = !CLR ; (1 pterm, 1 signal)
+
+PRE_i1.D = PRE_i2.Q & !PRE_i1.Q & PRE_i0.Q & !FUT_2_N_38_2
+    # !PRE_i2.Q & !PRE_i1.Q & PRE_i0.Q & FUT_2_N_38_2
+    # PRE_i1.Q & !PRE_i0.Q
+    # !PRE_i2.Q & PRE_i1.Q & !FUT_2_N_38_2 ; (4 pterms, 4 signals)
+PRE_i1.C = CLK ; (1 pterm, 1 signal)
+PRE_i1.AR = !CLR ; (1 pterm, 1 signal)
+
+PRE_i2.D = PRE_i2.Q & !PRE_i1.Q & FUT_2_N_38_2
+    # !PRE_i2.Q & PRE_i1.Q & PRE_i0.Q & FUT_2_N_38_2
+    # PRE_i2.Q & !PRE_i1.Q & PRE_i0.Q
+    # PRE_i2.Q & PRE_i1.Q & !PRE_i0.Q ; (4 pterms, 4 signals)
+PRE_i2.C = CLK ; (1 pterm, 1 signal)
+PRE_i2.AR = !CLR ; (1 pterm, 1 signal)
+
+n18 = !( !I_i8.Q & !I_i7.Q & !I_i6.Q & !I_i5.Q & !I_i4.Q & !I_i3.Q & !I_i2.Q
+       & !I_i1.Q & !I_i0.Q ) ; (1 pterm, 9 signals)
+
+n24 = !( !I_i11.Q & !I_i10.Q & !I_i9.Q & !I_i8.Q & !I_i7.Q & !I_i6.Q & !I_i5.Q
+       & !I_i4.Q & !I_i3.Q & !I_i2.Q & !I_i1.Q & !I_i0.Q ) ; (1 pterm, 12 signals)
+
+n30 = !( !I_i14.Q & !I_i13.Q & !I_i12.Q & !I_i11.Q & !I_i10.Q & !I_i9.Q
+       & !I_i8.Q & !I_i7.Q & !I_i6.Q & !I_i5.Q & !I_i4.Q & !I_i3.Q & !I_i2.Q
+       & !I_i1.Q & !I_i0.Q ) ; (1 pterm, 15 signals)
+
+n42 = !( !I_i20.Q & !I_i19.Q & !I_i18.Q & !I_i17.Q & !I_i16.Q & !I_i15.Q
+       & !I_i14.Q & !I_i13.Q & !I_i12.Q & !I_i11.Q & !I_i10.Q & !I_i9.Q
+       & !I_i8.Q & !I_i7.Q & !I_i6.Q & !I_i5.Q & !I_i4.Q & !I_i3.Q & !I_i2.Q
+       & !I_i1.Q & !I_i0.Q ) ; (1 pterm, 21 signals)
+
+n58 = !( !I_i26.Q & !I_i22.Q & !I_i20.Q & !I_i18.Q & !I_i10.Q & !I_i6.Q
+       & !I_i4.Q & !I_i3.Q ) ; (1 pterm, 8 signals)
+
+n602 = !( !I_i30.Q & !I_i29.Q & !I_i28.Q & !I_i27.Q & !I_i25.Q & !I_i24.Q
+       & !I_i23.Q & !I_i21.Q & !I_i19.Q & !I_i17.Q & !I_i16.Q & !I_i15.Q
+       & !I_i14.Q & !I_i13.Q & !I_i12.Q & !I_i11.Q & !I_i9.Q & !I_i8.Q
+       & !I_i7.Q & !I_i5.Q & !I_i2.Q & !I_i1.Q & !I_i0.Q & !n58 ) ; (1 pterm, 24 signals)
+
+n8 = !( !I_i3.Q & !I_i2.Q & !I_i1.Q & !I_i0.Q ) ; (1 pterm, 4 signals)
+

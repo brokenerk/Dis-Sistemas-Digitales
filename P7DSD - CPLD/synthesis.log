@@ -1,0 +1,135 @@
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2015 Lattice Semiconductor Corporation,  All rights reserved.
+Thu May 24 19:35:07 2018
+
+
+Command Line:  C:\ispLEVER_Classic2_0\lse/bin/nt/synthesis -f contreg.synproj 
+
+Synthesis options:
+The -a option is ispMACH400ZE.
+The -t option is not used.
+The -d option is LC4256ZE.
+Using default performance grade 6.
+                                                          
+
+##########################################################
+
+### Lattice Family : ispMACH400ZE
+
+### Device  : LC4256ZE
+
+### Package : 
+
+##########################################################
+
+                                                          
+
+Optimization goal = Area
+Top-level module name = contreg.
+WARNING - synthesis: Ignoring Frequency option in Area Mode. Setting to default frequency of 1.0 MHz.
+WARNING - synthesis: Ignoring SDC constraints in Area Mode!
+Target frequency = 1.000000 MHz.
+Timing path count = 3
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+Use IO Insertion = TRUE
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+Output EDIF file name = contreg.edi.
+WARNING - synthesis: Option -force_gsr will be set to false when option -output_edif/-ngo are set
+The -comp option is FALSE.
+The -syn option is FALSE.
+VHDL library = work
+VHDL design file = contreg.vhd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is not used.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/ispLEVER_Classic2_0/lse/userware/NT/SYNTHESIS_HEADERS/mach.v. VERI-1482
+Compile design.
+Compile Design Begin
+INFO - synthesis: The default VHDL library search path is now "C:/Users/YaKerTaker/Google Drive/4° SEMESTRE/Diseño S Digitales/P7DSD - CPLD". VHDL-1504
+Analyzing VHDL file contreg.vhd. VHDL-1481
+INFO - synthesis: contreg.vhd(6): analyzing entity contreg. VHDL-1012
+INFO - synthesis: contreg.vhd(14): analyzing architecture a_contreg. VHDL-1010
+unit contreg is not yet analyzed. VHDL-1485
+contreg.vhd(6): executing contreg(A_contreg)
+
+WARNING - synthesis: contreg.vhd(12): replacing existing netlist contreg(A_contreg). VHDL-1205
+Top module name (VHDL): contreg
+Loading NGL library 'C:/ispLEVER_Classic2_0/lse/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/ispLEVER_Classic2_0/lse/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c640.nph' in environment: C:/ispLEVER_Classic2_0/lse.
+Package Status:                     Final          Version 1.36.
+Top-level module name = contreg.
+
+
+
+Applying 1.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No .lpf file will be written because the -lpf option is not used or is set to zero.
+Results of NGD DRC are available in contreg_drc.log.
+
+################### Begin Area Report (contreg)######################
+Number of register bits => 4 of 880 (0 % )
+AND2 => 48
+AND3 => 2
+DFFCR => 4
+GND => 1
+IBUF => 14
+INV => 20
+OBUF => 4
+OR2 => 28
+OR3 => 1
+OR4 => 1
+VCC => 1
+XOR2 => 10
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_c, loads : 4
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : contador_2, loads : 9
+  Net : contador_1, loads : 8
+  Net : contador_0, loads : 8
+  Net : q_c_3, loads : 6
+  Net : c_0, loads : 5
+  Net : n250, loads : 5
+  Net : n321, loads : 5
+  Net : clr_c, loads : 4
+  Net : n110, loads : 4
+  Net : c_2_N_4_2, loads : 4
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk0 [get_nets clk_c]                   |            -|            -|     0  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 40.082  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.656  secs
+--------------------------------------------------------------

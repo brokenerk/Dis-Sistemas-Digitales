@@ -1,0 +1,8 @@
+ENTITY contns IS
+    PORT (
+	clk : in std_logic  ; 
+	clr : in std_logic  ; 
+	c : in std_logic  ; 
+	display : inout std_logic_vector (6 downto 0)
+    ) ;
+END contns ;

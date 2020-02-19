@@ -1,0 +1,1 @@
+-m -yu -e10 -w100 -o0 -ygs -fP -v10 -yw -dc22v10 -ppalc22v10d-15pc -b FFSR.vhd -u FFSR.hie 

@@ -1,0 +1,1 @@
+-nodal -src contreg.bl5 -type BLIF -presrc contreg.bl3 -crf contreg.crf -sif contreg.sif -devfile "C:/ispLEVER_Classic2_0/ispcpld/dat/lc4k/m4e_256_96.dev" -lci contreg.lct

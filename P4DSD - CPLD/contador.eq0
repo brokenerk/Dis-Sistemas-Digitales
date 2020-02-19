@@ -1,0 +1,388 @@
+EDIF2BLIF version IspLever 1.0  Linked Equations File
+Copyright(C), 1992-2015, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design contador created Mon Apr 16 16:54:22 2018
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1/1        1        1    Pin   Q_9_ 
+   1/1        1        1    Pin   Q_8_ 
+   1/1        1        1    Pin   Q_7_ 
+   1/1        1        1    Pin   Q_6_ 
+   1/1        1        1    Pin   Q_5_ 
+   1/1        1        1    Pin   Q_4_ 
+   1/1        1        1    Pin   Q_3_ 
+   1/1        1        1    Pin   Q_2_ 
+   1/1        1        1    Pin   Q_1_ 
+   1/1        1        1    Pin   Q_0_ 
+   1/1        1        1    Node  CLR_c 
+   1/1        1        1    Node  CLK_c 
+   1/1        1        1    Node  C_c 
+   1/1        1        1    Node  Q_i0_i10reg.CE 
+   1          1        1    Node  Q_i0_i10reg.AR 
+   1/1        1        1    Node  Q_i0_i10reg.D 
+   1/1        1        1    Node  Q_i0_i10reg.C 
+   1/1        1        1    Node  Q_i0_i9reg.CE 
+   1          1        1    Node  Q_i0_i9reg.AR 
+   1/1        1        1    Node  Q_i0_i9reg.D 
+   1/1        1        1    Node  Q_i0_i9reg.C 
+   1/1        1        1    Node  Q_i0_i8reg.CE 
+   1          1        1    Node  Q_i0_i8reg.AR 
+   1/1        1        1    Node  Q_i0_i8reg.D 
+   1/1        1        1    Node  Q_i0_i8reg.C 
+   1/1        1        1    Node  Q_i0_i7reg.CE 
+   1          1        1    Node  Q_i0_i7reg.AR 
+   1/1        1        1    Node  Q_i0_i7reg.D 
+   1/1        1        1    Node  Q_i0_i7reg.C 
+   1/1        1        1    Node  Q_i0_i6reg.CE 
+   1          1        1    Node  Q_i0_i6reg.AR 
+   1/1        1        1    Node  Q_i0_i6reg.D 
+   1/1        1        1    Node  Q_i0_i6reg.C 
+   1/1        1        1    Node  Q_i0_i5reg.CE 
+   1          1        1    Node  Q_i0_i5reg.AR 
+   1/1        1        1    Node  Q_i0_i5reg.D 
+   1/1        1        1    Node  Q_i0_i5reg.C 
+   1/1        1        1    Node  Q_i0_i4reg.CE 
+   1          1        1    Node  Q_i0_i4reg.AR 
+   1/1        1        1    Node  Q_i0_i4reg.D 
+   1/1        1        1    Node  Q_i0_i4reg.C 
+   1/1        1        1    Node  Q_i0_i3reg.CE 
+   1          1        1    Node  Q_i0_i3reg.AR 
+   1/1        1        1    Node  Q_i0_i3reg.D 
+   1/1        1        1    Node  Q_i0_i3reg.C 
+   1/1        1        1    Node  Q_i0_i2reg.CE 
+   1          1        1    Node  Q_i0_i2reg.AR 
+   1/1        1        1    Node  Q_i0_i2reg.D 
+   1/1        1        1    Node  Q_i0_i2reg.C 
+   1          1        1    Node  Q_i0_i1reg.AR 
+   1/1        1        1    Node  Q_i0_i1reg.D 
+   1/1        1        1    Node  Q_i0_i1reg.C 
+   1          2        1    Node  J_9 
+   1          2        1    Node  J_8 
+   1          2        1    Node  J_7 
+   1          2        1    Node  J_6 
+   1          2        1    Node  J_5 
+   1          2        1    Node  J_4 
+   1          2        1    Node  J_3 
+   1          2        1    Node  J_2 
+   1          2        1    Node  J_1 
+   1/1        1        1    NodeX1  i146.X1 
+   1/1        1        1    NodeX2  i146.X2 
+   1/1        1        1    NodeX1  i147.X1 
+   1/1        1        1    NodeX2  i147.X2 
+   1/1        1        1    NodeX1  i148.X1 
+   1/1        1        1    NodeX2  i148.X2 
+   1/1        1        1    NodeX1  i149.X1 
+   1/1        1        1    NodeX2  i149.X2 
+   1/1        1        1    NodeX1  i150.X1 
+   1/1        1        1    NodeX2  i150.X2 
+   1/1        1        1    NodeX1  i151.X1 
+   1/1        1        1    NodeX2  i151.X2 
+   1/1        1        1    NodeX1  i152.X1 
+   1/1        1        1    NodeX2  i152.X2 
+   1/1        1        1    NodeX1  i153.X1 
+   1/1        1        1    NodeX2  i153.X2 
+   1/1        1        1    NodeX1  i154.X1 
+   1/1        1        1    NodeX2  i154.X2 
+   1/1        1        1    NodeX1  i174.X1 
+   1/1        1        1    NodeX2  i174.X2 
+=========
+  81/62         Best P-Term Total: 81
+                       Total Pins: 13
+                      Total Nodes: 32
+            Average P-Term/Output: 1
+
+
+Equations:
+
+Q_9_ = (Q_i0_i10reg);
+
+Q_8_ = (Q_i0_i9reg);
+
+Q_7_ = (Q_i0_i8reg);
+
+Q_6_ = (Q_i0_i7reg);
+
+Q_5_ = (Q_i0_i6reg);
+
+Q_4_ = (Q_i0_i5reg);
+
+Q_3_ = (Q_i0_i4reg);
+
+Q_2_ = (Q_i0_i3reg);
+
+Q_1_ = (Q_i0_i2reg);
+
+Q_0_ = (Q_i0_i1reg);
+
+CLR_c = (CLR);
+
+CLK_c = (CLK);
+
+C_c = (C);
+
+Q_i0_i10reg.CE = (C_c);
+
+Q_i0_i10reg.AR = (!CLR_c);
+
+Q_i0_i10reg.D = (i154);
+
+Q_i0_i10reg.C = (CLK_c);
+
+Q_i0_i9reg.CE = (C_c);
+
+Q_i0_i9reg.AR = (!CLR_c);
+
+Q_i0_i9reg.D = (i153);
+
+Q_i0_i9reg.C = (CLK_c);
+
+Q_i0_i8reg.CE = (C_c);
+
+Q_i0_i8reg.AR = (!CLR_c);
+
+Q_i0_i8reg.D = (i152);
+
+Q_i0_i8reg.C = (CLK_c);
+
+Q_i0_i7reg.CE = (C_c);
+
+Q_i0_i7reg.AR = (!CLR_c);
+
+Q_i0_i7reg.D = (i151);
+
+Q_i0_i7reg.C = (CLK_c);
+
+Q_i0_i6reg.CE = (C_c);
+
+Q_i0_i6reg.AR = (!CLR_c);
+
+Q_i0_i6reg.D = (i150);
+
+Q_i0_i6reg.C = (CLK_c);
+
+Q_i0_i5reg.CE = (C_c);
+
+Q_i0_i5reg.AR = (!CLR_c);
+
+Q_i0_i5reg.D = (i149);
+
+Q_i0_i5reg.C = (CLK_c);
+
+Q_i0_i4reg.CE = (C_c);
+
+Q_i0_i4reg.AR = (!CLR_c);
+
+Q_i0_i4reg.D = (i148);
+
+Q_i0_i4reg.C = (CLK_c);
+
+Q_i0_i3reg.CE = (C_c);
+
+Q_i0_i3reg.AR = (!CLR_c);
+
+Q_i0_i3reg.D = (i147);
+
+Q_i0_i3reg.C = (CLK_c);
+
+Q_i0_i2reg.CE = (C_c);
+
+Q_i0_i2reg.AR = (!CLR_c);
+
+Q_i0_i2reg.D = (i146);
+
+Q_i0_i2reg.C = (CLK_c);
+
+Q_i0_i1reg.AR = (!CLR_c);
+
+Q_i0_i1reg.D = (i174);
+
+Q_i0_i1reg.C = (CLK_c);
+
+J_9 = (Q_i0_i9reg & J_8);
+
+J_8 = (Q_i0_i8reg & J_7);
+
+J_7 = (Q_i0_i7reg & J_6);
+
+J_6 = (Q_i0_i6reg & J_5);
+
+J_5 = (Q_i0_i5reg & J_4);
+
+J_4 = (Q_i0_i4reg & J_3);
+
+J_3 = (Q_i0_i3reg & J_2);
+
+J_2 = (Q_i0_i2reg & J_1);
+
+J_1 = (Q_i0_i1reg & C_c);
+
+i146.X1 = (J_1);
+
+i146.X2 = (Q_i0_i2reg);
+
+i147.X1 = (J_2);
+
+i147.X2 = (Q_i0_i3reg);
+
+i148.X1 = (J_3);
+
+i148.X2 = (Q_i0_i4reg);
+
+i149.X1 = (J_4);
+
+i149.X2 = (Q_i0_i5reg);
+
+i150.X1 = (J_5);
+
+i150.X2 = (Q_i0_i6reg);
+
+i151.X1 = (J_6);
+
+i151.X2 = (Q_i0_i7reg);
+
+i152.X1 = (J_7);
+
+i152.X2 = (Q_i0_i8reg);
+
+i153.X1 = (J_8);
+
+i153.X2 = (Q_i0_i9reg);
+
+i154.X1 = (J_9);
+
+i154.X2 = (Q_i0_i10reg);
+
+i174.X1 = (C_c);
+
+i174.X2 = (Q_i0_i1reg);
+
+
+Reverse-Polarity Equations:
+
+!Q_9_ = (!Q_i0_i10reg);
+
+!Q_8_ = (!Q_i0_i9reg);
+
+!Q_7_ = (!Q_i0_i8reg);
+
+!Q_6_ = (!Q_i0_i7reg);
+
+!Q_5_ = (!Q_i0_i6reg);
+
+!Q_4_ = (!Q_i0_i5reg);
+
+!Q_3_ = (!Q_i0_i4reg);
+
+!Q_2_ = (!Q_i0_i3reg);
+
+!Q_1_ = (!Q_i0_i2reg);
+
+!Q_0_ = (!Q_i0_i1reg);
+
+!CLR_c = (!CLR);
+
+!CLK_c = (!CLK);
+
+!C_c = (!C);
+
+!Q_i0_i10reg.CE = (!C_c);
+
+!Q_i0_i10reg.D = (!i154);
+
+!Q_i0_i10reg.C = (!CLK_c);
+
+!Q_i0_i9reg.CE = (!C_c);
+
+!Q_i0_i9reg.D = (!i153);
+
+!Q_i0_i9reg.C = (!CLK_c);
+
+!Q_i0_i8reg.CE = (!C_c);
+
+!Q_i0_i8reg.D = (!i152);
+
+!Q_i0_i8reg.C = (!CLK_c);
+
+!Q_i0_i7reg.CE = (!C_c);
+
+!Q_i0_i7reg.D = (!i151);
+
+!Q_i0_i7reg.C = (!CLK_c);
+
+!Q_i0_i6reg.CE = (!C_c);
+
+!Q_i0_i6reg.D = (!i150);
+
+!Q_i0_i6reg.C = (!CLK_c);
+
+!Q_i0_i5reg.CE = (!C_c);
+
+!Q_i0_i5reg.D = (!i149);
+
+!Q_i0_i5reg.C = (!CLK_c);
+
+!Q_i0_i4reg.CE = (!C_c);
+
+!Q_i0_i4reg.D = (!i148);
+
+!Q_i0_i4reg.C = (!CLK_c);
+
+!Q_i0_i3reg.CE = (!C_c);
+
+!Q_i0_i3reg.D = (!i147);
+
+!Q_i0_i3reg.C = (!CLK_c);
+
+!Q_i0_i2reg.CE = (!C_c);
+
+!Q_i0_i2reg.D = (!i146);
+
+!Q_i0_i2reg.C = (!CLK_c);
+
+!Q_i0_i1reg.D = (!i174);
+
+!Q_i0_i1reg.C = (!CLK_c);
+
+!i146.X1 = (!J_1);
+
+!i146.X2 = (!Q_i0_i2reg);
+
+!i147.X1 = (!J_2);
+
+!i147.X2 = (!Q_i0_i3reg);
+
+!i148.X1 = (!J_3);
+
+!i148.X2 = (!Q_i0_i4reg);
+
+!i149.X1 = (!J_4);
+
+!i149.X2 = (!Q_i0_i5reg);
+
+!i150.X1 = (!J_5);
+
+!i150.X2 = (!Q_i0_i6reg);
+
+!i151.X1 = (!J_6);
+
+!i151.X2 = (!Q_i0_i7reg);
+
+!i152.X1 = (!J_7);
+
+!i152.X2 = (!Q_i0_i8reg);
+
+!i153.X1 = (!J_8);
+
+!i153.X2 = (!Q_i0_i9reg);
+
+!i154.X1 = (!J_9);
+
+!i154.X2 = (!Q_i0_i10reg);
+
+!i174.X1 = (!C_c);
+
+!i174.X2 = (!Q_i0_i1reg);
+

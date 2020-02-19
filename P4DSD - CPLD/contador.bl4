@@ -1,0 +1,161 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Mon May 07 19:24:34 2018
+#$ MODULE contador
+#$ PINS 13 CLR CLK C Q_9_ Q_8_ Q_7_ Q_6_ Q_5_ Q_4_ Q_3_ Q_2_ Q_1_ Q_0_
+.model contador
+.inputs CLR.BLIF CLK.BLIF C.BLIF Q_8_.Q Q_7_.Q Q_6_.Q Q_5_.Q Q_4_.Q Q_3_.Q \
+Q_2_.Q Q_1_.Q Q_0_.Q
+.outputs Q_9_.C Q_9_.AR Q_8_.C Q_8_.AR Q_7_.C Q_7_.AR Q_6_.C Q_6_.AR Q_5_.C \
+Q_5_.AR Q_4_.C Q_4_.AR Q_3_.C Q_3_.AR Q_2_.C Q_2_.AR Q_1_.C Q_1_.AR Q_0_.C \
+Q_0_.AR Q_9_.T Q_8_.T Q_7_.T Q_6_.T Q_5_.T Q_4_.T Q_3_.D Q_2_.D Q_1_.D Q_0_.D
+.names CLR.BLIF Q_9_.AR
+0 1
+1 0
+.names CLR.BLIF Q_8_.AR
+0 1
+1 0
+.names CLR.BLIF Q_7_.AR
+0 1
+1 0
+.names CLR.BLIF Q_6_.AR
+0 1
+1 0
+.names CLR.BLIF Q_5_.AR
+0 1
+1 0
+.names CLR.BLIF Q_4_.AR
+0 1
+1 0
+.names CLR.BLIF Q_3_.AR
+0 1
+1 0
+.names CLR.BLIF Q_2_.AR
+0 1
+1 0
+.names CLR.BLIF Q_1_.AR
+0 1
+1 0
+.names CLR.BLIF Q_0_.AR
+0 1
+1 0
+.names CLK.BLIF Q_9_.C
+1 1
+0 0
+.names CLK.BLIF Q_8_.C
+1 1
+0 0
+.names CLK.BLIF Q_7_.C
+1 1
+0 0
+.names CLK.BLIF Q_6_.C
+1 1
+0 0
+.names CLK.BLIF Q_5_.C
+1 1
+0 0
+.names CLK.BLIF Q_4_.C
+1 1
+0 0
+.names CLK.BLIF Q_3_.C
+1 1
+0 0
+.names CLK.BLIF Q_2_.C
+1 1
+0 0
+.names CLK.BLIF Q_1_.C
+1 1
+0 0
+.names CLK.BLIF Q_0_.C
+1 1
+0 0
+.names C.BLIF Q_8_.Q Q_7_.Q Q_6_.Q Q_5_.Q Q_4_.Q Q_3_.Q Q_2_.Q Q_1_.Q Q_0_.Q \
+Q_9_.T
+1111111111 1
+--------0- 0
+-------0-- 0
+------0--- 0
+-----0---- 0
+----0----- 0
+---0------ 0
+--0------- 0
+-0-------- 0
+0--------- 0
+---------0 0
+.names C.BLIF Q_7_.Q Q_6_.Q Q_5_.Q Q_4_.Q Q_3_.Q Q_2_.Q Q_1_.Q Q_0_.Q Q_8_.T
+111111111 1
+-------0- 0
+------0-- 0
+-----0--- 0
+----0---- 0
+---0----- 0
+--0------ 0
+-0------- 0
+0-------- 0
+--------0 0
+.names C.BLIF Q_6_.Q Q_5_.Q Q_4_.Q Q_3_.Q Q_2_.Q Q_1_.Q Q_0_.Q Q_7_.T
+11111111 1
+------0- 0
+-----0-- 0
+----0--- 0
+---0---- 0
+--0----- 0
+-0------ 0
+0------- 0
+-------0 0
+.names C.BLIF Q_5_.Q Q_4_.Q Q_3_.Q Q_2_.Q Q_1_.Q Q_0_.Q Q_6_.T
+1111111 1
+-----0- 0
+----0-- 0
+---0--- 0
+--0---- 0
+-0----- 0
+0------ 0
+------0 0
+.names C.BLIF Q_4_.Q Q_3_.Q Q_2_.Q Q_1_.Q Q_0_.Q Q_5_.T
+111111 1
+----0- 0
+---0-- 0
+--0--- 0
+-0---- 0
+0----- 0
+-----0 0
+.names C.BLIF Q_3_.Q Q_2_.Q Q_1_.Q Q_0_.Q Q_4_.T
+11111 1
+---0- 0
+--0-- 0
+-0--- 0
+0---- 0
+----0 0
+.names C.BLIF Q_3_.Q Q_2_.Q Q_1_.Q Q_0_.Q Q_3_.D
+10111 1
+-1-0- 1
+-10-- 1
+01--- 1
+-1--0 1
+11111 0
+-0-0- 0
+-00-- 0
+00--- 0
+-0--0 0
+.names C.BLIF Q_2_.Q Q_1_.Q Q_0_.Q Q_2_.D
+1011 1
+-10- 1
+01-- 1
+-1-0 1
+1111 0
+-00- 0
+00-- 0
+-0-0 0
+.names C.BLIF Q_1_.Q Q_0_.Q Q_1_.D
+101 1
+01- 1
+-10 1
+111 0
+00- 0
+-00 0
+.names C.BLIF Q_0_.Q Q_0_.D
+10 1
+01 1
+00 0
+11 0
+.end

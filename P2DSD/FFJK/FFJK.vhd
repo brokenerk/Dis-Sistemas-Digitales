@@ -1,0 +1,37 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY FFJK IS PORT(
+PRE, CLR, CLK, J, K: IN STD_LOGIC;
+Q, NQ: OUT STD_LOGIC;
+QT: INOUT STD_LOGIC
+);
+END ENTITY;
+
+ARCHITECTURE A_FFJK OF FFJK IS BEGIN
+	PROCESS (CLR, CLK, PRE, J, K) BEGIN
+		
+		IF (CLR='0') THEN
+			QT <= '0';
+			--Q <= '0';
+			--NQ <= '1';
+		ELSIF (CLK'EVENT AND CLK='1') THEN
+			IF (PRE='1') THEN
+				QT <= '1';
+				--Q <= '1';
+				--NQ <= '0';
+			ELSIF (J='0' AND K='0') THEN
+				QT <= QT;
+			ELSIF (J='1' AND K='1') THEN
+				QT <= NOT QT;
+			ELSIF (J='0' AND K='1') THEN
+				QT <= '0';
+			ELSE
+				QT <= '1';
+			END IF;
+		END IF;
+	END PROCESS;
+
+	Q <= QT;
+	NQ <= NOT QT;
+END A_FFJK;

@@ -1,0 +1,232 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Thu May 24 19:35:08 2018
+#$ MODULE contreg
+#$ PINS 18 clk clr i_7_ e_3_ q_3_ i_6_ i_5_ i_4_ i_3_ i_2_ i_1_ i_0_ e_2_ e_1_ e_0_ q_2_ q_1_ \
+#  q_0_
+#$ NODES 11 contador_i0_i3reg contador_i0_i2 contador_i0_i1 contador_i0_i0 n110 \
+#  c_2_N_13_0 c_2_N_4_2 c_2_N_4_1 n304 n326 n413
+.model contreg
+.inputs clk.BLIF clr.BLIF i_7_.BLIF e_3_.BLIF i_6_.BLIF i_5_.BLIF i_4_.BLIF \
+i_3_.BLIF i_2_.BLIF i_1_.BLIF i_0_.BLIF e_2_.BLIF e_1_.BLIF e_0_.BLIF \
+contador_i0_i3reg.BLIF contador_i0_i2.BLIF contador_i0_i1.BLIF \
+contador_i0_i0.BLIF n110.BLIF c_2_N_13_0.BLIF c_2_N_4_2.BLIF c_2_N_4_1.BLIF \
+n304.BLIF n326.BLIF n413.BLIF
+.outputs q_3_ contador_i0_i3reg.C contador_i0_i3reg.CE contador_i0_i3reg.AR \
+contador_i0_i2.D contador_i0_i2.C contador_i0_i2.CE contador_i0_i2.AR \
+contador_i0_i1.C contador_i0_i1.CE contador_i0_i1.AR contador_i0_i0.D \
+contador_i0_i0.C contador_i0_i0.CE contador_i0_i0.AR n110 c_2_N_13_0 c_2_N_4_2 \
+c_2_N_4_1 n304 n326 n413 q_2_.X1 q_2_.X2 q_1_.X1 q_1_.X2 q_0_.X1 q_0_.X2 \
+contador_i0_i3reg.D.X1 contador_i0_i3reg.D.X2 contador_i0_i1.D.X1 \
+contador_i0_i1.D.X2
+.names clr.BLIF contador_i0_i3reg.AR
+0 1
+1 0
+.names i_1_.BLIF i_0_.BLIF e_2_.BLIF contador_i0_i3reg.BLIF \
+contador_i0_i2.BLIF contador_i0_i1.BLIF contador_i0_i0.BLIF n110.BLIF \
+c_2_N_13_0.BLIF n326.BLIF n413.BLIF contador_i0_i2.D
+-0--1-10-01 1
+-0--10-1-01 1
+-0--110--01 1
+-0--0000-01 1
+-0--0111-01 1
+00---1--011 1
+-0-1----111 1
+10-1-----11 1
+-11-------- 1
+--1-------0 1
+-0--01-0-01 0
+-0--0-01-01 0
+-0--001--01 0
+-0--1111-01 0
+-0--1000-01 0
+00---0--011 0
+-0-0----111 0
+10-0-----11 0
+-10-------- 0
+--0-------0 0
+.names clr.BLIF contador_i0_i2.AR
+0 1
+1 0
+.names clr.BLIF contador_i0_i1.AR
+0 1
+1 0
+.names i_1_.BLIF i_0_.BLIF e_0_.BLIF contador_i0_i3reg.BLIF \
+contador_i0_i1.BLIF contador_i0_i0.BLIF c_2_N_13_0.BLIF n326.BLIF n413.BLIF \
+contador_i0_i0.D
+00-1--011 1
+-0--1-111 1
+10--1--11 1
+-0---0-01 1
+-11------ 1
+--1-----0 1
+00-0--011 0
+-0--0-111 0
+10--0--11 0
+-0---1-01 0
+-10------ 0
+--0-----0 0
+.names clr.BLIF contador_i0_i0.AR
+0 1
+1 0
+.names i_1_.BLIF i_0_.BLIF c_2_N_13_0.BLIF c_2_N_4_2.BLIF c_2_N_4_1.BLIF n110
+00010 1
+00001 1
+---00 0
+---11 0
+--1-- 0
+-1--- 0
+1---- 0
+.names i_6_.BLIF i_5_.BLIF i_4_.BLIF i_3_.BLIF i_2_.BLIF c_2_N_13_0
+-10-0 1
+0-0-0 1
+---10 1
+10-0- 0
+--10- 0
+----1 0
+.names i_7_.BLIF i_6_.BLIF i_5_.BLIF i_4_.BLIF i_3_.BLIF i_2_.BLIF i_1_.BLIF \
+c_2_N_4_2
+---1000 1
+--1-000 1
+-1--000 1
+1---000 1
+0000--- 0
+-----1- 0
+----1-- 0
+------1 0
+.names i_7_.BLIF i_6_.BLIF i_5_.BLIF i_4_.BLIF i_3_.BLIF i_2_.BLIF i_1_.BLIF \
+c_2_N_4_1
+-100--0 1
+1-00--0 1
+-----10 1
+----1-0 1
+00--00- 0
+---100- 0
+--1-00- 0
+------1 0
+.names i_1_.BLIF i_0_.BLIF c_2_N_13_0.BLIF c_2_N_4_2.BLIF c_2_N_4_1.BLIF n304
+---1- 1
+0-0-- 1
+-1--- 1
+----1 1
+-0100 0
+10-00 0
+.names i_0_.BLIF c_2_N_4_2.BLIF c_2_N_4_1.BLIF n326
+011 1
+-0- 0
+1-- 0
+--0 0
+.names i_1_.BLIF c_2_N_13_0.BLIF c_2_N_4_2.BLIF c_2_N_4_1.BLIF n413
+--1- 1
+-1-- 1
+1--- 1
+---1 1
+0000 0
+.names contador_i0_i3reg.BLIF q_3_
+1 1
+0 0
+.names clk.BLIF contador_i0_i3reg.C
+1 1
+0 0
+.names n304.BLIF contador_i0_i3reg.CE
+1 1
+0 0
+.names clk.BLIF contador_i0_i2.C
+1 1
+0 0
+.names n304.BLIF contador_i0_i2.CE
+1 1
+0 0
+.names clk.BLIF contador_i0_i1.C
+1 1
+0 0
+.names n304.BLIF contador_i0_i1.CE
+1 1
+0 0
+.names clk.BLIF contador_i0_i0.C
+1 1
+0 0
+.names n304.BLIF contador_i0_i0.CE
+1 1
+0 0
+.names contador_i0_i2.BLIF q_2_.X1
+1 1
+0 0
+.names i_0_.BLIF contador_i0_i3reg.BLIF contador_i0_i2.BLIF c_2_N_4_2.BLIF \
+c_2_N_4_1.BLIF q_2_.X2
+01-10 1
+1---- 0
+-0--- 0
+---0- 0
+----1 0
+.names contador_i0_i1.BLIF q_1_.X1
+1 1
+0 0
+.names i_0_.BLIF contador_i0_i2.BLIF contador_i0_i1.BLIF c_2_N_4_2.BLIF \
+c_2_N_4_1.BLIF q_1_.X2
+01-10 1
+1---- 0
+-0--- 0
+---0- 0
+----1 0
+.names contador_i0_i0.BLIF q_0_.X1
+1 1
+0 0
+.names i_0_.BLIF contador_i0_i1.BLIF contador_i0_i0.BLIF c_2_N_4_2.BLIF \
+c_2_N_4_1.BLIF q_0_.X2
+01-10 1
+1---- 0
+-0--- 0
+---0- 0
+----1 0
+.names i_0_.BLIF contador_i0_i3reg.BLIF n326.BLIF n413.BLIF \
+contador_i0_i3reg.D.X1
+0101 1
+1--- 0
+-0-- 0
+--1- 0
+---0 0
+.names e_3_.BLIF i_1_.BLIF i_0_.BLIF contador_i0_i3reg.BLIF \
+contador_i0_i2.BLIF contador_i0_i1.BLIF contador_i0_i0.BLIF n110.BLIF \
+c_2_N_13_0.BLIF n326.BLIF n413.BLIF contador_i0_i3reg.D.X2
+1---------0 1
+--0-0000-01 1
+--0-1111-01 1
+-00-1---011 1
+--0---1-111 1
+-10---1--11 1
+1-1-------- 1
+0-1-------- 0
+0---------0 0
+-10---0--11 0
+--0---0-111 0
+--0-01---01 0
+--0-10---01 0
+--0-0-1--01 0
+--0-1-0--01 0
+--0-0--1-01 0
+--0-1--0-01 0
+-00-0---011 0
+.names i_0_.BLIF contador_i0_i0.BLIF n413.BLIF contador_i0_i1.D.X1
+001 1
+1-- 0
+-1- 0
+--0 0
+.names i_1_.BLIF i_0_.BLIF e_1_.BLIF contador_i0_i2.BLIF contador_i0_i1.BLIF \
+contador_i0_i0.BLIF n110.BLIF c_2_N_13_0.BLIF n326.BLIF n413.BLIF \
+contador_i0_i1.D.X2
+--1------0 1
+-0--0-1-01 1
+-0--1-0-01 1
+00-----011 1
+-0-0-0--11 1
+-0-1-1--11 1
+-11------- 1
+-10------- 0
+--0------0 0
+-0--1-1-01 0
+-0--0-0-01 0
+10-0-1--11 0
+10-1-0--11 0
+-0-0-1-111 0
+-0-1-0-111 0
+.end

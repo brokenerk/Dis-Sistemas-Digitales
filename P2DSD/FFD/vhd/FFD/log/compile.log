@@ -1,0 +1,7 @@
+ Compilation with file reorder...
+ File: F:\Diseño S Digitales\P2DSD\FFD\vhd\FFD.vhd
+ Compile Entity "ffd"
+ Compile Architecture "DSMB" of Entity "ffd"
+ Top-Level unit detected
+ Entity  =>   ffd
+ Compile success 0 Errors 0 Warnings  Analysis time :  4.0 [s]

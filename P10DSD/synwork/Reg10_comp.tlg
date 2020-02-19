@@ -1,0 +1,8 @@
+@N: CD630 :"C:\users\yakertaker\desktop\cpld\Sumador.vhd":5:7:5:11|Synthesizing work.reg10.a_reg10 
+@N: CD364 :"C:\users\yakertaker\desktop\cpld\Sumador.vhd":36:5:36:11|Removed redundant assignment
+@N: CD364 :"C:\users\yakertaker\desktop\cpld\Sumador.vhd":37:5:37:11|Removed redundant assignment
+@N: CD364 :"C:\users\yakertaker\desktop\cpld\Sumador.vhd":48:4:48:8|Removed redundant assignment
+@N: CD364 :"C:\users\yakertaker\desktop\cpld\Sumador.vhd":53:4:53:8|Removed redundant assignment
+@N: CD364 :"C:\users\yakertaker\desktop\cpld\Sumador.vhd":79:4:79:4|Removed redundant assignment
+@N: CD364 :"C:\users\yakertaker\desktop\cpld\Sumador.vhd":84:4:84:4|Removed redundant assignment
+Post processing for work.reg10.a_reg10

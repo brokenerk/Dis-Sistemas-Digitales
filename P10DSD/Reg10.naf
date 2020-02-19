@@ -1,0 +1,17 @@
+clk  i
+clr  i
+C[1]  i
+C[0]  i
+A[3]  i
+A[2]  i
+A[1]  i
+A[0]  i
+B[3]  i
+B[2]  i
+B[1]  i
+B[0]  i
+Carry  b
+q[3]  b
+q[2]  b
+q[1]  b
+q[0]  b

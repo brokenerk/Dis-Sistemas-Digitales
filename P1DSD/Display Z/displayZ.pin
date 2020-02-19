@@ -1,0 +1,15 @@
+Cypress Package: palc22v10d-15pc  PinOut File: displayZ.pin
+
+This file was created on 02/16/2018 at 04:50:02 
+by PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+==========
+z(1) in <> Enabled Normal 1 <> [User] 
+z(0) in <> Enabled Normal 2 <> [User] 
+dz(6) out <> Enabled Normal 14 <> [User] 
+dz(5) out <> Enabled Normal 15 <> [User] 
+dz(4) out <> Enabled Normal 16 <> [User] 
+dz(3) inout <> Enabled Normal 17 <> [User] 
+dz(2) out <> Enabled Normal 18 <> [User] 
+dz(1) out <> Enabled Normal 19 <> [User] 
+dz(0) out <> Enabled Normal 20 <> [User] 

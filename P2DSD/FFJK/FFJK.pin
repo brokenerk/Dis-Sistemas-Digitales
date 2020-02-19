@@ -1,0 +1,14 @@
+Cypress Package: palc22v10d-15pc  PinOut File: FFJK.pin
+
+This file was created on 03/02/2018 at 07:11:11 
+by PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+==========
+clk gclk <> Enabled Normal 1 <> [Auto] 
+pre in <> Enabled Normal 2 <> [Auto] 
+k in <> Enabled Normal 3 <> [Auto] 
+j in <> Enabled Normal 4 <> [Auto] 
+clr in <> Enabled Normal 5 <> [Auto] 
+qt inout <> Enabled Normal 14 <> [Auto] 
+nq out <> Enabled Normal 15 <> [Auto] 
+q out <> Enabled Normal 23 <> [Auto] 

@@ -1,0 +1,11 @@
+----------------------------------------------------------------------
+Report for cell SEC.TECH
+Register bits:  35 of 880 (3.977%)
+I/O cells:      15
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               DFFR        33          100.0
+                               DFFS         2          100.0
+                               IBUF         8          100.0
+                               OBUF         7          100.0
+                              TOTAL        50

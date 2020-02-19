@@ -1,0 +1,98 @@
+|--------------------------------------------------- ----------|
+|- ispLEVER Classic 2.0.00.17.20.15 Equations File            -|
+|- Copyright(C), 1992-2012, Lattice Semiconductor Corporation -|
+|- All Rights Reserved.                                       -|
+|--------------------------------------------------------------|
+
+
+Equations:
+
+c_2_N_13_0 = i_5_ & !i_4_ & !i_2_
+    # !i_6_ & !i_4_ & !i_2_
+    # i_3_ & !i_2_ ; (3 pterms, 5 signals)
+
+c_2_N_4_1 = i_6_ & !i_5_ & !i_4_ & !i_1_
+    # i_7_ & !i_5_ & !i_4_ & !i_1_
+    # i_2_ & !i_1_
+    # i_3_ & !i_1_ ; (4 pterms, 7 signals)
+
+c_2_N_4_2 = i_4_ & !i_3_ & !i_2_ & !i_1_
+    # i_5_ & !i_3_ & !i_2_ & !i_1_
+    # i_6_ & !i_3_ & !i_2_ & !i_1_
+    # i_7_ & !i_3_ & !i_2_ & !i_1_ ; (4 pterms, 7 signals)
+
+contador_i0_i0.D = !i_1_ & !i_0_ & q_3_.Q & !c_2_N_13_0 & n326 & n413
+    # !i_0_ & contador_i0_i1.Q & c_2_N_13_0 & n326 & n413
+    # i_1_ & !i_0_ & contador_i0_i1.Q & n326 & n413
+    # !i_0_ & !contador_i0_i0.Q & !n326 & n413
+    # i_0_ & e_0_
+    # e_0_ & !n413 ; (6 pterms, 9 signals)
+contador_i0_i0.C = clk ; (1 pterm, 1 signal)
+contador_i0_i0.CE = n304 ; (1 pterm, 1 signal)
+contador_i0_i0.AR = !clr ; (1 pterm, 1 signal)
+
+contador_i0_i1.D = !i_1_ & !i_0_ & contador_i0_i0.Q & !c_2_N_13_0 & n326
+       & n413
+    # !i_0_ & !contador_i0_i1.Q & !contador_i0_i0.Q & !n110 & !n326 & n413
+    # !i_0_ & contador_i0_i1.Q & contador_i0_i0.Q & !n110 & !n326 & n413
+    # !i_0_ & contador_i0_i1.Q & !contador_i0_i0.Q & n110 & !n326 & n413
+    # !i_0_ & !contador_i0_i1.Q & contador_i0_i0.Q & n110 & !n326 & n413
+    # !i_0_ & contador_i0_i2.Q & c_2_N_13_0 & n326 & n413
+    # i_1_ & !i_0_ & contador_i0_i2.Q & n326 & n413
+    # i_0_ & e_1_
+    # e_1_ & !n413 ; (9 pterms, 10 signals)
+contador_i0_i1.C = clk ; (1 pterm, 1 signal)
+contador_i0_i1.CE = n304 ; (1 pterm, 1 signal)
+contador_i0_i1.AR = !clr ; (1 pterm, 1 signal)
+
+contador_i0_i2.D = !i_0_ & contador_i0_i2.Q & contador_i0_i0.Q & !n110 & !n326
+       & n413
+    # !i_0_ & contador_i0_i2.Q & !contador_i0_i1.Q & n110 & !n326 & n413
+    # !i_0_ & contador_i0_i2.Q & contador_i0_i1.Q & !contador_i0_i0.Q & !n326
+       & n413
+    # !i_0_ & !contador_i0_i2.Q & !contador_i0_i1.Q & !contador_i0_i0.Q
+       & !n110 & !n326 & n413
+    # !i_0_ & !contador_i0_i2.Q & contador_i0_i1.Q & contador_i0_i0.Q & n110
+       & !n326 & n413
+    # !i_1_ & !i_0_ & contador_i0_i1.Q & !c_2_N_13_0 & n326 & n413
+    # !i_0_ & q_3_.Q & c_2_N_13_0 & n326 & n413
+    # i_1_ & !i_0_ & q_3_.Q & n326 & n413
+    # i_0_ & e_2_
+    # e_2_ & !n413 ; (10 pterms, 11 signals)
+contador_i0_i2.C = clk ; (1 pterm, 1 signal)
+contador_i0_i2.CE = n304 ; (1 pterm, 1 signal)
+contador_i0_i2.AR = !clr ; (1 pterm, 1 signal)
+
+n110 = !i_1_ & !i_0_ & !c_2_N_13_0 & c_2_N_4_2 & !c_2_N_4_1
+    # !i_1_ & !i_0_ & !c_2_N_13_0 & !c_2_N_4_2 & c_2_N_4_1 ; (2 pterms, 5 signals)
+
+n304 = !( !i_0_ & c_2_N_13_0 & !c_2_N_4_2 & !c_2_N_4_1
+    # i_1_ & !i_0_ & !c_2_N_4_2 & !c_2_N_4_1 ) ; (2 pterms, 5 signals)
+
+n326 = !i_0_ & c_2_N_4_2 & c_2_N_4_1 ; (1 pterm, 3 signals)
+
+n413 = !( !i_1_ & !c_2_N_13_0 & !c_2_N_4_2 & !c_2_N_4_1 ) ; (1 pterm, 4 signals)
+
+q_0_.X1 = !i_0_ & contador_i0_i1.Q & c_2_N_4_2 & !c_2_N_4_1 ; (1 pterm, 4 signals)
+q_0_.X2 = contador_i0_i0.Q ; (1 pterm, 1 signal)
+
+q_1_.X1 = !i_0_ & contador_i0_i2.Q & c_2_N_4_2 & !c_2_N_4_1 ; (1 pterm, 4 signals)
+q_1_.X2 = contador_i0_i1.Q ; (1 pterm, 1 signal)
+
+q_2_.X1 = !i_0_ & q_3_.Q & c_2_N_4_2 & !c_2_N_4_1 ; (1 pterm, 4 signals)
+q_2_.X2 = contador_i0_i2.Q ; (1 pterm, 1 signal)
+
+q_3_.D.X1 = e_3_ & !n413
+    # !i_0_ & !contador_i0_i2.Q & !contador_i0_i1.Q & !contador_i0_i0.Q
+       & !n110 & !n326 & n413
+    # !i_0_ & contador_i0_i2.Q & contador_i0_i1.Q & contador_i0_i0.Q & n110
+       & !n326 & n413
+    # !i_1_ & !i_0_ & contador_i0_i2.Q & !c_2_N_13_0 & n326 & n413
+    # !i_0_ & contador_i0_i0.Q & c_2_N_13_0 & n326 & n413
+    # i_1_ & !i_0_ & contador_i0_i0.Q & n326 & n413
+    # e_3_ & i_0_ ; (7 pterms, 10 signals)
+q_3_.D.X2 = !i_0_ & q_3_.Q & !n326 & n413 ; (1 pterm, 4 signals)
+q_3_.C = clk ; (1 pterm, 1 signal)
+q_3_.CE = n304 ; (1 pterm, 1 signal)
+q_3_.AR = !clr ; (1 pterm, 1 signal)
+

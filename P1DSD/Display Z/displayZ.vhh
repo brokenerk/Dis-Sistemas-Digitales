@@ -1,0 +1,6 @@
+ENTITY displays IS
+    PORT (
+	z : in std_logic_vector (1 downto 0) ; 
+	dz : inout std_logic_vector (6 downto 0)
+    ) ;
+END displays ;

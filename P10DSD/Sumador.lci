@@ -1,0 +1,151 @@
+
+[Device]
+Family = lc4k;
+PartNumber = LC4256ZE-5TN144C;
+Package = 144TQFP;
+PartType = LC4256ZE;
+Speed = -5.8;
+Operating_condition = COM;
+Status = Production;
+EN_PinGLB = yes;
+EN_PinMacrocell = yes;
+
+[Revision]
+Parent = lc4k256e.lci;
+DATE = 06/04/2018;
+TIME = 08:48:13;
+Source_Format = Pure_VHDL;
+Synthesis = Synplify;
+
+[Ignore Assignments]
+
+[Clear Assignments]
+
+[Backannotate Assignments]
+
+[Global Constraints]
+
+[Location Assignments]
+layer = OFF;
+clk = Pin, 4, -, C, 12;
+clr = Pin, 5, -, C, 10;
+A_3_ = Pin, 8, -, C, 4;
+A_2_ = Pin, 9, -, C, 2;
+A_1_ = Pin, 11, -, D, 14;
+A_0_ = Pin, 12, -, D, 12;
+B_3_ = Pin, 13, -, D, 10;
+B_2_ = Pin, 14, -, D, 8;
+B_1_ = Pin, 15, -, D, 6;
+B_0_ = Pin, 16, -, D, 4;
+Carry = Pin, 28, -, F, 2;
+q_3_ = Pin, 29, -, F, 4;
+q_2_ = Pin, 30, -, F, 6;
+q_1_ = Pin, 31, -, F, 8;
+q_0_ = Pin, 32, -, F, 10;
+C_1_ = Pin, 6, -, C, 8;
+C_0_ = Pin, 7, -, C, 6;
+
+[Group Assignments]
+layer = OFF;
+
+[Resource Reservations]
+layer = OFF;
+
+[Fitter Report Format]
+
+[Power]
+
+[Source Constraint Option]
+
+[Fast Bypass]
+
+[OSM Bypass]
+
+[Input Registers]
+
+[Netlist/Delay Format]
+NetList = VHDL;
+
+[IO Types]
+layer = OFF;
+
+[Pullup]
+
+[Slewrate]
+
+[Region]
+
+[Timing Constraints]
+layer = OFF;
+
+[HSI Attributes]
+
+[Input Delay]
+
+[opt global constraints list]
+
+[Explorer User Settings]
+
+[Pin attributes list]
+
+[global constraints list]
+
+[Global Constraints Process Update]
+
+[pin lock limitation]
+
+[LOCATION ASSIGNMENTS LIST]
+
+[RESOURCE RESERVATIONS LIST]
+
+[individual constraints list]
+
+[Attributes list setting]
+
+[Timing Analyzer]
+
+[PLL Assignments]
+
+[Dual Function Macrocell]
+
+[Explorer Results]
+
+[VHDL synplify constraints]
+
+[VHDL spectrum constraints]
+
+[verilog synplify constraints]
+
+[verilog spectrum constraints]
+
+[VHDL synplify constraints list]
+
+[VHDL spectrum constraints list]
+
+[verilog synplify constraints list]
+
+[verilog spectrum constraints list]
+
+[Power Guard]
+
+[ORP Bypass]
+
+[Register Powerup]
+
+[Constraint Version]
+version = 1.0;
+
+[ORP ASSIGNMENTS]
+layer = OFF;
+
+[Node attribute]
+layer = OFF;
+
+[SYMBOL/MODULE attribute]
+layer = OFF;
+
+[Nodal Constraints]
+layer = OFF;
+
+[OSCTIMER Assignments]
+layer = OFF;

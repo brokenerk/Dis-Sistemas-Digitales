@@ -1,0 +1,382 @@
+#$ DATE Thu May 24 19:35:08 2018
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE contreg
+#$ PINS 18 clk clr i_7_ e_3_ q_3_ i_6_ i_5_ i_4_ i_3_ i_2_ i_1_ i_0_ e_2_ e_1_ e_0_ q_2_ q_1_ q_0_
+#$ NODES 124 clk_c clr_c i_c_7 i_c_6 i_c_5 i_c_4 i_c_3 i_c_2 i_c_1 i_c_0 \
+#  e_c_3 e_c_2 e_c_1 e_c_0 q_c_2 q_c_1 q_c_0 contador_i0_i3reg i144 i146 \
+#  i152 c_2 c_1 c_0 contador_i0_i2 contador_i0_i1 contador_i0_i0 n110 n8 n9 \
+#  n13 n15 n17 n418 n21 c_2_N_13_1 c_2_N_13_0 c_2_N_4_2 c_2_N_4_1 c_2_N_4_0 \
+#  n436 i90 i83 contador_3_N_20_0 contador_3_N_16_3 contador_3_N_16_2 n162 n435 n4 n479 \
+#  n304 n107 n449 n433 n440 n114 n115 n478 n148 n169 \
+#  n476 n2 n437 n475 n430 n443 n434 n6 n250 n474 \
+#  n424 i23 n473 n472 n426 n470 n330 n446 n469 n326 \
+#  n471 n4_adj_1 n5 n321 n416 n465 n462 n428 n468 n431 \
+#  n359 i1 i1_adj_2 n340 n318 n315 n467 n466 n464 n463 \
+#  i34 n477 n461 n429 n415 n460 n427 n459 n457 n456 \
+#  n4_adj_2 i356 n454 n453 n451 n450 n447 n444 n442 n441 \
+#  n438 n2_adj_3 n423 n413 
+.model contreg
+.inputs clk.BLIF clr.BLIF i_7_.BLIF e_3_.BLIF i_6_.BLIF i_5_.BLIF i_4_.BLIF i_3_.BLIF i_2_.BLIF \
+  i_1_.BLIF i_0_.BLIF e_2_.BLIF e_1_.BLIF e_0_.BLIF clk_c.BLIF clr_c.BLIF i_c_7.BLIF i_c_6.BLIF \
+  i_c_5.BLIF i_c_4.BLIF i_c_3.BLIF i_c_2.BLIF i_c_1.BLIF i_c_0.BLIF e_c_3.BLIF e_c_2.BLIF e_c_1.BLIF \
+  e_c_0.BLIF q_c_2.BLIF q_c_1.BLIF q_c_0.BLIF contador_i0_i3reg.BLIF i144.BLIF i146.BLIF i152.BLIF c_2.BLIF \
+  c_1.BLIF c_0.BLIF contador_i0_i2.BLIF contador_i0_i1.BLIF contador_i0_i0.BLIF n110.BLIF n8.BLIF n9.BLIF n13.BLIF \
+  n15.BLIF n17.BLIF n418.BLIF n21.BLIF c_2_N_13_1.BLIF c_2_N_13_0.BLIF c_2_N_4_2.BLIF c_2_N_4_1.BLIF c_2_N_4_0.BLIF \
+  n436.BLIF i90.BLIF i83.BLIF contador_3_N_20_0.BLIF contador_3_N_16_3.BLIF contador_3_N_16_2.BLIF n162.BLIF n435.BLIF n4.BLIF \
+  n479.BLIF n304.BLIF n107.BLIF n449.BLIF n433.BLIF n440.BLIF n114.BLIF n115.BLIF n478.BLIF \
+  n148.BLIF n169.BLIF n476.BLIF n2.BLIF n437.BLIF n475.BLIF n430.BLIF n443.BLIF n434.BLIF \
+  n6.BLIF n250.BLIF n474.BLIF n424.BLIF i23.BLIF n473.BLIF n472.BLIF n426.BLIF n470.BLIF \
+  n330.BLIF n446.BLIF n469.BLIF n326.BLIF n471.BLIF n4_adj_1.BLIF n5.BLIF n321.BLIF n416.BLIF \
+  n465.BLIF n462.BLIF n428.BLIF n468.BLIF n431.BLIF n359.BLIF i1.BLIF i1_adj_2.BLIF n340.BLIF \
+  n318.BLIF n315.BLIF n467.BLIF n466.BLIF n464.BLIF n463.BLIF i34.BLIF n477.BLIF n461.BLIF \
+  n429.BLIF n415.BLIF n460.BLIF n427.BLIF n459.BLIF n457.BLIF n456.BLIF n4_adj_2.BLIF i356.BLIF \
+  n454.BLIF n453.BLIF n451.BLIF n450.BLIF n447.BLIF n444.BLIF n442.BLIF n441.BLIF n438.BLIF \
+  n2_adj_3.BLIF n423.BLIF n413.BLIF  
+.outputs q_3_ q_2_ q_1_ q_0_ contador_i0_i3reg.D contador_i0_i3reg.C contador_i0_i3reg.CE contador_i0_i3reg.AR contador_i0_i2.D contador_i0_i2.C contador_i0_i2.CE \
+  contador_i0_i2.AR contador_i0_i1.D contador_i0_i1.C contador_i0_i1.CE contador_i0_i1.AR contador_i0_i0.D contador_i0_i0.C contador_i0_i0.CE contador_i0_i0.AR i1.X1 i1.X2 \
+  i1_adj_2.X1 i1_adj_2.X2 i146.X1 i146.X2 i144.X1 i144.X2 i23.X1 i23.X2 i152.X1 i152.X2 i356.X1 \
+  i356.X2 i34.X1 i34.X2 i83.X1 i83.X2 i90.X1 i90.X2 clk_c clr_c i_c_7 i_c_6 \
+  i_c_5 i_c_4 i_c_3 i_c_2 i_c_1 i_c_0 e_c_3 e_c_2 e_c_1 e_c_0 q_c_2 \
+  q_c_1 q_c_0 c_2 c_1 c_0 n110 n8 n9 n13 n15 n17 \
+  n418 n21 c_2_N_13_1 c_2_N_13_0 c_2_N_4_2 c_2_N_4_1 c_2_N_4_0 n436 contador_3_N_20_0 contador_3_N_16_3 contador_3_N_16_2 \
+  n162 n435 n4 n479 n304 n107 n449 n433 n440 n114 n115 \
+  n478 n148 n169 n476 n2 n437 n475 n430 n443 n434 n6 \
+  n250 n474 n424 n473 n472 n426 n470 n330 n446 n469 n326 \
+  n471 n4_adj_1 n5 n321 n416 n465 n462 n428 n468 n431 n359 \
+  n340 n318 n315 n467 n466 n464 n463 n477 n461 n429 n415 \
+  n460 n427 n459 n457 n456 n4_adj_2 n454 n453 n451 n450 n447 \
+  n444 n442 n441 n438 n2_adj_3 n423 n413
+.names  n250.BLIF n479.BLIF n430
+11 1
+.names  n433.BLIF n429.BLIF n465
+11 1
+.names  i_6_.BLIF i_c_6
+1 1
+.names  i_7_.BLIF i_c_7
+1 1
+.names  n5.BLIF n461.BLIF n462
+11 1
+.names  i_c_1.BLIF c_2_N_13_0.BLIF c_2_N_4_0
+1- 1
+-1 1
+.names  c_0.BLIF n2.BLIF n4_adj_2
+11 1
+.names  n466.BLIF n465.BLIF n467
+1- 1
+-1 1
+.names  clr.BLIF clr_c
+1 1
+.names  i_4_.BLIF i_c_4
+1 1
+.names  i_1_.BLIF i_c_1
+1 1
+.names  clk.BLIF clk_c
+1 1
+.names  n114.BLIF contador_i0_i1.BLIF n469
+11 1
+.names  n469.BLIF n468.BLIF n470
+1- 1
+-1 1
+.names  q_c_0.BLIF q_0_
+1 1
+.names  n433.BLIF contador_3_N_20_0.BLIF n459
+11 1
+.names  i_2_.BLIF i_c_2
+1 1
+.names  i_3_.BLIF i_c_3
+1 1
+.names  n449.BLIF contador_i0_i2.BLIF n456
+11 1
+.names  q_c_1.BLIF q_1_
+1 1
+.names  i_c_5.BLIF n9.BLIF n13
+1- 1
+-1 1
+.names  n315.BLIF n13.BLIF n17
+11 1
+.names  n107.BLIF e_c_1.BLIF n431
+11 1
+.names  q_c_2.BLIF q_2_
+1 1
+.names  i_5_.BLIF i_c_5
+1 1
+.names  e_0_.BLIF e_c_0
+1 1
+.names  e_1_.BLIF e_c_1
+1 1
+.names  e_2_.BLIF e_c_2
+1 1
+.names  e_3_.BLIF e_c_3
+1 1
+.names  i_0_.BLIF i_c_0
+1 1
+.names  contador_i0_i3reg.BLIF q_3_
+1 1
+.names  n359.BLIF n8.BLIF n315.BLIF n415
+111 1
+.names  n431.BLIF n430.BLIF contador_i0_i1.D
+1- 1
+-1 1
+.names  n114.BLIF contador_i0_i2.BLIF n472
+11 1
+.names  n472.BLIF n471.BLIF n473
+1- 1
+-1 1
+.names  i_c_6.BLIF i_c_7.BLIF n8
+1- 1
+-1 1
+.names  n449.BLIF contador_i0_i1.BLIF n453
+11 1
+.names  c_2_N_4_2.BLIF c_2_N_4_1.BLIF c_2_N_4_0.BLIF n413
+1-- 1
+-1- 1
+--1 1
+.names  n340.BLIF n15.BLIF c_2_N_4_2
+11 1
+.names  n250.BLIF n473.BLIF n446
+11 1
+.names  n107.BLIF e_c_0.BLIF n438
+11 1
+.names  n438.BLIF n437.BLIF contador_i0_i0.D
+1- 1
+-1 1
+.names  i_c_3.BLIF n17.BLIF n21
+1- 1
+-1 1
+.names  c_0.BLIF contador_i0_i2.BLIF n475
+11 1
+.names  n110.BLIF i90.BLIF n441
+11 1
+.names  n433.BLIF n442.BLIF n434
+11 1
+.names  n441.BLIF n440.BLIF n442
+1- 1
+-1 1
+.names  n115.BLIF contador_i0_i0.BLIF n435
+11 1
+.names  n107.BLIF e_c_2.BLIF n444
+11 1
+.names  n318.BLIF n21.BLIF c_2_N_13_0
+11 1
+.names  n444.BLIF n443.BLIF contador_i0_i2.D
+1- 1
+-1 1
+.names  n4_adj_1.BLIF c_0.BLIF n5
+1- 1
+-1 1
+.names  n250.BLIF n470.BLIF n443
+11 1
+.names  n107.BLIF e_c_3.BLIF n447
+11 1
+.names  n447.BLIF n446.BLIF contador_i0_i3reg.D
+1- 1
+-1 1
+.names  n449.BLIF contador_i0_i0.BLIF n450
+11 1
+.names  c_2_N_4_2.BLIF c_1.BLIF n326
+11 1
+.names  n426.BLIF contador_3_N_16_3.BLIF n440
+11 1
+.names  n321.BLIF c_2_N_4_0.BLIF c_0
+11 1
+.names  n148.BLIF i152.BLIF n451
+11 1
+.names  n321.BLIF n413.BLIF n250
+11 1
+.names  n451.BLIF n450.BLIF q_c_0
+1- 1
+-1 1
+.names  n148.BLIF i146.BLIF n454
+11 1
+.names  n326.BLIF c_0.BLIF n115
+11 1
+.names  n435.BLIF n434.BLIF n436
+1- 1
+-1 1
+.names  i23.BLIF n321.BLIF n2_adj_3.BLIF n110
+111 1
+.names  c_2_N_4_1.BLIF n321.BLIF c_1
+11 1
+.names  n4.BLIF contador_i0_i2.BLIF n6
+1- 1
+-1 1
+.names  i_c_2.BLIF i_c_3.BLIF n416
+1- 1
+-1 1
+.names  n416.BLIF n415.BLIF c_2_N_13_1
+1- 1
+-1 1
+.names  n475.BLIF n474.BLIF n476
+1- 1
+-1 1
+.names  i356.BLIF n423
+0 1
+.names  c_2_N_4_2.BLIF n321.BLIF c_2
+11 1
+.names  i_c_5.BLIF i_c_4.BLIF i_c_6.BLIF i_c_7.BLIF n15
+1--- 1
+-1-- 1
+--1- 1
+---1 1
+.names  n454.BLIF n453.BLIF q_c_1
+1- 1
+-1 1
+.names  c_0.BLIF n2_adj_3
+0 1
+.names  i1_adj_2.BLIF contador_3_N_16_2
+0 1
+.names  n418.BLIF n340
+0 1
+.names  n426.BLIF contador_3_N_16_2.BLIF n427
+11 1
+.names  i1.BLIF contador_3_N_16_3
+0 1
+.names  i_c_5.BLIF n359
+0 1
+.names  n148.BLIF i144.BLIF n457
+11 1
+.names  n457.BLIF n456.BLIF q_c_2
+1- 1
+-1 1
+.names  n148.BLIF n449
+0 1
+.names  i_c_1.BLIF n330
+0 1
+.names  n115.BLIF contador_i0_i1.BLIF n460
+11 1
+.names  n2.BLIF c_2.BLIF n148
+11 1
+.names  n424.BLIF c_2.BLIF n304
+1- 1
+-1 1
+.names  n326.BLIF n476.BLIF n478
+11 1
+.names  i_c_6.BLIF n9
+0 1
+.names  n5.BLIF n114
+0 1
+.names  n326.BLIF n4_adj_1
+0 1
+.names  n250.BLIF n107
+0 1
+.names  contador_i0_i0.BLIF contador_i0_i1.BLIF n4
+1- 1
+-1 1
+.names  n162.BLIF contador_i0_i2.BLIF n169
+11 1
+.names  n416.BLIF i_c_1.BLIF n418
+1- 1
+-1 1
+.names  n110.BLIF n426
+0 1
+.names  n428.BLIF n427.BLIF n429
+1- 1
+-1 1
+.names  c_1.BLIF n2
+0 1
+.names  contador_i0_i0.BLIF contador_3_N_20_0
+0 1
+.names  n115.BLIF n433
+0 1
+.names  n460.BLIF n459.BLIF n461
+1- 1
+-1 1
+.names  n250.BLIF n464.BLIF n437
+11 1
+.names  n478.BLIF n477.BLIF n479
+1- 1
+-1 1
+.names  n4_adj_2.BLIF n424
+0 1
+.names  i_c_0.BLIF n321
+0 1
+.names  n4_adj_1.BLIF i34.BLIF n477
+11 1
+.names  contador_i0_i0.BLIF contador_i0_i1.BLIF n162
+11 1
+.names  n114.BLIF contador_i0_i3reg.BLIF n463
+11 1
+.names  n463.BLIF n462.BLIF n464
+1- 1
+-1 1
+.names  i_c_2.BLIF n318
+0 1
+.names  i_c_4.BLIF n315
+0 1
+.names  n2_adj_3.BLIF contador_i0_i0.BLIF n474
+11 1
+.names  n330.BLIF c_2_N_13_1.BLIF c_2_N_4_1
+11 1
+.names  n5.BLIF n436.BLIF n471
+11 1
+.names  n5.BLIF n467.BLIF n468
+11 1
+.names  n115.BLIF contador_i0_i3reg.BLIF n466
+11 1
+.names  n110.BLIF i83.BLIF n428
+11 1
+.names  clr_c.BLIF contador_i0_i3reg.AR
+0 1
+.names  clr_c.BLIF contador_i0_i2.AR
+0 1
+.names  clr_c.BLIF contador_i0_i1.AR
+0 1
+.names  clr_c.BLIF contador_i0_i0.AR
+0 1
+.names  clk_c.BLIF contador_i0_i3reg.C
+1 1
+.names  n304.BLIF contador_i0_i3reg.CE
+1 1
+.names  clk_c.BLIF contador_i0_i2.C
+1 1
+.names  n304.BLIF contador_i0_i2.CE
+1 1
+.names  clk_c.BLIF contador_i0_i1.C
+1 1
+.names  n304.BLIF contador_i0_i1.CE
+1 1
+.names  clk_c.BLIF contador_i0_i0.C
+1 1
+.names  n304.BLIF contador_i0_i0.CE
+1 1
+.names  n6.BLIF i1.X1
+1 1
+.names  contador_i0_i3reg.BLIF i1.X2
+1 1
+.names  n4.BLIF i1_adj_2.X1
+1 1
+.names  contador_i0_i2.BLIF i1_adj_2.X2
+1 1
+.names  contador_i0_i2.BLIF i146.X1
+1 1
+.names  contador_i0_i1.BLIF i146.X2
+1 1
+.names  contador_i0_i3reg.BLIF i144.X1
+1 1
+.names  contador_i0_i2.BLIF i144.X2
+1 1
+.names  c_2_N_4_2.BLIF i23.X1
+1 1
+.names  c_2_N_4_1.BLIF i23.X2
+1 1
+.names  contador_i0_i1.BLIF i152.X1
+1 1
+.names  contador_i0_i0.BLIF i152.X2
+1 1
+.names  n110.BLIF i356.X1
+1 1
+.names  contador_i0_i1.BLIF i356.X2
+1 1
+.names  n423.BLIF i34.X1
+1 1
+.names  contador_i0_i0.BLIF i34.X2
+1 1
+.names  n162.BLIF i83.X1
+1 1
+.names  contador_i0_i2.BLIF i83.X2
+1 1
+.names  n169.BLIF i90.X1
+1 1
+.names  contador_i0_i3reg.BLIF i90.X2
+1 1
+.end

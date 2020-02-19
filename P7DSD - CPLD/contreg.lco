@@ -1,0 +1,220 @@
+[DEVICE]
+Family = lc4k;
+PartType = LC4256ZE;
+Package = 144TQFP;
+PartNumber = LC4256ZE-5TN144C;
+Speed = -5.8;
+Operating_condition = COM;
+EN_Segment = Yes;
+Pin_MC_1to1 = No;
+Default_Device_Io_Types=LVCMOS18,-;
+Voltage = 1.8;
+
+[REVISION]
+RCS = "$Header $";
+Parent = lc4k256e.lci;
+Design = ;
+DATE = 05/23/2018;
+TIME = 19:04:45;
+Source_Format = Pure_VHDL;
+Type = ;
+Pre_Fit_Time = ;
+
+[IGNORE ASSIGNMENTS]
+Pin_Assignments = No;
+Pin_Keep_Block = No;
+Pin_Keep_Segment = No;
+Group_Assignments = No;
+Macrocell_Assignments = No;
+Macrocell_Keep_Block = No;
+Macrocell_Keep_Segment = No;
+Pin_Reservation = No;
+Block_Reservation = No;
+Segment_Reservation = No;
+Timing_Constraints = No;
+IO_Types = No;
+
+[CLEAR ASSIGNMENTS]
+Pin_Assignments = No;
+Pin_Keep_Block = No;
+Pin_Keep_Segment = No;
+Group_Assignments = No;
+Macrocell_Assignments = No;
+Macrocell_Keep_Block = No;
+Macrocell_Keep_Segment = No;
+Pin_Reservation = No;
+Block_Reservation = No;
+Segment_Reservation = No;
+Timing_Constraints = No;
+IO_Types = No;
+
+[BACKANNOTATE ASSIGNMENTS]
+Pin_Assignment = No;
+Pin_Block = No;
+Pin_Macrocell_Block = No;
+Routing = No;
+Io_Types = No;
+
+[GLOBAL CONSTRAINTS]
+Max_Fanin = 24;
+Max_PTerm_Split = 80;
+Max_PTerm_Collapse = 16;
+Max_Pin_Percent = 100;
+Max_Macrocell_Percent = 100;
+Max_GLB_Input_Percent = 100;
+Logic_Reduction = Yes;
+XOR_Synthesis = Yes;
+Keep_XOR = No;
+DT_Synthesis = Yes;
+Node_Collapse = Yes;
+Nodes_collapsing_mode = FMAX;
+Fmax_Logic_Level = 1;
+Use_CE = Yes;
+Use_Internal_COM_FB = Yes;
+Set_Reset_Swap = No;
+Clock_Optimize = No;
+EN_Set_Reset_Dont_Care = No;
+TOE_AS_IO = No;
+Set_Reset_Dont_Care = No;
+EN_In_Reg_Optimize = No;
+In_Reg_Optimize = Yes;
+Run_Time = 0;
+Routing_Attempts = 2;
+Balanced_Partitioning = Yes;
+Spread_Placement = Yes;
+Usercode = ;
+Usercode_Format = HEX;
+Vcc = ;
+Dual_Function_Macrocell = 1;
+Global_PTOE = Yes;
+Hard_Fast_Bypass = No;
+Fitter_Effort_Level = LOW;
+Auto_buffering_for_high_glb_fanin = Off;
+Auto_buffering_for_low_bonded_io = Off;
+User_max_glb_fanin = 36;
+Adjust_input_assignments = Off;
+
+[LOCATION ASSIGNMENTS]
+// Block A
+c_2_N_13_0=node,-,-,A,7;
+// Block B
+c_2_N_4_2=node,-,-,B,3;
+c_2_N_4_1=node,-,-,B,9;
+// Block C
+clr=pin,4,-,C,12;
+i_4_=pin,9,-,C,2;
+i_3_=pin,8,-,C,4;
+i_2_=pin,7,-,C,6;
+i_1_=pin,6,-,C,8;
+i_0_=pin,5,-,C,10;
+// Block D
+i_7_=pin,13,-,D,10;
+e_3_=pin,14,-,D,8;
+i_6_=pin,12,-,D,12;
+i_5_=pin,11,-,D,14;
+e_2_=pin,15,-,D,6;
+e_1_=pin,16,-,D,4;
+// Block E
+contador_i0_i2=node,-,-,E,4;
+// Block F
+contador_i0_i1=node,-,-,F,4;
+// Block G
+contador_i0_i0=node,-,-,G,4;
+// Block K
+q_2_=pin,79,-,K,7;
+q_1_=pin,78,-,K,11;
+q_0_=pin,77,-,K,1;
+q_3_=pin,80,-,K,5;
+n413=node,-,-,K,3;
+// Block O
+n110=node,-,-,O,2;
+n304=node,-,-,O,5;
+n326=node,-,-,O,10;
+// Input/Clock Pins
+clk=pin,128,-,-,-;
+
+// Input Pins
+e_0_=pin,17,-,-,-;
+
+[PTOE ASSIGNMENTS]
+
+[INPUT REGISTERS]
+Default=NONE;
+;
+
+[IO TYPES]
+clk=LVCMOS18,pin,-,-;
+clr=LVCMOS18,pin,-,-;
+i_7_=LVCMOS18,pin,-,-;
+e_3_=LVCMOS18,pin,-,-;
+i_6_=LVCMOS18,pin,-,-;
+i_5_=LVCMOS18,pin,-,-;
+i_4_=LVCMOS18,pin,-,-;
+i_3_=LVCMOS18,pin,-,-;
+i_2_=LVCMOS18,pin,-,-;
+i_1_=LVCMOS18,pin,-,-;
+i_0_=LVCMOS18,pin,-,-;
+e_2_=LVCMOS18,pin,-,-;
+e_1_=LVCMOS18,pin,-,-;
+e_0_=LVCMOS18,pin,-,-;
+q_2_=LVCMOS18,pin,1,-;
+q_1_=LVCMOS18,pin,1,-;
+q_0_=LVCMOS18,pin,1,-;
+q_3_=LVCMOS18,pin,1,-;
+
+[PLL ASSIGNMENTS]
+
+[RESOURCE RESERVATIONS]
+layer=OFF;
+
+[SLEWRATE]
+Default=FAST;
+
+[PULLUP]
+Default=DOWN;
+
+[FITTER RESULTS]
+I/O_pin_util = 16;
+I/O_pin = 16;
+Logic_PT_util = 4;
+Logic_PT = 56;
+Occupied_MC_util = 7;
+Occupied_MC = 18;
+Occupied_PT_util = 6;
+Occupied_PT = 91;
+GLB_input_util = 11;
+GLB_input = 68;
+
+[TIMING CONSTRAINTS]
+layer=OFF;
+
+[FITTER REPORT FORMAT]
+Fitter_Options = Yes;
+Pinout_Diagram = No;
+Pinout_Listing = Yes;
+Detailed_Block_Segment_Summary = Yes;
+Input_Signal_List = Yes;
+Output_Signal_List = Yes;
+Bidir_Signal_List = Yes;
+Node_Signal_List = Yes;
+Signal_Fanout_List = Yes;
+Block_Segment_Fanin_List = Yes;
+Postfit_Eqn = Yes;
+Page_Break = Yes;
+Detailed = No;
+
+[POWER]
+Default=HIGH;
+
+[SOURCE_CONSTRAINT_OPTION]
+
+[HARDWARE DEVICE OPTIONS]
+Zero_Hold_Time = No;
+Signature_Word = ;
+Pullup = No;
+Slew_Rate = FAST;
+
+[TIMING ANALYZER]
+Last_source=;
+Last_source_type=Fmax;
+

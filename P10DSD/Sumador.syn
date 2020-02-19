@@ -1,0 +1,11 @@
+JDF B
+// Created by Version 2.0 
+PROJECT Sumador
+DESIGN sumador Normal
+DEVKIT LC4256ZE-5TN144C
+ENTRY Pure VHDL
+MODULE Sumador.vhd
+MODSTYLE Reg10 Normal
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE Reg10

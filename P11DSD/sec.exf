@@ -1,0 +1,55 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      ENTRADA[5:0]                  ENTRADA                  5          6            -1
+      Port          2      DISPLAY[6:0]                  DISPLAY                  6          7            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      ENTRADA_5_                  ENTRADA[5]                       1            0            
+        Port      ENTRADA_4_                  ENTRADA[4]                       1            1            
+        Port      ENTRADA_3_                  ENTRADA[3]                       1            2            
+        Port      ENTRADA_2_                  ENTRADA[2]                       1            3            
+        Port      ENTRADA_1_                  ENTRADA[1]                       1            4            
+        Port      ENTRADA_0_                  ENTRADA[0]                       1            5            
+        Port      DISPLAY_6_                  DISPLAY[6]                       2            0            
+        Port      DISPLAY_5_                  DISPLAY[5]                       2            1            
+        Port      DISPLAY_4_                  DISPLAY[4]                       2            2            
+        Port      DISPLAY_3_                  DISPLAY[3]                       2            3            
+        Port      DISPLAY_2_                  DISPLAY[2]                       2            4            
+        Port      DISPLAY_1_                  DISPLAY[1]                       2            5            
+        Port      DISPLAY_0_                  DISPLAY[0]                       2            6            
+End
+Section Cross Reference File
+Design 'SEC' created Sat Jun 16 16:48:26 2018
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Net            entrada_0__n                                ENTRADA[0]
+   Net            entrada_1__n                                ENTRADA[1]
+   Net            entrada_2__n                                ENTRADA[2]
+   Net            entrada_3__n                                ENTRADA[3]
+   Net            entrada_4__n                                ENTRADA[4]
+   Net            display_0__n                                DISPLAY[0]
+   Net            display_1__n                                DISPLAY[1]
+   Net            display_2__n                                DISPLAY[2]
+   Net            display_3__n                                DISPLAY[3]
+   Net            display_4__n                                DISPLAY[4]
+   Net            display_5__n                                DISPLAY[5]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     CLR
+        Input     CLK
+        Input     ENTRADA_5_
+        Input     ENTRADA_4_
+        Input     ENTRADA_3_
+        Input     ENTRADA_2_
+        Input     ENTRADA_1_
+        Input     ENTRADA_0_
+        Output     DISPLAY_6_
+        Output     DISPLAY_5_
+        Output     DISPLAY_4_
+        Output     DISPLAY_3_
+        Output     DISPLAY_2_
+        Output     DISPLAY_1_
+        Output     DISPLAY_0_
+End

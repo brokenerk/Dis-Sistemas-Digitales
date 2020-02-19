@@ -1,0 +1,2 @@
+teclado.vhd #Entity tm 4
+teclado.vhd #Architecture a_tm tm 12

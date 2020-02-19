@@ -1,0 +1,468 @@
+
+     | | | | | | |
+   _________________
+  -|               |-
+  -|               |-
+  -|               |-
+  -|    CYPRESS    |-
+  -|               |-
+  -|               |-   Warp VHDL Synthesis Compiler: Version 6.3 IR 35
+  -|               |-   Copyright (C) 1991-2001 Cypress Semiconductor
+   |_______________|
+     | | | | | | |
+
+======================================================================
+Compiling:  condec.vhd
+Options:    -m -yu -e10 -w100 -o2 -ygs -fP -v10 -yw -dc22v10 -ppalc22v10d-15pc -b condec.vhd -u condec.hie
+======================================================================
+
+vhdlfe V6.3 IR 35:  VHDL parser
+Sat Apr 28 19:45:51 2018
+
+Library 'work' => directory 'lc22v10'
+Linking 'C:\Archivos de programa\Cypress\Warp\bin\std.vhd'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\common\cypress.vhd'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\common\work\cypress.vif'.
+Library 'ieee' => directory 'C:\Archivos de programa\Cypress\Warp\lib\ieee\work'
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\ieee\work\stdlogic.vif'.
+
+vhdlfe:  No errors.
+
+
+tovif V6.3 IR 35:  High-level synthesis
+Sat Apr 28 19:45:51 2018
+
+Linking 'C:\Archivos de programa\Cypress\Warp\bin\std.vhd'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\common\cypress.vhd'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\common\work\cypress.vif'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\ieee\work\stdlogic.vif'.
+
+tovif:  No errors.
+
+
+topld V6.3 IR 35:  Synthesis and optimization
+Sat Apr 28 19:45:51 2018
+
+Linking 'C:\Archivos de programa\Cypress\Warp\bin\std.vhd'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\common\cypress.vhd'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\common\work\cypress.vif'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\ieee\work\stdlogic.vif'.
+
+----------------------------------------------------------
+Detecting unused logic.
+----------------------------------------------------------
+
+
+
+------------------------------------------------------
+Alias Detection
+------------------------------------------------------
+
+------------------------------------------------------
+Aliased 0 equations, 13 wires.
+------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification
+----------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification results:
+
+	Expanded 0 signals.
+	Turned 0 signals into soft nodes.
+	Maximum default expansion cost was set at 10.
+----------------------------------------------------------
+Created 36 PLD nodes.
+
+topld:  No errors.
+
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+DESIGN HEADER INFORMATION  (19:45:53)
+
+Input File(s): condec.pla
+Device       : C22V10
+Package      : palc22v10d-15pc
+ReportFile   : condec.rpt
+
+Program Controls:
+    COMMAND LANGUAGE_VHDL 
+    COMMAND PROPERTY BUS_HOLD ENABLE 
+
+Signal Requests:
+    GROUP USEPOL ALL
+    GROUP SLOW_SLEW ALL
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+OPTIMIZATION OPTIONS       (19:45:53)
+
+Messages:
+  Information: Process virtual '\display(0)D\'\display(0)D\ ... expanded.
+  Information: Process virtual '\display(1)D\'\display(1)D\ ... expanded.
+  Information: Process virtual '\display(2)D\'\display(2)D\ ... expanded.
+  Information: Process virtual '\display(3)D\'\display(3)D\ ... expanded.
+  Information: Process virtual '\display(4)D\'\display(4)D\ ... expanded.
+  Information: Process virtual '\display(5)D\'\display(5)D\ ... expanded.
+  Information: Process virtual '\display(6)D\'\display(6)D\ ... expanded.
+  Information: Optimizing logic using best output polarity for signals:
+         display(0).D display(1).D display(2).D display(3).D display(4).D
+         display(5).D display(6).D
+
+  Information: Selected logic optimization OFF for signals:
+         display(0).AR display(0).C display(1).AR display(1).C display(2).AR
+         display(2).C display(3).AR display(3).C display(4).AR display(4).C
+         display(5).AR display(5).C display(6).AP display(6).C
+
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Optimizer Software:       MINOPT.EXE     01/NOV/1999  [v4.02 ] 6.3 IR 35
+
+LOGIC MINIMIZATION         ()
+
+Messages:
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+OPTIMIZATION OPTIONS       (19:45:53)
+
+Messages:
+  Information: Optimizing Banked Preset/Reset requirements.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+<CYPRESSTAG name="Equations" icon=FILE_RPT_EQUATION>
+DESIGN EQUATIONS           (19:45:53)
+</CYPRESSTAG>
+
+    display(0).D =
+          /c(0) * /c(1) * display(0).Q * /display(1).Q * /display(2).Q * 
+          display(3).Q * display(4).Q * display(5).Q * display(6).Q 
+        + c(0) * /c(1) * /display(0).Q * /display(1).Q * /display(2).Q * 
+          /display(3).Q * /display(4).Q * /display(5).Q * display(6).Q 
+        + c(0) * /c(1) * /display(0).Q * /display(1).Q * /display(2).Q * 
+          /display(3).Q * display(4).Q * display(5).Q * /display(6).Q 
+        + /c(0) * c(1) * /display(0).Q * /display(1).Q * display(2).Q * 
+          /display(3).Q * /display(4).Q * display(5).Q * /display(6).Q 
+        + /c(0) * /c(1) * display(0).Q * /display(1).Q * /display(2).Q * 
+          display(3).Q * display(4).Q * /display(5).Q * /display(6).Q 
+        + /c(0) * c(1) * /display(0).Q * display(1).Q * /display(2).Q * 
+          /display(3).Q * display(4).Q * /display(5).Q * /display(6).Q 
+        + c(0) * c(1) * e(0) * /e(1) * /e(2) * /e(3) 
+        + c(0) * c(1) * /e(0) * /e(1) * e(2) 
+        + c(0) * c(1) * e(2) * e(3) 
+        + c(0) * c(1) * e(1) * e(3) 
+
+    display(0).AR =
+          clr 
+
+    display(0).SP =
+          GND
+
+    display(0).C =
+          clk 
+
+    display(1).D =
+          /c(0) * c(1) * /display(0).Q * /display(1).Q * /display(2).Q * 
+          display(3).Q * display(4).Q * display(5).Q * display(6).Q 
+        + c(0) * /c(1) * display(0).Q * /display(1).Q * /display(2).Q * 
+          display(3).Q * display(4).Q * /display(5).Q * /display(6).Q 
+        + /c(1) * /display(0).Q * display(1).Q * /display(2).Q * 
+          /display(3).Q * display(4).Q * /display(5).Q * /display(6).Q 
+        + /c(0) * /display(0).Q * display(1).Q * /display(2).Q * 
+          /display(3).Q * /display(4).Q * /display(5).Q * /display(6).Q 
+        + c(0) * c(1) * /e(0) * e(1) * e(2) 
+        + c(0) * c(1) * e(0) * /e(1) * e(2) 
+        + c(0) * c(1) * e(2) * e(3) 
+        + c(0) * c(1) * e(1) * e(3) 
+
+    display(1).AR =
+          clr 
+
+    display(1).SP =
+          GND
+
+    display(1).C =
+          clk 
+
+    display(2).D =
+          c(0) * /c(1) * display(0).Q * /display(1).Q * /display(2).Q * 
+          display(3).Q * display(4).Q * display(5).Q * display(6).Q 
+        + /c(0) * c(1) * /display(0).Q * /display(1).Q * /display(2).Q * 
+          /display(3).Q * display(4).Q * display(5).Q * /display(6).Q 
+        + /c(0) * /c(1) * /display(0).Q * /display(1).Q * display(2).Q * 
+          /display(3).Q * /display(4).Q * display(5).Q * /display(6).Q 
+        + c(0) * c(1) * /e(0) * e(1) * /e(2) 
+        + c(0) * c(1) * e(2) * e(3) 
+        + c(0) * c(1) * e(1) * e(3) 
+
+    display(2).AR =
+          clr 
+
+    display(2).SP =
+          GND
+
+    display(2).C =
+          clk 
+
+    display(3).D =
+          c(0) * /c(1) * /display(0).Q * /display(1).Q * /display(2).Q * 
+          /display(3).Q * /display(4).Q * /display(5).Q * display(6).Q 
+        + c(0) * /c(1) * /display(0).Q * /display(1).Q * /display(2).Q * 
+          /display(3).Q * display(4).Q * display(5).Q * /display(6).Q 
+        + /c(0) * c(1) * /display(0).Q * /display(1).Q * display(2).Q * 
+          /display(3).Q * /display(4).Q * display(5).Q * /display(6).Q 
+        + /c(0) * /c(1) * display(0).Q * /display(1).Q * /display(2).Q * 
+          display(3).Q * display(4).Q * /display(5).Q * /display(6).Q 
+        + /c(0) * c(1) * /display(0).Q * display(1).Q * /display(2).Q * 
+          /display(3).Q * display(4).Q * /display(5).Q * /display(6).Q 
+        + c(0) * /c(1) * /display(0).Q * display(1).Q * /display(2).Q * 
+          /display(3).Q * /display(4).Q * /display(5).Q * /display(6).Q 
+        + /c(0) * c(1) * /display(0).Q * /display(1).Q * /display(2).Q * 
+          /display(3).Q * /display(4).Q * /display(5).Q * /display(6).Q 
+        + /c(0) * /c(1) * /display(1).Q * /display(2).Q * display(3).Q * 
+          display(4).Q * display(5).Q * display(6).Q 
+        + c(0) * c(1) * e(0) * /e(1) * /e(2) * /e(3) 
+        + c(0) * c(1) * e(0) * e(1) * e(2) 
+        + c(0) * c(1) * /e(0) * /e(1) * e(2) 
+        + c(0) * c(1) * e(2) * e(3) 
+        + c(0) * c(1) * e(1) * e(3) 
+
+    display(3).AR =
+          clr 
+
+    display(3).SP =
+          GND
+
+    display(3).C =
+          clk 
+
+    display(4).D =
+          /c(0) * c(1) * /display(0).Q * /display(1).Q * display(2).Q * 
+          /display(3).Q * /display(4).Q * display(5).Q * /display(6).Q 
+        + c(0) * /c(1) * /display(0).Q * /display(1).Q * display(2).Q * 
+          /display(3).Q * /display(4).Q * display(5).Q * /display(6).Q 
+        + /c(0) * /c(1) * /display(1).Q * /display(2).Q * display(3).Q * 
+          display(4).Q * display(5).Q * display(6).Q 
+        + /c(0) * c(1) * /display(0).Q * /display(1).Q * /display(2).Q * 
+          /display(3).Q * /display(4).Q * /display(5).Q 
+        + c(0) * /c(1) * /display(0).Q * /display(1).Q * /display(2).Q * 
+          /display(3).Q * /display(4).Q * /display(5).Q 
+        + /c(1) * /display(0).Q * /display(1).Q * /display(2).Q * 
+          /display(3).Q * display(4).Q * display(5).Q * /display(6).Q 
+        + /c(0) * display(0).Q * /display(1).Q * /display(2).Q * 
+          display(3).Q * display(4).Q * /display(5).Q * /display(6).Q 
+        + /c(1) * display(0).Q * /display(1).Q * /display(2).Q * 
+          display(3).Q * display(4).Q * /display(5).Q * /display(6).Q 
+        + /c(0) * c(1) * /display(0).Q * display(1).Q * /display(2).Q * 
+          /display(3).Q * /display(5).Q * /display(6).Q 
+        + /c(0) * /c(1) * /display(0).Q * /display(2).Q * /display(3).Q * 
+          display(4).Q * /display(5).Q * /display(6).Q 
+        + c(0) * /c(1) * /display(0).Q * /display(2).Q * /display(3).Q * 
+          /display(4).Q * /display(5).Q * /display(6).Q 
+        + c(0) * c(1) * e(1) * e(3) 
+        + c(0) * c(1) * /e(1) * e(2) 
+        + c(0) * c(1) * e(0) 
+
+    display(4).AR =
+          clr 
+
+    display(4).SP =
+          GND
+
+    display(4).C =
+          clk 
+
+    display(5).D =
+          c(0) * /c(1) * /display(0).Q * /display(1).Q * /display(2).Q * 
+          /display(3).Q * /display(4).Q * /display(5).Q * display(6).Q 
+        + /c(0) * c(1) * display(0).Q * /display(1).Q * /display(2).Q * 
+          display(3).Q * display(4).Q * /display(5).Q * /display(6).Q 
+        + c(0) * /c(1) * /display(0).Q * display(1).Q * /display(2).Q * 
+          /display(3).Q * /display(4).Q * /display(5).Q * /display(6).Q 
+        + /c(0) * c(1) * /display(0).Q * /display(1).Q * /display(2).Q * 
+          /display(3).Q * /display(4).Q * /display(5).Q * /display(6).Q 
+        + /c(1) * display(0).Q * /display(1).Q * /display(2).Q * 
+          display(3).Q * display(4).Q * display(5).Q * display(6).Q 
+        + /c(0) * /c(1) * /display(1).Q * /display(2).Q * display(3).Q * 
+          display(4).Q * display(5).Q * display(6).Q 
+        + /c(0) * /display(0).Q * /display(1).Q * /display(2).Q * 
+          /display(3).Q * display(4).Q * display(5).Q * /display(6).Q 
+        + /c(0) * /display(0).Q * /display(1).Q * display(2).Q * 
+          /display(3).Q * /display(4).Q * display(5).Q * /display(6).Q 
+        + /c(1) * /display(0).Q * /display(1).Q * display(2).Q * 
+          /display(3).Q * /display(4).Q * display(5).Q * /display(6).Q 
+        + c(0) * c(1) * e(0) * /e(2) * /e(3) 
+        + c(0) * c(1) * e(2) * e(3) 
+        + c(0) * c(1) * e(0) * e(1) 
+        + c(0) * c(1) * e(1) * /e(2) 
+
+    display(5).AR =
+          clr 
+
+    display(5).SP =
+          GND
+
+    display(5).C =
+          clk 
+
+    /display(6).D =
+          /c(0) * c(1) * /display(0).Q * /display(1).Q * /display(2).Q * 
+          display(3).Q * display(4).Q * display(5).Q * display(6).Q 
+        + /c(0) * c(1) * /display(0).Q * /display(1).Q * /display(2).Q * 
+          /display(3).Q * /display(4).Q * /display(5).Q * display(6).Q 
+        + c(0) * /c(1) * /display(1).Q * /display(2).Q * display(3).Q * 
+          display(4).Q * display(5).Q * display(6).Q 
+        + /c(1) * /display(0).Q * /display(1).Q * /display(2).Q * 
+          /display(3).Q * display(4).Q * display(5).Q * /display(6).Q 
+        + /c(1) * /display(0).Q * /display(1).Q * display(2).Q * 
+          /display(3).Q * /display(4).Q * display(5).Q * /display(6).Q 
+        + /c(0) * display(0).Q * /display(1).Q * /display(2).Q * 
+          display(3).Q * display(4).Q * /display(5).Q * /display(6).Q 
+        + /c(1) * display(0).Q * /display(1).Q * /display(2).Q * 
+          display(3).Q * display(4).Q * /display(5).Q * /display(6).Q 
+        + /c(1) * /display(0).Q * display(1).Q * /display(2).Q * 
+          /display(3).Q * display(4).Q * /display(5).Q * /display(6).Q 
+        + /c(1) * /display(0).Q * /display(1).Q * /display(2).Q * 
+          /display(3).Q * /display(4).Q * /display(5).Q * /display(6).Q 
+        + /c(0) * /display(0).Q * /display(1).Q * /display(2).Q * 
+          /display(3).Q * display(4).Q * /display(6).Q 
+        + /c(0) * /display(0).Q * display(1).Q * /display(2).Q * 
+          /display(3).Q * /display(5).Q * /display(6).Q 
+        + c(0) * c(1) * /e(1) * /e(2) * e(3) 
+        + c(0) * c(1) * /e(0) * e(2) * /e(3) 
+        + c(0) * c(1) * /e(1) * e(2) * /e(3) 
+        + c(0) * c(1) * e(1) * /e(2) * /e(3) 
+
+    display(6).AR =
+          clr 
+
+    display(6).SP =
+          GND
+
+    display(6).C =
+          clk 
+
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+DESIGN RULE CHECK          (19:45:53)
+
+Messages:
+                 None.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+<CYPRESSTAG name="Pinout" icon=FILE_RPT_PINOUT>
+PINOUT INFORMATION   (19:45:53)
+</CYPRESSTAG>
+Messages:
+  Information: Checking for duplicate NODE logic.
+                 None.
+
+
+                                 C22V10
+                 __________________________________________
+            clk =| 1|                                  |24|* not used       
+            clr =| 2|                                  |23|= display(2)     
+           c(1) =| 3|                                  |22|* not used       
+           c(0) =| 4|                                  |21|* not used       
+           e(3) =| 5|                                  |20|= display(5)     
+           e(2) =| 6|                                  |19|= display(3)     
+           e(1) =| 7|                                  |18|= display(6)     
+           e(0) =| 8|                                  |17|= display(4)     
+       not used *| 9|                                  |16|* not used       
+       not used *|10|                                  |15|= display(0)     
+       not used *|11|                                  |14|= display(1)     
+       not used *|12|                                  |13|* not used       
+                 __________________________________________
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+<CYPRESSTAG name="Utilization" icon=FILE_RPT_UTILIZATION>
+RESOURCE UTILIZATION (19:45:53)
+</CYPRESSTAG>
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    7  |   11  |
+                 | Clock/Inputs       |    1  |    1  |
+                 | I/O Macrocells     |    7  |   10  |
+                 ______________________________________
+                                          15  /   22   = 68  %
+
+
+  Information: Output Logic Product Term Utilization.
+
+                  Node#  Output Signal Name  Used   Max
+                 ________________________________________
+                 | 14  |  display(1)      |   8  |   8  |
+                 | 15  |  display(0)      |  10  |  10  |
+                 | 16  |  Unused          |   0  |  12  |
+                 | 17  |  display(4)      |  14  |  14  |
+                 | 18  |  display(6)      |  15  |  16  |
+                 | 19  |  display(3)      |  13  |  16  |
+                 | 20  |  display(5)      |  13  |  14  |
+                 | 21  |  Unused          |   0  |  12  |
+                 | 22  |  Unused          |   0  |  10  |
+                 | 23  |  display(2)      |   6  |   8  |
+                 | 25  |  Unused          |   0  |   1  |
+                 ________________________________________
+                                             79  / 121   = 65  %
+
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+JEDEC ASSEMBLE             (19:45:53)
+
+Messages:
+  Information: Output file 'condec.pin' created.
+  Information: Output file 'condec.jed' created.
+
+  Usercode:    
+  Checksum:    936E
+
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully at 19:45:53

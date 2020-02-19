@@ -1,0 +1,6 @@
+MESSAGE "File: F:\Diseño S Digitales\P2DSD\FFD\vhd\FFD.vhd" 
+MESSAGE "Compile Entity "ffd"" 
+MESSAGE "Compile Architecture "DSMB" of Entity "ffd"" 
+MESSAGE "Top-Level unit detected" 
+MESSAGE "Entity  =>   ffd" 
+MESSAGE "Compile success 0 Errors 0 Warnings  Analysis time :  4.0 [s]" 

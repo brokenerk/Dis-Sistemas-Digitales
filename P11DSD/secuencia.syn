@@ -1,0 +1,11 @@
+JDF B
+// Created by Version 2.0 
+PROJECT secuencia
+DESIGN secuencia Normal
+DEVKIT LC4256ZE-5TN144C
+ENTRY Pure VHDL
+MODULE secuencia.vhd
+MODSTYLE SEC Normal
+SYNTHESIS_TOOL LSE
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE SEC

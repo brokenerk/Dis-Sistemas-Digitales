@@ -1,0 +1,64 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      i[7:0]                        i                  7          8            -1
+      Port          2      e[3:0]                        e                  3          4            -1
+      Port          3      q[3:0]                        q                  3          4            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      i_7_                        i[7]                       1            0            
+        Port      i_6_                        i[6]                       1            1            
+        Port      i_5_                        i[5]                       1            2            
+        Port      i_4_                        i[4]                       1            3            
+        Port      i_3_                        i[3]                       1            4            
+        Port      i_2_                        i[2]                       1            5            
+        Port      i_1_                        i[1]                       1            6            
+        Port      i_0_                        i[0]                       1            7            
+        Port      e_3_                        e[3]                       2            0            
+        Port      e_2_                        e[2]                       2            1            
+        Port      e_1_                        e[1]                       2            2            
+        Port      e_0_                        e[0]                       2            3            
+        Port      q_3_                        q[3]                       3            0            
+        Port      q_2_                        q[2]                       3            1            
+        Port      q_1_                        q[1]                       3            2            
+        Port      q_0_                        q[0]                       3            3            
+End
+Section Cross Reference File
+Design 'contreg' created Thu May 24 19:35:08 2018
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Net                  i_3__n                                      i[3]
+   Net                  i_4__n                                      i[4]
+   Net                  i_6__n                                      i[6]
+   Net                  i_5__n                                      i[5]
+   Net                  i_1__n                                      i[1]
+   Net                  i_2__n                                      i[2]
+   Net                  q_0__n                                      q[0]
+   Net                  q_1__n                                      q[1]
+   Net                  q_2__n                                      q[2]
+   Net                  e_0__n                                      e[0]
+   Net                  e_1__n                                      e[1]
+   Net                  e_2__n                                      e[2]
+   Net                  i_0__n                                      i[0]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     clk
+        Input     clr
+        Input     i_7_
+        Input     e_3_
+        Input     i_6_
+        Input     i_5_
+        Input     i_4_
+        Input     i_3_
+        Input     i_2_
+        Input     i_1_
+        Input     i_0_
+        Input     e_2_
+        Input     e_1_
+        Input     e_0_
+        Output     q_3_
+        Output     q_2_
+        Output     q_1_
+        Output     q_0_
+End

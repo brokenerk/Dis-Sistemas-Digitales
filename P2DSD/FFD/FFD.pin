@@ -1,0 +1,12 @@
+Cypress Package: palc22v10d-15pc  PinOut File: FFD.pin
+
+This file was created on 03/09/2018 at 07:24:28 
+by PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+==========
+clk gclk <> Enabled Normal 1 <> [Auto] 
+pre in <> Enabled Normal 2 <> [Auto] 
+d in <> Enabled Normal 3 <> [Auto] 
+clr in <> Enabled Normal 4 <> [Auto] 
+q out <> Enabled Normal 14 <> [Auto] 
+nq out <> Enabled Normal 23 <> [Auto] 

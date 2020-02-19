@@ -1,0 +1,359 @@
+#$ TOOL  ispLEVER Classic 2.0.00.17.20.15
+#$ DATE  Sat Jun 16 16:48:26 2018
+#$ MODULE  SEC
+#$ PINS 15 CLR CLK ENTRADA_4_ ENTRADA_5_ ENTRADA_3_ ENTRADA_2_ DISPLAY_6_
+ ENTRADA_1_ ENTRADA_0_ DISPLAY_5_ DISPLAY_4_ DISPLAY_3_ DISPLAY_2_ DISPLAY_1_
+ DISPLAY_0_
+#$ NODES 43 n18 I_i31 I_i30 I_i29 I_i28 I_i27 I_i26 I_i25 I_i24 I_i23 I_i22
+ I_i21 I_i20 I_i19 I_i18 I_i17 I_i16 I_i15 I_i14 I_i13 I_i12 I_i11 I_i10 I_i9
+ I_i8 I_i7 I_i6 I_i5 I_i4 I_i3 I_i2 I_i1 I_i0 PRE_i2 PRE_i1 PRE_i0 n58 n8
+ FUT_2_N_38_2 n42 n602 n30 n24
+.model sec 
+.inputs CLR.BLIF CLK.BLIF ENTRADA_5_.BLIF ENTRADA_4_.BLIF ENTRADA_3_.BLIF \
+ ENTRADA_2_.BLIF ENTRADA_1_.BLIF ENTRADA_0_.BLIF n18.BLIF I_i31.Q I_i30.Q I_i29.Q \
+ I_i28.Q I_i27.Q I_i26.Q I_i25.Q I_i24.Q I_i23.Q I_i22.Q I_i21.Q I_i20.Q I_i19.Q \
+ I_i18.Q I_i17.Q I_i16.Q I_i15.Q I_i14.Q I_i13.Q I_i12.Q I_i11.Q I_i10.Q I_i9.Q \
+ I_i8.Q I_i7.Q I_i6.Q I_i5.Q I_i4.Q I_i3.Q I_i2.Q I_i1.Q I_i0.Q PRE_i2.Q PRE_i1.Q \
+ PRE_i0.Q n58.BLIF n8.BLIF FUT_2_N_38_2.BLIF n42.BLIF n602.BLIF n30.BLIF n24.BLIF
+.outputs DISPLAY_6_- DISPLAY_5_ DISPLAY_4_ DISPLAY_3_ DISPLAY_2_ DISPLAY_1_ \
+ DISPLAY_0_ n18- I_i31.D I_i31.C I_i31.AR I_i30.T I_i30.C I_i30.AR I_i29.T \
+ I_i29.C I_i29.AR I_i28.T I_i28.C I_i28.AR I_i27.T I_i27.C I_i27.AR I_i26.T \
+ I_i26.C I_i26.AR I_i25.T I_i25.C I_i25.AR I_i24.D.X1 I_i24.D.X2 I_i24.C I_i24.AR \
+ I_i23.D I_i23.C I_i23.AR I_i22.D I_i22.C I_i22.AR I_i21.D- I_i21.C I_i21.AR \
+ I_i20.T I_i20.C I_i20.AR I_i19.T I_i19.C I_i19.AR I_i18.D.X1 I_i18.D.X2 I_i18.C \
+ I_i18.AR I_i17.T- I_i17.C I_i17.AR I_i16.D- I_i16.C I_i16.AR I_i15.D- I_i15.C \
+ I_i15.AR I_i14.T- I_i14.C I_i14.AR I_i13.D- I_i13.C I_i13.AR I_i12.D- I_i12.C \
+ I_i12.AR I_i11.D I_i11.C I_i11.AR I_i10.D I_i10.C I_i10.AR I_i9.T I_i9.C I_i9.AR \
+ I_i8.T I_i8.C I_i8.AR I_i7.D.X1 I_i7.D.X2 I_i7.C I_i7.AR I_i6.D I_i6.C I_i6.AR \
+ I_i5.D I_i5.C I_i5.AR I_i4.D I_i4.C I_i4.AR I_i3.T- I_i3.C I_i3.AR I_i2.D- \
+ I_i2.C I_i2.AP I_i1.D- I_i1.C I_i1.AR I_i0.D- I_i0.C I_i0.AP PRE_i2.D PRE_i2.C \
+ PRE_i2.AR PRE_i1.D PRE_i1.C PRE_i1.AR PRE_i0.D PRE_i0.C PRE_i0.AR n58- n8- \
+ FUT_2_N_38_2 n42- n602- n30- n24-
+.names PRE_i2.Q PRE_i1.Q PRE_i0.Q DISPLAY_6_-
+111 1
+.names PRE_i2.Q PRE_i1.Q PRE_i0.Q DISPLAY_5_
+110 1
+.names PRE_i2.Q PRE_i1.Q PRE_i0.Q DISPLAY_4_
+110 1
+.names PRE_i2.Q PRE_i1.Q PRE_i0.Q DISPLAY_3_
+110 1
+.names DISPLAY_2_
+.names DISPLAY_1_
+.names PRE_i2.Q PRE_i1.Q PRE_i0.Q DISPLAY_0_
+110 1
+.names I_i8.Q I_i7.Q I_i6.Q I_i5.Q I_i4.Q I_i3.Q I_i2.Q I_i1.Q I_i0.Q n18-
+000000000 1
+.names I_i31.Q I_i30.Q I_i29.Q I_i28.Q I_i27.Q I_i26.Q I_i25.Q I_i24.Q I_i23.Q I_i22.Q I_i21.Q n42.BLIF n602.BLIF I_i31.D
+0000000000001 1
+.names CLK.BLIF I_i31.C
+1 1
+.names CLR.BLIF I_i31.AR
+0 1
+.names I_i31.Q I_i30.Q I_i29.Q I_i28.Q I_i27.Q I_i26.Q I_i25.Q I_i24.Q I_i23.Q I_i22.Q I_i21.Q n42.BLIF n602.BLIF I_i30.T
+0-00000000001 1
+11----------- 1
+-1----------0 1
+.names CLK.BLIF I_i30.C
+1 1
+.names CLR.BLIF I_i30.AR
+0 1
+.names I_i31.Q I_i29.Q I_i28.Q I_i27.Q I_i26.Q I_i25.Q I_i24.Q I_i23.Q I_i22.Q I_i21.Q n42.BLIF n602.BLIF I_i29.T
+0-0000000001 1
+11---------- 1
+-1---------0 1
+.names CLK.BLIF I_i29.C
+1 1
+.names CLR.BLIF I_i29.AR
+0 1
+.names I_i31.Q I_i28.Q I_i27.Q I_i26.Q I_i25.Q I_i24.Q I_i23.Q I_i22.Q I_i21.Q n42.BLIF n602.BLIF I_i28.T
+0-000000001 1
+11--------- 1
+-1--------0 1
+.names CLK.BLIF I_i28.C
+1 1
+.names CLR.BLIF I_i28.AR
+0 1
+.names I_i31.Q I_i27.Q I_i26.Q I_i25.Q I_i24.Q I_i23.Q I_i22.Q I_i21.Q n42.BLIF n602.BLIF I_i27.T
+0-00000001 1
+11-------- 1
+-1-------0 1
+.names CLK.BLIF I_i27.C
+1 1
+.names CLR.BLIF I_i27.AR
+0 1
+.names I_i31.Q I_i26.Q I_i25.Q I_i24.Q I_i23.Q I_i22.Q I_i21.Q n42.BLIF n602.BLIF I_i26.T
+0-0000001 1
+11------- 1
+-1------0 1
+.names CLK.BLIF I_i26.C
+1 1
+.names CLR.BLIF I_i26.AR
+0 1
+.names I_i31.Q I_i25.Q I_i24.Q I_i23.Q I_i22.Q I_i21.Q n42.BLIF n602.BLIF I_i25.T
+0-000001 1
+11------ 1
+-1-----0 1
+.names CLK.BLIF I_i25.C
+1 1
+.names CLR.BLIF I_i25.AR
+0 1
+.names I_i31.Q I_i24.Q I_i23.Q I_i22.Q I_i21.Q n42.BLIF n602.BLIF I_i24.D.X1
+01----1 1
+.names I_i31.Q I_i24.Q I_i23.Q I_i22.Q I_i21.Q n42.BLIF n602.BLIF I_i24.D.X2
+0-00001 1
+.names CLK.BLIF I_i24.C
+1 1
+.names CLR.BLIF I_i24.AR
+0 1
+.names I_i31.Q I_i23.Q I_i22.Q I_i21.Q n42.BLIF n602.BLIF I_i23.D
+000001 1
+01--11 1
+01-1-1 1
+011--1 1
+.names CLK.BLIF I_i23.C
+1 1
+.names CLR.BLIF I_i23.AR
+0 1
+.names I_i31.Q I_i22.Q I_i21.Q n42.BLIF n602.BLIF I_i22.D
+00001 1
+01-11 1
+011-1 1
+.names CLK.BLIF I_i22.C
+1 1
+.names CLR.BLIF I_i22.AR
+0 1
+.names I_i31.Q I_i30.Q I_i29.Q I_i28.Q I_i27.Q I_i25.Q I_i24.Q I_i23.Q I_i21.Q I_i19.Q I_i17.Q I_i16.Q I_i15.Q I_i14.Q I_i13.Q I_i12.Q I_i11.Q I_i9.Q I_i8.Q I_i7.Q I_i5.Q I_i2.Q I_i1.Q I_i0.Q n58.BLIF n42.BLIF I_i21.D-
+1------------------------- 1
+--------0----------------1 1
+--------1----------------0 1
+-000000000000000000000000- 1
+.names CLK.BLIF I_i21.C
+1 1
+.names CLR.BLIF I_i21.AR
+0 1
+.names I_i31.Q I_i20.Q I_i19.Q I_i18.Q I_i17.Q I_i16.Q I_i15.Q I_i14.Q I_i13.Q I_i12.Q n602.BLIF n24.BLIF I_i20.T
+0-0000000010 1
+-1--------0- 1
+11---------- 1
+.names CLK.BLIF I_i20.C
+1 1
+.names CLR.BLIF I_i20.AR
+0 1
+.names I_i31.Q I_i19.Q I_i18.Q I_i17.Q I_i16.Q I_i15.Q I_i14.Q I_i13.Q I_i12.Q n602.BLIF n24.BLIF I_i19.T
+0-000000010 1
+-1-------0- 1
+11--------- 1
+.names CLK.BLIF I_i19.C
+1 1
+.names CLR.BLIF I_i19.AR
+0 1
+.names I_i31.Q I_i18.Q I_i17.Q I_i16.Q I_i15.Q n602.BLIF n30.BLIF I_i18.D.X1
+01---1- 1
+.names I_i31.Q I_i18.Q I_i17.Q I_i16.Q I_i15.Q n602.BLIF n30.BLIF I_i18.D.X2
+0-00010 1
+.names CLK.BLIF I_i18.C
+1 1
+.names CLR.BLIF I_i18.AR
+0 1
+.names I_i31.Q I_i30.Q I_i29.Q I_i28.Q I_i27.Q I_i25.Q I_i24.Q I_i23.Q I_i21.Q I_i19.Q I_i17.Q I_i16.Q I_i15.Q I_i14.Q I_i13.Q I_i12.Q I_i11.Q I_i9.Q I_i8.Q I_i7.Q I_i5.Q I_i2.Q I_i1.Q I_i0.Q n58.BLIF n30.BLIF I_i17.T-
+-0000000000--000000000000- 1
+0-----------1------------- 1
+0----------1-------------- 1
+1---------0--------------- 1
+0------------------------1 1
+.names CLK.BLIF I_i17.C
+1 1
+.names CLR.BLIF I_i17.AR
+0 1
+.names I_i31.Q I_i30.Q I_i29.Q I_i28.Q I_i27.Q I_i25.Q I_i24.Q I_i23.Q I_i21.Q I_i19.Q I_i17.Q I_i16.Q I_i15.Q I_i14.Q I_i13.Q I_i12.Q I_i11.Q I_i9.Q I_i8.Q I_i7.Q I_i5.Q I_i2.Q I_i1.Q I_i0.Q n58.BLIF n30.BLIF I_i16.D-
+1------------------------- 1
+-----------01------------- 1
+-----------0-------------1 1
+-----------10------------0 1
+-00000000000-000000000000- 1
+.names CLK.BLIF I_i16.C
+1 1
+.names CLR.BLIF I_i16.AR
+0 1
+.names I_i31.Q I_i30.Q I_i29.Q I_i28.Q I_i27.Q I_i25.Q I_i24.Q I_i23.Q I_i21.Q I_i19.Q I_i17.Q I_i16.Q I_i15.Q I_i14.Q I_i13.Q I_i12.Q I_i11.Q I_i9.Q I_i8.Q I_i7.Q I_i5.Q I_i2.Q I_i1.Q I_i0.Q n58.BLIF n30.BLIF I_i15.D-
+1------------------------- 1
+------------0------------1 1
+------------1------------0 1
+-000000000000000000000000- 1
+.names CLK.BLIF I_i15.C
+1 1
+.names CLR.BLIF I_i15.AR
+0 1
+.names I_i31.Q I_i30.Q I_i29.Q I_i28.Q I_i27.Q I_i25.Q I_i24.Q I_i23.Q I_i21.Q I_i19.Q I_i17.Q I_i16.Q I_i15.Q I_i14.Q I_i13.Q I_i12.Q I_i11.Q I_i9.Q I_i8.Q I_i7.Q I_i5.Q I_i2.Q I_i1.Q I_i0.Q n58.BLIF n24.BLIF I_i14.T-
+-0000000000000--000000000- 1
+0--------------1---------- 1
+0-------------1----------- 1
+1------------0------------ 1
+0------------------------1 1
+.names CLK.BLIF I_i14.C
+1 1
+.names CLR.BLIF I_i14.AR
+0 1
+.names I_i31.Q I_i30.Q I_i29.Q I_i28.Q I_i27.Q I_i25.Q I_i24.Q I_i23.Q I_i21.Q I_i19.Q I_i17.Q I_i16.Q I_i15.Q I_i14.Q I_i13.Q I_i12.Q I_i11.Q I_i9.Q I_i8.Q I_i7.Q I_i5.Q I_i2.Q I_i1.Q I_i0.Q n58.BLIF n24.BLIF I_i13.D-
+1------------------------- 1
+--------------01---------- 1
+--------------0----------1 1
+--------------10---------0 1
+-00000000000000-000000000- 1
+.names CLK.BLIF I_i13.C
+1 1
+.names CLR.BLIF I_i13.AR
+0 1
+.names I_i31.Q I_i30.Q I_i29.Q I_i28.Q I_i27.Q I_i25.Q I_i24.Q I_i23.Q I_i21.Q I_i19.Q I_i17.Q I_i16.Q I_i15.Q I_i14.Q I_i13.Q I_i12.Q I_i11.Q I_i9.Q I_i8.Q I_i7.Q I_i5.Q I_i2.Q I_i1.Q I_i0.Q n58.BLIF n24.BLIF I_i12.D-
+1------------------------- 1
+---------------0---------1 1
+---------------1---------0 1
+-000000000000000000000000- 1
+.names CLK.BLIF I_i12.C
+1 1
+.names CLR.BLIF I_i12.AR
+0 1
+.names n18.BLIF I_i31.Q I_i11.Q I_i10.Q I_i9.Q n602.BLIF I_i11.D
+000001 1
+-01-11 1
+-011-1 1
+101--1 1
+.names CLK.BLIF I_i11.C
+1 1
+.names CLR.BLIF I_i11.AR
+0 1
+.names n18.BLIF I_i31.Q I_i10.Q I_i9.Q n602.BLIF I_i10.D
+00001 1
+-0111 1
+101-1 1
+.names CLK.BLIF I_i10.C
+1 1
+.names CLR.BLIF I_i10.AR
+0 1
+.names I_i31.Q I_i9.Q I_i8.Q I_i7.Q I_i6.Q I_i5.Q I_i4.Q n8.BLIF n602.BLIF I_i9.T
+0-0000001 1
+11------- 1
+-1------0 1
+.names CLK.BLIF I_i9.C
+1 1
+.names CLR.BLIF I_i9.AR
+0 1
+.names I_i31.Q I_i8.Q I_i7.Q I_i6.Q I_i5.Q I_i4.Q n8.BLIF n602.BLIF I_i8.T
+0-000001 1
+11------ 1
+-1-----0 1
+.names CLK.BLIF I_i8.C
+1 1
+.names CLR.BLIF I_i8.AR
+0 1
+.names I_i31.Q I_i7.Q I_i6.Q I_i5.Q I_i4.Q n8.BLIF n602.BLIF I_i7.D.X1
+01----1 1
+.names I_i31.Q I_i7.Q I_i6.Q I_i5.Q I_i4.Q n8.BLIF n602.BLIF I_i7.D.X2
+0-00001 1
+.names CLK.BLIF I_i7.C
+1 1
+.names CLR.BLIF I_i7.AR
+0 1
+.names I_i31.Q I_i6.Q I_i5.Q I_i4.Q n8.BLIF n602.BLIF I_i6.D
+000001 1
+01--11 1
+01-1-1 1
+011--1 1
+.names CLK.BLIF I_i6.C
+1 1
+.names CLR.BLIF I_i6.AR
+0 1
+.names I_i31.Q I_i5.Q I_i4.Q n8.BLIF n602.BLIF I_i5.D
+00001 1
+01-11 1
+011-1 1
+.names CLK.BLIF I_i5.C
+1 1
+.names CLR.BLIF I_i5.AR
+0 1
+.names I_i31.Q I_i4.Q n8.BLIF n602.BLIF I_i4.D
+0001 1
+0111 1
+.names CLK.BLIF I_i4.C
+1 1
+.names CLR.BLIF I_i4.AR
+0 1
+.names I_i31.Q I_i30.Q I_i29.Q I_i28.Q I_i27.Q I_i25.Q I_i24.Q I_i23.Q I_i21.Q I_i19.Q I_i17.Q I_i16.Q I_i15.Q I_i14.Q I_i13.Q I_i12.Q I_i11.Q I_i9.Q I_i8.Q I_i7.Q I_i5.Q I_i3.Q I_i2.Q I_i1.Q I_i0.Q n58.BLIF I_i3.T-
+-000000000000000000000---0 1
+0-----------------------1- 1
+0----------------------1-- 1
+0---------------------1--- 1
+1--------------------0---- 1
+.names CLK.BLIF I_i3.C
+1 1
+.names CLR.BLIF I_i3.AR
+0 1
+.names I_i31.Q I_i2.Q I_i1.Q I_i0.Q I_i2.D-
+0100 1
+001- 1
+00-1 1
+.names CLK.BLIF I_i2.C
+1 1
+.names CLR.BLIF I_i2.AP
+0 1
+.names I_i31.Q I_i30.Q I_i29.Q I_i28.Q I_i27.Q I_i25.Q I_i24.Q I_i23.Q I_i21.Q I_i19.Q I_i17.Q I_i16.Q I_i15.Q I_i14.Q I_i13.Q I_i12.Q I_i11.Q I_i9.Q I_i8.Q I_i7.Q I_i5.Q I_i2.Q I_i1.Q I_i0.Q n58.BLIF I_i1.D-
+1------------------------ 1
+----------------------01- 1
+----------------------10- 1
+-0000000000000000000000-0 1
+.names CLK.BLIF I_i1.C
+1 1
+.names CLR.BLIF I_i1.AR
+0 1
+.names I_i31.Q I_i0.Q I_i0.D-
+01 1
+.names CLK.BLIF I_i0.C
+1 1
+.names CLR.BLIF I_i0.AP
+0 1
+.names PRE_i2.Q PRE_i1.Q PRE_i0.Q FUT_2_N_38_2.BLIF PRE_i2.D
+10-1 1
+0111 1
+101- 1
+110- 1
+.names CLK.BLIF PRE_i2.C
+1 1
+.names CLR.BLIF PRE_i2.AR
+0 1
+.names PRE_i2.Q PRE_i1.Q PRE_i0.Q FUT_2_N_38_2.BLIF PRE_i1.D
+1010 1
+0011 1
+-10- 1
+01-0 1
+.names CLK.BLIF PRE_i1.C
+1 1
+.names CLR.BLIF PRE_i1.AR
+0 1
+.names PRE_i2.Q PRE_i1.Q PRE_i0.Q FUT_2_N_38_2.BLIF PRE_i0.D
+01-0 1
+-001 1
+10-1 1
+.names CLK.BLIF PRE_i0.C
+1 1
+.names CLR.BLIF PRE_i0.AR
+0 1
+.names I_i26.Q I_i22.Q I_i20.Q I_i18.Q I_i10.Q I_i6.Q I_i4.Q I_i3.Q n58-
+00000000 1
+.names I_i3.Q I_i2.Q I_i1.Q I_i0.Q n8-
+0000 1
+.names ENTRADA_5_.BLIF ENTRADA_4_.BLIF ENTRADA_3_.BLIF ENTRADA_2_.BLIF ENTRADA_1_.BLIF ENTRADA_0_.BLIF I_i2.Q I_i1.Q I_i0.Q FUT_2_N_38_2
+-1----100 1
+---1--010 1
+1-----101 1
+--1---011 1
+-----1000 1
+----1-001 1
+.names I_i20.Q I_i19.Q I_i18.Q I_i17.Q I_i16.Q I_i15.Q I_i14.Q I_i13.Q I_i12.Q I_i11.Q I_i10.Q I_i9.Q I_i8.Q I_i7.Q I_i6.Q I_i5.Q I_i4.Q I_i3.Q I_i2.Q I_i1.Q I_i0.Q n42-
+000000000000000000000 1
+.names I_i30.Q I_i29.Q I_i28.Q I_i27.Q I_i25.Q I_i24.Q I_i23.Q I_i21.Q I_i19.Q I_i17.Q I_i16.Q I_i15.Q I_i14.Q I_i13.Q I_i12.Q I_i11.Q I_i9.Q I_i8.Q I_i7.Q I_i5.Q I_i2.Q I_i1.Q I_i0.Q n58.BLIF n602-
+000000000000000000000000 1
+.names I_i14.Q I_i13.Q I_i12.Q I_i11.Q I_i10.Q I_i9.Q I_i8.Q I_i7.Q I_i6.Q I_i5.Q I_i4.Q I_i3.Q I_i2.Q I_i1.Q I_i0.Q n30-
+000000000000000 1
+.names I_i11.Q I_i10.Q I_i9.Q I_i8.Q I_i7.Q I_i6.Q I_i5.Q I_i4.Q I_i3.Q I_i2.Q I_i1.Q I_i0.Q n24-
+000000000000 1
+.end

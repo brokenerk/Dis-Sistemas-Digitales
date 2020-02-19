@@ -1,0 +1,228 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Mon May 07 19:24:34 2018
+#$ MODULE contador
+#$ PINS 13 CLR CLK C Q_9_ Q_8_ Q_7_ Q_6_ Q_5_ Q_4_ Q_3_ Q_2_ Q_1_ Q_0_
+#$ NODES 10 cnt_15__i10reg cnt_15__i9reg cnt_15__i8reg cnt_15__i7reg cnt_15__i6reg \
+#  cnt_15__i5reg cnt_15__i4reg cnt_15__i3reg cnt_15__i2reg cnt_15__i1reg
+.model contador
+.inputs CLR.BLIF CLK.BLIF C.BLIF cnt_15__i10reg.BLIF cnt_15__i9reg.BLIF \
+cnt_15__i8reg.BLIF cnt_15__i7reg.BLIF cnt_15__i6reg.BLIF cnt_15__i5reg.BLIF \
+cnt_15__i4reg.BLIF cnt_15__i3reg.BLIF cnt_15__i2reg.BLIF cnt_15__i1reg.BLIF
+.outputs Q_9_ Q_8_ Q_7_ Q_6_ Q_5_ Q_4_ Q_3_ Q_2_ Q_1_ Q_0_ cnt_15__i10reg.C \
+cnt_15__i10reg.AR cnt_15__i9reg.C cnt_15__i9reg.AR cnt_15__i8reg.C \
+cnt_15__i8reg.AR cnt_15__i7reg.C cnt_15__i7reg.AR cnt_15__i6reg.C \
+cnt_15__i6reg.AR cnt_15__i5reg.C cnt_15__i5reg.AR cnt_15__i4reg.C \
+cnt_15__i4reg.AR cnt_15__i3reg.D cnt_15__i3reg.C cnt_15__i3reg.AR \
+cnt_15__i2reg.D cnt_15__i2reg.C cnt_15__i2reg.AR cnt_15__i1reg.D \
+cnt_15__i1reg.C cnt_15__i1reg.AR cnt_15__i10reg.D.X1 cnt_15__i10reg.D.X2 \
+cnt_15__i9reg.D.X1 cnt_15__i9reg.D.X2 cnt_15__i8reg.D.X1 cnt_15__i8reg.D.X2 \
+cnt_15__i7reg.D.X1 cnt_15__i7reg.D.X2 cnt_15__i6reg.D.X1 cnt_15__i6reg.D.X2 \
+cnt_15__i5reg.D.X1 cnt_15__i5reg.D.X2 cnt_15__i4reg.D.X1 cnt_15__i4reg.D.X2
+.names CLR.BLIF cnt_15__i10reg.AR
+0 1
+1 0
+.names CLR.BLIF cnt_15__i9reg.AR
+0 1
+1 0
+.names CLR.BLIF cnt_15__i8reg.AR
+0 1
+1 0
+.names CLR.BLIF cnt_15__i7reg.AR
+0 1
+1 0
+.names CLR.BLIF cnt_15__i6reg.AR
+0 1
+1 0
+.names CLR.BLIF cnt_15__i5reg.AR
+0 1
+1 0
+.names CLR.BLIF cnt_15__i4reg.AR
+0 1
+1 0
+.names CLR.BLIF cnt_15__i3reg.AR
+0 1
+1 0
+.names CLR.BLIF cnt_15__i2reg.AR
+0 1
+1 0
+.names CLR.BLIF cnt_15__i1reg.AR
+0 1
+1 0
+.names cnt_15__i10reg.BLIF Q_9_
+1 1
+0 0
+.names cnt_15__i9reg.BLIF Q_8_
+1 1
+0 0
+.names cnt_15__i8reg.BLIF Q_7_
+1 1
+0 0
+.names cnt_15__i7reg.BLIF Q_6_
+1 1
+0 0
+.names cnt_15__i6reg.BLIF Q_5_
+1 1
+0 0
+.names cnt_15__i5reg.BLIF Q_4_
+1 1
+0 0
+.names cnt_15__i4reg.BLIF Q_3_
+1 1
+0 0
+.names cnt_15__i3reg.BLIF Q_2_
+1 1
+0 0
+.names cnt_15__i2reg.BLIF Q_1_
+1 1
+0 0
+.names cnt_15__i1reg.BLIF Q_0_
+1 1
+0 0
+.names CLK.BLIF cnt_15__i10reg.C
+1 1
+0 0
+.names CLK.BLIF cnt_15__i9reg.C
+1 1
+0 0
+.names CLK.BLIF cnt_15__i8reg.C
+1 1
+0 0
+.names CLK.BLIF cnt_15__i7reg.C
+1 1
+0 0
+.names CLK.BLIF cnt_15__i6reg.C
+1 1
+0 0
+.names CLK.BLIF cnt_15__i5reg.C
+1 1
+0 0
+.names CLK.BLIF cnt_15__i4reg.C
+1 1
+0 0
+.names C.BLIF cnt_15__i3reg.BLIF cnt_15__i2reg.BLIF cnt_15__i1reg.BLIF \
+cnt_15__i3reg.D
+1011 1
+-10- 1
+01-- 1
+-1-0 1
+1111 0
+-00- 0
+00-- 0
+-0-0 0
+.names CLK.BLIF cnt_15__i3reg.C
+1 1
+0 0
+.names C.BLIF cnt_15__i2reg.BLIF cnt_15__i1reg.BLIF cnt_15__i2reg.D
+101 1
+01- 1
+-10 1
+111 0
+00- 0
+-00 0
+.names CLK.BLIF cnt_15__i2reg.C
+1 1
+0 0
+.names C.BLIF cnt_15__i1reg.BLIF cnt_15__i1reg.D
+10 1
+01 1
+00 0
+11 0
+.names CLK.BLIF cnt_15__i1reg.C
+1 1
+0 0
+.names cnt_15__i10reg.BLIF cnt_15__i10reg.D.X1
+1 1
+0 0
+.names C.BLIF cnt_15__i10reg.BLIF cnt_15__i9reg.BLIF cnt_15__i8reg.BLIF \
+cnt_15__i7reg.BLIF cnt_15__i6reg.BLIF cnt_15__i5reg.BLIF cnt_15__i4reg.BLIF \
+cnt_15__i3reg.BLIF cnt_15__i2reg.BLIF cnt_15__i1reg.BLIF cnt_15__i10reg.D.X2
+1-111111111 1
+0---------- 0
+--0-------- 0
+---0------- 0
+----0------ 0
+-----0----- 0
+------0---- 0
+-------0--- 0
+--------0-- 0
+---------0- 0
+----------0 0
+.names cnt_15__i9reg.BLIF cnt_15__i9reg.D.X1
+1 1
+0 0
+.names C.BLIF cnt_15__i9reg.BLIF cnt_15__i8reg.BLIF cnt_15__i7reg.BLIF \
+cnt_15__i6reg.BLIF cnt_15__i5reg.BLIF cnt_15__i4reg.BLIF cnt_15__i3reg.BLIF \
+cnt_15__i2reg.BLIF cnt_15__i1reg.BLIF cnt_15__i9reg.D.X2
+1-11111111 1
+0--------- 0
+--0------- 0
+---0------ 0
+----0----- 0
+-----0---- 0
+------0--- 0
+-------0-- 0
+--------0- 0
+---------0 0
+.names cnt_15__i8reg.BLIF cnt_15__i8reg.D.X1
+1 1
+0 0
+.names C.BLIF cnt_15__i8reg.BLIF cnt_15__i7reg.BLIF cnt_15__i6reg.BLIF \
+cnt_15__i5reg.BLIF cnt_15__i4reg.BLIF cnt_15__i3reg.BLIF cnt_15__i2reg.BLIF \
+cnt_15__i1reg.BLIF cnt_15__i8reg.D.X2
+1-1111111 1
+0-------- 0
+--0------ 0
+---0----- 0
+----0---- 0
+-----0--- 0
+------0-- 0
+-------0- 0
+--------0 0
+.names cnt_15__i7reg.BLIF cnt_15__i7reg.D.X1
+1 1
+0 0
+.names C.BLIF cnt_15__i7reg.BLIF cnt_15__i6reg.BLIF cnt_15__i5reg.BLIF \
+cnt_15__i4reg.BLIF cnt_15__i3reg.BLIF cnt_15__i2reg.BLIF cnt_15__i1reg.BLIF \
+cnt_15__i7reg.D.X2
+1-111111 1
+0------- 0
+--0----- 0
+---0---- 0
+----0--- 0
+-----0-- 0
+------0- 0
+-------0 0
+.names cnt_15__i6reg.BLIF cnt_15__i6reg.D.X1
+1 1
+0 0
+.names C.BLIF cnt_15__i6reg.BLIF cnt_15__i5reg.BLIF cnt_15__i4reg.BLIF \
+cnt_15__i3reg.BLIF cnt_15__i2reg.BLIF cnt_15__i1reg.BLIF cnt_15__i6reg.D.X2
+1-11111 1
+0------ 0
+--0---- 0
+---0--- 0
+----0-- 0
+-----0- 0
+------0 0
+.names cnt_15__i5reg.BLIF cnt_15__i5reg.D.X1
+1 1
+0 0
+.names C.BLIF cnt_15__i5reg.BLIF cnt_15__i4reg.BLIF cnt_15__i3reg.BLIF \
+cnt_15__i2reg.BLIF cnt_15__i1reg.BLIF cnt_15__i5reg.D.X2
+1-1111 1
+0----- 0
+--0--- 0
+---0-- 0
+----0- 0
+-----0 0
+.names cnt_15__i4reg.BLIF cnt_15__i4reg.D.X1
+1 1
+0 0
+.names C.BLIF cnt_15__i4reg.BLIF cnt_15__i3reg.BLIF cnt_15__i2reg.BLIF \
+cnt_15__i1reg.BLIF cnt_15__i4reg.D.X2
+1-111 1
+0---- 0
+--0-- 0
+---0- 0
+----0 0
+.end

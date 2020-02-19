@@ -1,0 +1,51 @@
+//
+// Software Version :  ispLEVER Classic 2.0.00.17.20.15  
+// Project Name	    :  sumador
+// Targeted Device  :  LC4256ZE-5TN144C
+// Date             :  Thu Jun 07 19:20:08 2018
+//
+                      GND          SYS           1
+                   VCCIO0          SYS           3
+                      clk          IN            4
+                      clr          IN            5
+                     C_1_          IN            6
+                     C_0_          IN            7
+                     A_3_          IN            8
+                     A_2_          IN            9
+                   GNDIO0          SYS           10
+                     A_1_          IN            11
+                     A_0_          IN            12
+                     B_3_          IN            13
+                     B_2_          IN            14
+                     B_1_          IN            15
+                     B_0_          IN            16
+                   VCCIO0          SYS           19
+                   GNDIO0          SYS           27
+                    Carry          OUT           28
+                     q_3_          OUT           29
+                     q_2_          OUT           30
+                     q_1_          OUT           31
+                     q_0_          OUT           32
+                   VCCIO0          SYS           34
+                      VCC          SYS           36
+                      GND          SYS           37
+                   GNDIO0          SYS           46
+                   VCCIO0          SYS           47
+                   GNDIO1          SYS           55
+                      VCC          SYS           57
+                   VCCIO1          SYS           64
+                   GNDIO1          SYS           65
+                      GND          SYS           73
+                   VCCIO1          SYS           75
+                   GNDIO1          SYS           82
+                   VCCIO1          SYS           91
+                   GNDIO1          SYS           99
+                   VCCIO1          SYS           106
+                      VCC          SYS           108
+                      GND          SYS           109
+                   GNDIO1          SYS           118
+                   VCCIO1          SYS           119
+                   GNDIO0          SYS           127
+                      VCC          SYS           129
+                   VCCIO0          SYS           136
+                   GNDIO0          SYS           137

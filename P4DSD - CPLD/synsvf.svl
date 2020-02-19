@@ -1,0 +1,4 @@
+Part Number: LC4256ZE-5TN144C
+C:\ispLEVER_Classic2_0\ispvmsystem/ispufw -dev LC4256ZE-XXTN144 -if contador.jed -oft -isc -lever
+Invoke process : C:\ispLEVER_Classic2_0\ispvmsystem/ispufw -dev LC4256ZE-XXTN144 -if contador.jed -oft -isc -lever
+ISC file is generated successfully

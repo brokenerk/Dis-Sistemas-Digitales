@@ -1,0 +1,2 @@
+contreg.vhd #Entity contreg 6
+contreg.vhd #Architecture a_contreg contreg 14

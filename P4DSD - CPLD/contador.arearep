@@ -1,0 +1,10 @@
+----------------------------------------------------------------------
+Report for cell contador.TECH
+Register bits:  10 of 880 (1.136%)
+I/O cells:      13
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               DFFR        10          100.0
+                               IBUF         3          100.0
+                               OBUF        10          100.0
+                              TOTAL        23

@@ -1,0 +1,49 @@
+//
+// Software Version :  ispLEVER Classic 2.0.00.17.20.15  
+// Project Name	    :  secuencia
+// Targeted Device  :  LC4256ZE-5TN144C
+// Date             :  Sat Jun 16 16:48:29 2018
+//
+                      GND          SYS           1
+                   VCCIO0          SYS           3
+                      CLK          IN            4
+                      CLR          IN            5
+               ENTRADA_0_          IN            6
+               ENTRADA_1_          IN            7
+               ENTRADA_2_          IN            8
+               ENTRADA_3_          IN            9
+                   GNDIO0          SYS           10
+               ENTRADA_4_          IN            11
+               ENTRADA_5_          IN            12
+                   VCCIO0          SYS           19
+                   GNDIO0          SYS           27
+                   VCCIO0          SYS           34
+                      VCC          SYS           36
+                      GND          SYS           37
+                   GNDIO0          SYS           46
+                   VCCIO0          SYS           47
+                   GNDIO1          SYS           55
+                      VCC          SYS           57
+                   VCCIO1          SYS           64
+                   GNDIO1          SYS           65
+                      GND          SYS           73
+                   VCCIO1          SYS           75
+                   GNDIO1          SYS           82
+                   VCCIO1          SYS           91
+                   GNDIO1          SYS           99
+                   VCCIO1          SYS           106
+                      VCC          SYS           108
+                      GND          SYS           109
+                   GNDIO1          SYS           118
+                   VCCIO1          SYS           119
+                   GNDIO0          SYS           127
+                      VCC          SYS           129
+               DISPLAY_0_          OUT           130
+               DISPLAY_1_          OUT           131
+               DISPLAY_2_          OUT           132
+               DISPLAY_3_          OUT           133
+               DISPLAY_4_          OUT           134
+               DISPLAY_5_          OUT           135
+                   VCCIO0          SYS           136
+                   GNDIO0          SYS           137
+               DISPLAY_6_          OUT           138

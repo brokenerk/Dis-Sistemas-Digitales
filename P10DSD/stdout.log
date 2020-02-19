@@ -1,0 +1,58 @@
+Running in Lattice mode
+
+
+Starting:    C:\ispLEVER_Classic2_0\synpbase\win64\mbin\synbatch.exe
+Install:     C:\ispLEVER_Classic2_0\synpbase
+Date:        Thu Jun 07 19:20:00 2018
+Version:     I-2014.03LC 
+
+Arguments:   -product synplify_pro  -batch c:/users/yakertaker/desktop/cpld\Reg10.prj
+ProductType: synplify_pro
+
+
+
+
+
+log file: "C:\users\yakertaker\desktop\cpld\Reg10.srr"
+
+Generating HDL info...
+hdl_info_gen Completed
+Return Code: 0
+Run Time:0h:00m:00s
+log file: "C:\users\yakertaker\desktop\cpld\Reg10.srr"
+
+Running Reg10|cpld
+
+Running: Compile on Reg10|cpld
+
+Running: Compile Process on Reg10|cpld
+
+Running: Compile Input on Reg10|cpld
+Copied C:\users\yakertaker\desktop\cpld\synwork\Reg10_comp.srs to C:\users\yakertaker\desktop\cpld\Reg10.srs
+compiler Completed
+Return Code: 0
+Run Time:0h:00m:02s
+
+Running: Multi-srs Generator on Reg10|cpld
+Copied C:\users\yakertaker\desktop\cpld\synwork\Reg10_comp.srs to C:\users\yakertaker\desktop\cpld\synwork\Reg10_s.srs
+multi_srs_gen Completed
+Return Code: 0
+Run Time:0h:00m:00s
+Copied C:\users\yakertaker\desktop\cpld\synwork\Reg10_mult.srs to C:\users\yakertaker\desktop\cpld\Reg10.srs
+Copied C:\users\yakertaker\desktop\cpld\Reg10.srr to C:\users\yakertaker\desktop\cpld\reg10.srf
+Complete: Compile Process on Reg10|cpld
+Complete: Compile on Reg10|cpld
+
+Running: Map on Reg10|cpld
+
+Running: Map & Optimize on Reg10|cpld
+fpga_mapper Completed
+Return Code: 0
+Run Time:0h:00m:00s
+Complete: Map on Reg10|cpld
+Complete: Logic Synthesis on Reg10|cpld
+
+exit status=0
+
+exit status=0
+

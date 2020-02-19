@@ -1,0 +1,47 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// ------------------------------------------------------------------------------------------
+      Port          1      Q[9:0]                        Q                  9         10            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      Q_9_                        Q[9]                       1            0            
+        Port      Q_8_                        Q[8]                       1            1            
+        Port      Q_7_                        Q[7]                       1            2            
+        Port      Q_6_                        Q[6]                       1            3            
+        Port      Q_5_                        Q[5]                       1            4            
+        Port      Q_4_                        Q[4]                       1            5            
+        Port      Q_3_                        Q[3]                       1            6            
+        Port      Q_2_                        Q[2]                       1            7            
+        Port      Q_1_                        Q[1]                       1            8            
+        Port      Q_0_                        Q[0]                       1            9            
+End
+Section Cross Reference File
+Design 'contador' created Mon May 07 19:24:34 2018
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Net                  q_3__n                                      Q[3]
+   Net                  q_4__n                                      Q[4]
+   Net                  q_5__n                                      Q[5]
+   Net                  q_6__n                                      Q[6]
+   Net                  q_7__n                                      Q[7]
+   Net                  q_1__n                                      Q[1]
+   Net                  q_2__n                                      Q[2]
+   Net                  q_0__n                                      Q[0]
+   Net                  q_8__n                                      Q[8]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     CLR
+        Input     CLK
+        Input     C
+        Output     Q_9_
+        Output     Q_8_
+        Output     Q_7_
+        Output     Q_6_
+        Output     Q_5_
+        Output     Q_4_
+        Output     Q_3_
+        Output     Q_2_
+        Output     Q_1_
+        Output     Q_0_
+End

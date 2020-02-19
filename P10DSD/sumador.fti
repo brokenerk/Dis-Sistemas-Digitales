@@ -1,0 +1,126 @@
+#PLAFILE     sumador.bl5
+#DATE        Thu Jun 07 19:20:08 2018
+
+#DESIGN      sumador
+#DEVICE      MACH4S-256
+
+
+// Default settings.
+DATA GLOBAL tINDIO:0
+
+
+// Signal locations
+DATA LOCATION C_1_:C_*_6
+DATA LOCATION A_3_:C_*_8
+DATA LOCATION B_3_:D_*_13
+DATA LOCATION clk:C_*_4
+DATA LOCATION clr:C_*_5
+DATA LOCATION C_0_:C_*_7
+DATA LOCATION A_2_:C_*_9
+DATA LOCATION A_1_:D_*_11
+DATA LOCATION A_0_:D_*_12
+DATA LOCATION B_2_:D_*_14
+DATA LOCATION B_1_:D_*_15
+DATA LOCATION B_0_:D_*_16
+DATA LOCATION q_3_:F_5_29
+DATA LOCATION Carry:F_3_28
+DATA LOCATION q_2_:F_7_30
+DATA LOCATION q_1_:F_9_31
+DATA LOCATION q_0_:F_1_32
+DATA LOCATION un4_c:E_7
+DATA LOCATION contador_0_:A_5
+DATA LOCATION contador_1_:C_9
+DATA LOCATION contador_3_:C_3
+DATA LOCATION inst_detener:A_10
+DATA LOCATION SalidaB_0_:K_1
+DATA LOCATION SalidaA_0_:M_3
+DATA LOCATION contador_2_:A_2
+DATA LOCATION SalidaA_1_:M_9
+DATA LOCATION SalidaA_2_:K_3
+DATA LOCATION SalidaA_3_:K_6
+DATA LOCATION SalidaB_1_:O_7
+DATA LOCATION SalidaB_2_:L_7
+DATA LOCATION SalidaB_3_:K_10
+DATA LOCATION inst_Suma:F_12
+DATA LOCATION Carry_0:B_7
+
+// Signals direction
+DATA IO_DIR C_1_:IN
+DATA IO_DIR A_3_:IN
+DATA IO_DIR B_3_:IN
+DATA IO_DIR clk:IN
+DATA IO_DIR clr:IN
+DATA IO_DIR C_0_:IN
+DATA IO_DIR A_2_:IN
+DATA IO_DIR A_1_:IN
+DATA IO_DIR A_0_:IN
+DATA IO_DIR B_2_:IN
+DATA IO_DIR B_1_:IN
+DATA IO_DIR B_0_:IN
+DATA IO_DIR q_3_:OUT
+DATA IO_DIR Carry:OUT
+DATA IO_DIR q_2_:OUT
+DATA IO_DIR q_1_:OUT
+DATA IO_DIR q_0_:OUT
+
+// Signals using Shared Clock or CE
+DATA tBCLK q_3_.C
+DATA tBCLK Carry.C
+DATA tBCLK q_2_.C
+DATA tBCLK q_1_.C
+DATA tBCLK q_0_.C
+DATA tBCLK contador_0_.C
+DATA tBCLK contador_1_.CE
+DATA tBCLK contador_3_.CE
+DATA tBCLK inst_detener.C
+DATA tBCLK SalidaB_0_.C
+DATA tBCLK SalidaA_0_.C
+DATA tBCLK contador_2_.C
+DATA tBCLK SalidaA_1_.C
+DATA tBCLK SalidaA_2_.C
+DATA tBCLK SalidaA_3_.C
+DATA tBCLK SalidaB_1_.C
+DATA tBCLK SalidaB_2_.C
+DATA tBCLK SalidaB_3_.C
+DATA tBCLK inst_Suma.C
+
+// Signals using Shared Init Pterm
+DATA tBSR q_3_.AR
+DATA tBSR Carry.AR
+DATA tBSR q_2_.AR
+DATA tBSR q_1_.AR
+DATA tBSR q_0_.AR
+DATA tBSR contador_0_.AR
+DATA tBSR contador_1_.AR
+DATA tBSR contador_3_.AR
+DATA tBSR inst_detener.AR
+DATA tBSR SalidaB_0_.AR
+DATA tBSR SalidaA_0_.AR
+DATA tBSR contador_2_.AR
+DATA tBSR SalidaA_1_.AR
+DATA tBSR SalidaA_2_.AR
+DATA tBSR SalidaA_3_.AR
+DATA tBSR SalidaB_1_.AR
+DATA tBSR SalidaB_2_.AR
+DATA tBSR SalidaB_3_.AR
+DATA tBSR inst_Suma.AR
+
+// Block Load Adders
+DATA tBLA clk:6
+DATA tBLA clr:6
+DATA tBLA C_0_:6
+DATA tBLA un4_c:3
+DATA tBLA Carry_0:2
+DATA tBLA contador_2_:2
+DATA tBLA contador_3_:2
+DATA tBLA contador_1_:2
+DATA tBLA contador_0_:2
+DATA tBLA C_1_:2
+DATA tBLA inst_detener:1
+
+// Signals using OSM or fast 5-PTs path
+DATA tOSM q_3_
+DATA tOSM Carry
+DATA tOSM q_2_
+DATA tOSM q_1_
+DATA tOSM q_0_

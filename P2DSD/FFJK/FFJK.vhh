@@ -1,0 +1,12 @@
+ENTITY ffjk IS
+    PORT (
+	pre : in std_logic  ; 
+	clr : in std_logic  ; 
+	clk : in std_logic  ; 
+	j : in std_logic  ; 
+	k : in std_logic  ; 
+	q : inout std_logic  ; 
+	nq : inout std_logic  ; 
+	qt : inout std_logic 
+    ) ;
+END ffjk ;

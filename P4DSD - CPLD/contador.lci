@@ -1,0 +1,147 @@
+
+[Device]
+Family = lc4k;
+PartNumber = LC4256ZE-5TN144C;
+Package = 144TQFP;
+PartType = LC4256ZE;
+Speed = -5.8;
+Operating_condition = COM;
+Status = Production;
+EN_PinGLB = yes;
+EN_PinMacrocell = yes;
+
+[Revision]
+Parent = lc4k256e.lci;
+DATE = 05/07/2018;
+TIME = 19:06:22;
+Source_Format = Pure_VHDL;
+Synthesis = LSE;
+
+[Ignore Assignments]
+
+[Clear Assignments]
+
+[Backannotate Assignments]
+
+[Global Constraints]
+
+[Location Assignments]
+layer = OFF;
+C = Pin, 4, -, C, 12;
+CLR = Pin, 5, -, C, 10;
+CLK = Pin, 128, -, -, -;
+Q_9_ = Pin, 115, -, O, 4;
+Q_8_ = Pin, 114, -, O, 6;
+Q_7_ = Pin, 113, -, O, 8;
+Q_6_ = Pin, 112, -, O, 10;
+Q_5_ = Pin, 111, -, O, 12;
+Q_4_ = Pin, 105, -, N, 12;
+Q_3_ = Pin, 104, -, N, 10;
+Q_2_ = Pin, 103, -, N, 8;
+Q_1_ = Pin, 102, -, N, 6;
+Q_0_ = Pin, 101, -, N, 4;
+
+[Group Assignments]
+layer = OFF;
+
+[Resource Reservations]
+layer = OFF;
+
+[Fitter Report Format]
+
+[Power]
+
+[Source Constraint Option]
+
+[Fast Bypass]
+
+[OSM Bypass]
+
+[Input Registers]
+
+[Netlist/Delay Format]
+NetList = VHDL;
+
+[IO Types]
+layer = OFF;
+
+[Pullup]
+
+[Slewrate]
+
+[Region]
+
+[Timing Constraints]
+layer = OFF;
+
+[HSI Attributes]
+
+[Input Delay]
+
+[opt global constraints list]
+
+[Explorer User Settings]
+
+[Pin attributes list]
+
+[global constraints list]
+
+[Global Constraints Process Update]
+
+[pin lock limitation]
+
+[LOCATION ASSIGNMENTS LIST]
+
+[RESOURCE RESERVATIONS LIST]
+
+[individual constraints list]
+
+[Attributes list setting]
+
+[Timing Analyzer]
+
+[PLL Assignments]
+
+[Dual Function Macrocell]
+
+[Explorer Results]
+
+[VHDL synplify constraints]
+
+[VHDL spectrum constraints]
+
+[verilog synplify constraints]
+
+[verilog spectrum constraints]
+
+[VHDL synplify constraints list]
+
+[VHDL spectrum constraints list]
+
+[verilog synplify constraints list]
+
+[verilog spectrum constraints list]
+
+[Power Guard]
+
+[ORP Bypass]
+
+[Register Powerup]
+
+[Constraint Version]
+version = 1.0;
+
+[ORP ASSIGNMENTS]
+layer = OFF;
+
+[Node attribute]
+layer = OFF;
+
+[SYMBOL/MODULE attribute]
+layer = OFF;
+
+[Nodal Constraints]
+layer = OFF;
+
+[OSCTIMER Assignments]
+layer = OFF;

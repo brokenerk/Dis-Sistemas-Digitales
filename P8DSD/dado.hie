@@ -1,0 +1,2 @@
+dado.vhd #Entity dado 4
+dado.vhd #Architecture a_dado dado 12

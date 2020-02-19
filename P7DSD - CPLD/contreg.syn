@@ -1,0 +1,11 @@
+JDF B
+// Created by Version 2.0 
+PROJECT contreg
+DESIGN contreg Normal
+DEVKIT LC4256ZE-5TN144C
+ENTRY Pure VHDL
+MODULE contreg.vhd
+MODSTYLE contreg Normal
+SYNTHESIS_TOOL LSE
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE contreg

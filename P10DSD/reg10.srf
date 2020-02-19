@@ -1,0 +1,44 @@
+#Build: Synplify Pro I-2014.03LC , Build 063R, May 27 2014
+#install: C:\ispLEVER_Classic2_0\synpbase
+#OS: Windows 7 6.2
+#Hostname: OUTERHEAVEN
+
+#Implementation: cpld
+
+$ Start of Compile
+#Thu Jun 07 19:20:00 2018
+
+Synopsys VHDL Compiler, version comp201403rcp1, Build 060R, built May 27 2014
+@N|Running in 64-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\users\yakertaker\desktop\cpld\Sumador.vhd":5:7:5:11|Top entity is set to Reg10.
+File C:\users\yakertaker\desktop\cpld\Sumador.vhd changed - recompiling
+VHDL syntax check successful!
+@N: CD630 :"C:\users\yakertaker\desktop\cpld\Sumador.vhd":5:7:5:11|Synthesizing work.reg10.a_reg10 
+@N: CD364 :"C:\users\yakertaker\desktop\cpld\Sumador.vhd":36:5:36:11|Removed redundant assignment
+@N: CD364 :"C:\users\yakertaker\desktop\cpld\Sumador.vhd":37:5:37:11|Removed redundant assignment
+@N: CD364 :"C:\users\yakertaker\desktop\cpld\Sumador.vhd":48:4:48:8|Removed redundant assignment
+@N: CD364 :"C:\users\yakertaker\desktop\cpld\Sumador.vhd":53:4:53:8|Removed redundant assignment
+@N: CD364 :"C:\users\yakertaker\desktop\cpld\Sumador.vhd":79:4:79:4|Removed redundant assignment
+@N: CD364 :"C:\users\yakertaker\desktop\cpld\Sumador.vhd":84:4:84:4|Removed redundant assignment
+Post processing for work.reg10.a_reg10
+@END
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Jun 07 19:20:00 2018
+
+###########################################################]
+Synopsys Netlist Linker, version comp201403rcp1, Build 060R, built May 27 2014
+@N|Running in 64-bit mode
+File C:\users\yakertaker\desktop\cpld\synwork\Reg10_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Jun 07 19:20:02 2018
+
+###########################################################]

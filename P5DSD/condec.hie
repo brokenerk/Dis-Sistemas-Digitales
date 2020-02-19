@@ -1,0 +1,2 @@
+condec.vhd #Entity condec 3
+condec.vhd #Architecture a_condec condec 13

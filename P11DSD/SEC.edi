@@ -1,0 +1,2754 @@
+(edif root
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timeStamp 2018 6 16 16 48 25)
+      (author "Lattice Semiconductor Corp.")
+      (program "EDIF Writer"(version "lse"))
+    )
+  )
+  (external mach
+    (edifLevel 0)
+    (technology (numberDefinition))
+    (cell DFFR
+      (cellType generic)
+      (view (rename INTERFACE_c "INTERFACE")
+        (viewType netlist)
+        (interface
+          (port Q (direction OUTPUT))
+          (port D (direction INPUT))
+          (port CLK (direction INPUT))
+          (port R (direction INPUT))
+        )
+      )
+    )
+    (cell DFFS
+      (cellType generic)
+      (view (rename INTERFACE_c "INTERFACE")
+        (viewType netlist)
+        (interface
+          (port Q (direction OUTPUT))
+          (port D (direction INPUT))
+          (port CLK (direction INPUT))
+          (port S (direction INPUT))
+        )
+      )
+    )
+    (cell XOR2
+      (cellType generic)
+      (view (rename uNoName_ "<NoName>")
+        (viewType netlist)
+        (interface
+          (port O (direction OUTPUT))
+          (port I0 (direction INPUT))
+          (port I1 (direction INPUT))
+        )
+      )
+    )
+    (cell OBUF
+      (cellType generic)
+      (view (rename INTERFACE_c "INTERFACE")
+        (viewType netlist)
+        (interface
+          (port O (direction OUTPUT))
+          (port I0 (direction INPUT))
+        )
+        (property black_box_pad_pin (string "O"))
+      )
+    )
+    (cell IBUF
+      (cellType generic)
+      (view (rename INTERFACE_c "INTERFACE")
+        (viewType netlist)
+        (interface
+          (port O (direction OUTPUT))
+          (port I0 (direction INPUT))
+        )
+        (property black_box_pad_pin (string "I0"))
+      )
+    )
+    (cell INV
+      (cellType generic)
+      (view (rename uNoName_ "<NoName>")
+        (viewType netlist)
+        (interface
+          (port O (direction OUTPUT))
+          (port I0 (direction INPUT))
+        )
+      )
+    )
+    (cell OR2
+      (cellType generic)
+      (view (rename uNoName_ "<NoName>")
+        (viewType netlist)
+        (interface
+          (port O (direction OUTPUT))
+          (port I0 (direction INPUT))
+          (port I1 (direction INPUT))
+        )
+      )
+    )
+    (cell AND2
+      (cellType generic)
+      (view (rename uNoName_ "<NoName>")
+        (viewType netlist)
+        (interface
+          (port O (direction OUTPUT))
+          (port I0 (direction INPUT))
+          (port I1 (direction INPUT))
+        )
+      )
+    )
+    (cell VCC
+      (cellType generic)
+      (view (rename uNoName_ "<NoName>")
+        (viewType netlist)
+        (interface
+          (port X (direction OUTPUT))
+        )
+      )
+    )
+    (cell GND
+      (cellType generic)
+      (view (rename uNoName_ "<NoName>")
+        (viewType netlist)
+        (interface
+          (port X (direction OUTPUT))
+        )
+      )
+    )
+    (cell AND3
+      (cellType generic)
+      (view (rename uNoName_ "<NoName>")
+        (viewType netlist)
+        (interface
+          (port O (direction OUTPUT))
+          (port I0 (direction INPUT))
+          (port I1 (direction INPUT))
+          (port I2 (direction INPUT))
+        )
+      )
+    )
+    (cell OR6
+      (cellType generic)
+      (view (rename uNoName_ "<NoName>")
+        (viewType netlist)
+        (interface
+          (port O (direction OUTPUT))
+          (port I0 (direction INPUT))
+          (port I1 (direction INPUT))
+          (port I2 (direction INPUT))
+          (port I3 (direction INPUT))
+          (port I4 (direction INPUT))
+          (port I5 (direction INPUT))
+        )
+      )
+    )
+  )
+  (library work
+    (edifLevel 0)
+    (technology (numberDefinition))
+    (cell SEC
+      (cellType generic)
+      (view TECH
+        (viewType netlist)
+        (interface
+          (port CLR (direction INPUT))
+          (port CLK (direction INPUT))
+          (port (array (rename ENTRADA "ENTRADA[5:0]") 6) (direction INPUT))
+          (port (array (rename DISPLAY_c "DISPLAY[6:0]") 7) (direction OUTPUT))
+        )
+        (contents
+          (instance PRE_i0
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+          )
+          (instance I_i6
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i5
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i4
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i0
+            (viewRef INTERFACE_c (cellRef DFFS (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i3
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i2
+            (viewRef INTERFACE_c (cellRef DFFS (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i1
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance PRE_i2
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+          )
+          (instance i1_adj_1
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance DISPLAY_pad_6
+            (viewRef INTERFACE_c (cellRef OBUF (libraryref mach)))
+          )
+          (instance ENTRADA_pad_0
+            (viewRef INTERFACE_c (cellRef IBUF (libraryref mach)))
+          )
+          (instance PRE_i1
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+          )
+          (instance I_i8
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance DISPLAY_pad_5
+            (viewRef INTERFACE_c (cellRef OBUF (libraryref mach)))
+          )
+          (instance ENTRADA_pad_1
+            (viewRef INTERFACE_c (cellRef IBUF (libraryref mach)))
+          )
+          (instance ENTRADA_pad_2
+            (viewRef INTERFACE_c (cellRef IBUF (libraryref mach)))
+          )
+          (instance ENTRADA_pad_3
+            (viewRef INTERFACE_c (cellRef IBUF (libraryref mach)))
+          )
+          (instance ENTRADA_pad_4
+            (viewRef INTERFACE_c (cellRef IBUF (libraryref mach)))
+          )
+          (instance ENTRADA_pad_5
+            (viewRef INTERFACE_c (cellRef IBUF (libraryref mach)))
+          )
+          (instance CLK_pad
+            (viewRef INTERFACE_c (cellRef IBUF (libraryref mach)))
+          )
+          (instance CLR_pad
+            (viewRef INTERFACE_c (cellRef IBUF (libraryref mach)))
+          )
+          (instance DISPLAY_pad_0
+            (viewRef INTERFACE_c (cellRef OBUF (libraryref mach)))
+          )
+          (instance DISPLAY_pad_1
+            (viewRef INTERFACE_c (cellRef OBUF (libraryref mach)))
+          )
+          (instance DISPLAY_pad_2
+            (viewRef INTERFACE_c (cellRef OBUF (libraryref mach)))
+          )
+          (instance DISPLAY_pad_3
+            (viewRef INTERFACE_c (cellRef OBUF (libraryref mach)))
+          )
+          (instance DISPLAY_pad_4
+            (viewRef INTERFACE_c (cellRef OBUF (libraryref mach)))
+          )
+          (instance I_i9
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i10
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i11
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i12
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i13
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i14
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i15
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i16
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i17
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i18
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i19
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i20
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i21
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i22
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i23
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i24
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i25
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i26
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i27
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i28
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i29
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i30
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance I_i31
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance i1_adj_2
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i4
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance I_i7
+            (viewRef INTERFACE_c (cellRef DFFR (libraryref mach)))
+            (property lse_init_val (string "0"))
+          )
+          (instance i3
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i4_adj_3
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i10
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i11
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i5
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i12
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i13
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i551
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i552
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i14
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i15
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i564
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i554
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i6
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i555
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i17
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i18
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i547
+            (viewRef uNoName_ (cellRef VCC (libraryref mach)))
+          )
+          (instance i7
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i127
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i2
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i8
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i19
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i1_adj_4
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i20
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i21
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i22
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i9
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i23
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i494
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i1_adj_5
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i496
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i574
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i25
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i498
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i1_adj_6
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i500
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i502
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i1_adj_7
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i151
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i1_adj_8
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i480
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i1
+            (viewRef uNoName_ (cellRef GND (libraryref mach)))
+          )
+          (instance i148
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i482
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i504
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i124
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i1_adj_9
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i506
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i26
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i1_adj_10
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i508
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i472
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i470
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i575
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i510
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i512
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i577
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i548
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i514
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i516
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i549
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i474
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i167
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i518
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i1_adj_11
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i520
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i522
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i524
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i492
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i488
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i478
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i476
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i486
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i152
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i468
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i466
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i490
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i27
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance FUT_2__N_86_I_0_37
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i484
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i560
+            (viewRef uNoName_ (cellRef INV (libraryref mach)))
+          )
+          (instance i154
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i567
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i1_adj_12
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i570
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i573
+            (viewRef uNoName_ (cellRef AND3 (libraryref mach)))
+          )
+          (instance i563
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i562
+            (viewRef uNoName_ (cellRef AND3 (libraryref mach)))
+          )
+          (instance i155
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i168
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i156
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i157
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i572
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i158
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i159
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i1_adj_13
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i160
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i161
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i1_adj_14
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i162
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i163
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i1_adj_15
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i164
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i165
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i1_adj_16
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i166
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i169
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i170
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i171
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i172
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i173
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i174
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i175
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i1_adj_17
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i176
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i177
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i178
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i179
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i180
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i181
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i182
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i183
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i184
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i187
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i561
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i1_adj_18
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i1_adj_19
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i1_adj_20
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i1_adj_21
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i1_adj_22
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i1_adj_23
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i1_adj_24
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i1_adj_25
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i1_adj_26
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i190
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i576
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i579
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i1_adj_27
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i582
+            (viewRef uNoName_ (cellRef AND3 (libraryref mach)))
+          )
+          (instance i585
+            (viewRef uNoName_ (cellRef AND3 (libraryref mach)))
+          )
+          (instance i1_adj_28
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i1_adj_29
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i1_adj_30
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i559
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i138
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i1_adj_31
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i1_adj_32
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i571
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i569
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i558
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i216
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i1_adj_33
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i1_adj_34
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i224
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i568
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i232
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i240
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i248
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i566
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i256
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i565
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i264
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i556
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i272
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i280
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i288
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i296
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i304
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i312
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i320
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i328
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i553
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i336
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i344
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i352
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i360
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i1_adj_35
+            (viewRef uNoName_ (cellRef XOR2 (libraryref mach)))
+          )
+          (instance i368
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i376
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i384
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i30
+            (viewRef uNoName_ (cellRef OR6 (libraryref mach)))
+          )
+          (instance i392
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i587
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i400
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i408
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i416
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i424
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i557
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i586
+            (viewRef uNoName_ (cellRef AND3 (libraryref mach)))
+          )
+          (instance i432
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i440
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i584
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i448
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i583
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i581
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i550
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (instance i580
+            (viewRef uNoName_ (cellRef AND2 (libraryref mach)))
+          )
+          (instance i578
+            (viewRef uNoName_ (cellRef OR2 (libraryref mach)))
+          )
+          (net DISPLAY_c
+            (joined
+              (portRef X (instanceRef i1))
+              (portRef I0 (instanceRef DISPLAY_pad_2))
+              (portRef I0 (instanceRef DISPLAY_pad_1))
+            )
+          )
+          (net pwr
+            (joined
+              (portRef X (instanceRef i547))
+            )
+          )
+          (net n18
+            (joined
+              (portRef I0 (instanceRef i280))
+              (portRef I0 (instanceRef i1_adj_29))
+              (portRef O (instanceRef i272))
+            )
+          )
+          (net CLR_c
+            (joined
+              (portRef O (instanceRef CLR_pad))
+              (portRef R (instanceRef I_i7))
+              (portRef R (instanceRef PRE_i0))
+              (portRef R (instanceRef I_i6))
+              (portRef R (instanceRef I_i5))
+              (portRef R (instanceRef I_i4))
+              (portRef S (instanceRef I_i0))
+              (portRef R (instanceRef I_i3))
+              (portRef S (instanceRef I_i2))
+              (portRef R (instanceRef I_i1))
+              (portRef R (instanceRef PRE_i2))
+              (portRef R (instanceRef PRE_i1))
+              (portRef R (instanceRef I_i8))
+              (portRef R (instanceRef I_i9))
+              (portRef R (instanceRef I_i10))
+              (portRef R (instanceRef I_i11))
+              (portRef R (instanceRef I_i12))
+              (portRef R (instanceRef I_i13))
+              (portRef R (instanceRef I_i14))
+              (portRef R (instanceRef I_i15))
+              (portRef R (instanceRef I_i16))
+              (portRef R (instanceRef I_i17))
+              (portRef R (instanceRef I_i18))
+              (portRef R (instanceRef I_i19))
+              (portRef R (instanceRef I_i20))
+              (portRef R (instanceRef I_i21))
+              (portRef R (instanceRef I_i22))
+              (portRef R (instanceRef I_i23))
+              (portRef R (instanceRef I_i24))
+              (portRef R (instanceRef I_i25))
+              (portRef R (instanceRef I_i26))
+              (portRef R (instanceRef I_i27))
+              (portRef R (instanceRef I_i28))
+              (portRef R (instanceRef I_i29))
+              (portRef R (instanceRef I_i30))
+              (portRef R (instanceRef I_i31))
+            )
+          )
+          (net CLK_c
+            (joined
+              (portRef CLK (instanceRef I_i3))
+              (portRef CLK (instanceRef I_i6))
+              (portRef O (instanceRef CLK_pad))
+              (portRef CLK (instanceRef I_i8))
+              (portRef CLK (instanceRef PRE_i1))
+              (portRef CLK (instanceRef PRE_i2))
+              (portRef CLK (instanceRef I_i1))
+              (portRef CLK (instanceRef I_i2))
+              (portRef CLK (instanceRef I_i0))
+              (portRef CLK (instanceRef I_i4))
+              (portRef CLK (instanceRef I_i5))
+              (portRef CLK (instanceRef PRE_i0))
+              (portRef CLK (instanceRef I_i9))
+              (portRef CLK (instanceRef I_i10))
+              (portRef CLK (instanceRef I_i11))
+              (portRef CLK (instanceRef I_i12))
+              (portRef CLK (instanceRef I_i13))
+              (portRef CLK (instanceRef I_i14))
+              (portRef CLK (instanceRef I_i15))
+              (portRef CLK (instanceRef I_i16))
+              (portRef CLK (instanceRef I_i17))
+              (portRef CLK (instanceRef I_i18))
+              (portRef CLK (instanceRef I_i19))
+              (portRef CLK (instanceRef I_i20))
+              (portRef CLK (instanceRef I_i21))
+              (portRef CLK (instanceRef I_i22))
+              (portRef CLK (instanceRef I_i23))
+              (portRef CLK (instanceRef I_i24))
+              (portRef CLK (instanceRef I_i25))
+              (portRef CLK (instanceRef I_i26))
+              (portRef CLK (instanceRef I_i27))
+              (portRef CLK (instanceRef I_i28))
+              (portRef CLK (instanceRef I_i29))
+              (portRef CLK (instanceRef I_i30))
+              (portRef CLK (instanceRef I_i31))
+              (portRef CLK (instanceRef I_i7))
+            )
+            (property is_clock (string "1"))
+            (property SET_AS_NETWORK (string "CLK_c"))
+          )
+          (net ENTRADA_c_5
+            (joined
+              (portRef I1 (instanceRef i565))
+              (portRef O (instanceRef ENTRADA_pad_5))
+            )
+          )
+          (net ENTRADA_c_4
+            (joined
+              (portRef I1 (instanceRef i564))
+              (portRef O (instanceRef ENTRADA_pad_4))
+            )
+          )
+          (net ENTRADA_c_3
+            (joined
+              (portRef I1 (instanceRef i571))
+              (portRef O (instanceRef ENTRADA_pad_3))
+            )
+          )
+          (net ENTRADA_c_2
+            (joined
+              (portRef I1 (instanceRef i570))
+              (portRef O (instanceRef ENTRADA_pad_2))
+            )
+          )
+          (net ENTRADA_c_1
+            (joined
+              (portRef I1 (instanceRef i558))
+              (portRef O (instanceRef ENTRADA_pad_1))
+            )
+          )
+          (net ENTRADA_c_0
+            (joined
+              (portRef I1 (instanceRef i557))
+              (portRef O (instanceRef ENTRADA_pad_0))
+            )
+          )
+          (net DISPLAY_c_6
+            (joined
+              (portRef O (instanceRef i550))
+              (portRef I0 (instanceRef DISPLAY_pad_6))
+            )
+          )
+          (net n661
+            (joined
+              (portRef I0 (instanceRef i522))
+              (portRef O (instanceRef i1_adj_13))
+            )
+          )
+          (net DISPLAY_c_4
+            (joined
+              (portRef I0 (instanceRef DISPLAY_pad_4))
+              (portRef I0 (instanceRef DISPLAY_pad_5))
+              (portRef I0 (instanceRef DISPLAY_pad_3))
+              (portRef I0 (instanceRef DISPLAY_pad_0))
+              (portRef O (instanceRef i151))
+            )
+          )
+          (net n659
+            (joined
+              (portRef I0 (instanceRef i520))
+              (portRef O (instanceRef i1_adj_14))
+            )
+          )
+          (net n712
+            (joined
+              (portRef O (instanceRef i573))
+              (portRef I1 (instanceRef i575))
+            )
+          )
+          (net n268
+            (joined
+              (portRef I0 (instanceRef i549))
+              (portRef I0 (instanceRef i151))
+              (portRef O (instanceRef i127))
+            )
+          )
+          (net n657
+            (joined
+              (portRef I0 (instanceRef i518))
+              (portRef O (instanceRef i1_adj_15))
+            )
+          )
+          (net I_31
+            (joined
+              (portRef Q (instanceRef I_i31))
+              (portRef I0 (instanceRef i167))
+              (portRef I1 (instanceRef i1_adj_12))
+            )
+          )
+          (net I_30
+            (joined
+              (portRef I1 (instanceRef i448))
+              (portRef Q (instanceRef I_i30))
+              (portRef I1 (instanceRef i8))
+              (portRef I1 (instanceRef i1_adj_13))
+            )
+          )
+          (net I_29
+            (joined
+              (portRef I1 (instanceRef i440))
+              (portRef Q (instanceRef I_i29))
+              (portRef I0 (instanceRef i2))
+              (portRef I1 (instanceRef i1_adj_14))
+            )
+          )
+          (net I_28
+            (joined
+              (portRef I1 (instanceRef i432))
+              (portRef Q (instanceRef I_i28))
+              (portRef I0 (instanceRef i7))
+              (portRef I1 (instanceRef i1_adj_15))
+            )
+          )
+          (net I_27
+            (joined
+              (portRef I1 (instanceRef i424))
+              (portRef Q (instanceRef I_i27))
+              (portRef I1 (instanceRef i7))
+              (portRef I1 (instanceRef i1_adj_18))
+            )
+          )
+          (net I_26
+            (joined
+              (portRef I1 (instanceRef i416))
+              (portRef Q (instanceRef I_i26))
+              (portRef I1 (instanceRef i13))
+              (portRef I1 (instanceRef i1_adj_20))
+            )
+          )
+          (net I_25
+            (joined
+              (portRef I1 (instanceRef i408))
+              (portRef Q (instanceRef I_i25))
+              (portRef I1 (instanceRef i2))
+              (portRef I1 (instanceRef i1_adj_21))
+            )
+          )
+          (net I_24
+            (joined
+              (portRef I1 (instanceRef i400))
+              (portRef Q (instanceRef I_i24))
+              (portRef I0 (instanceRef i6))
+              (portRef I1 (instanceRef i1_adj_23))
+            )
+          )
+          (net I_23
+            (joined
+              (portRef I1 (instanceRef i392))
+              (portRef Q (instanceRef I_i23))
+              (portRef I1 (instanceRef i6))
+              (portRef I1 (instanceRef i1_adj_24))
+            )
+          )
+          (net I_22
+            (joined
+              (portRef I1 (instanceRef i384))
+              (portRef Q (instanceRef I_i22))
+              (portRef I0 (instanceRef i12))
+              (portRef I1 (instanceRef i1_adj_25))
+            )
+          )
+          (net I_21
+            (joined
+              (portRef I1 (instanceRef i376))
+              (portRef Q (instanceRef I_i21))
+              (portRef I0 (instanceRef i5))
+              (portRef I1 (instanceRef i1_adj_26))
+            )
+          )
+          (net I_20
+            (joined
+              (portRef I1 (instanceRef i368))
+              (portRef Q (instanceRef I_i20))
+              (portRef I1 (instanceRef i12))
+              (portRef I1 (instanceRef i1_adj_30))
+            )
+          )
+          (net I_19
+            (joined
+              (portRef I1 (instanceRef i360))
+              (portRef Q (instanceRef I_i19))
+              (portRef I0 (instanceRef i11))
+              (portRef I1 (instanceRef i1_adj_31))
+            )
+          )
+          (net I_18
+            (joined
+              (portRef I1 (instanceRef i352))
+              (portRef Q (instanceRef I_i18))
+              (portRef I0 (instanceRef i15))
+              (portRef I1 (instanceRef i1_adj_32))
+            )
+          )
+          (net I_17
+            (joined
+              (portRef I1 (instanceRef i344))
+              (portRef Q (instanceRef I_i17))
+              (portRef I0 (instanceRef i1_adj_8))
+              (portRef I1 (instanceRef i1_adj_33))
+            )
+          )
+          (net I_16
+            (joined
+              (portRef I1 (instanceRef i336))
+              (portRef Q (instanceRef I_i16))
+              (portRef I1 (instanceRef i5))
+              (portRef I1 (instanceRef i1_adj_28))
+            )
+          )
+          (net I_15
+            (joined
+              (portRef I1 (instanceRef i328))
+              (portRef Q (instanceRef I_i15))
+              (portRef I0 (instanceRef i4_adj_3))
+              (portRef I1 (instanceRef i1_adj_1))
+            )
+          )
+          (net I_14
+            (joined
+              (portRef I1 (instanceRef i320))
+              (portRef Q (instanceRef I_i14))
+              (portRef I1 (instanceRef i11))
+              (portRef I1 (instanceRef i1_adj_6))
+            )
+          )
+          (net I_13
+            (joined
+              (portRef I1 (instanceRef i4_adj_3))
+              (portRef Q (instanceRef I_i13))
+              (portRef I1 (instanceRef i1_adj_35))
+              (portRef I1 (instanceRef i312))
+            )
+          )
+          (net I_12
+            (joined
+              (portRef I1 (instanceRef i304))
+              (portRef Q (instanceRef I_i12))
+              (portRef I0 (instanceRef i10))
+              (portRef I1 (instanceRef i1_adj_19))
+            )
+          )
+          (net I_11
+            (joined
+              (portRef I1 (instanceRef i296))
+              (portRef Q (instanceRef I_i11))
+              (portRef I1 (instanceRef i10))
+              (portRef I1 (instanceRef i1_adj_11))
+            )
+          )
+          (net I_10
+            (joined
+              (portRef I1 (instanceRef i288))
+              (portRef Q (instanceRef I_i10))
+              (portRef I1 (instanceRef i15))
+              (portRef I1 (instanceRef i1_adj_9))
+            )
+          )
+          (net I_9
+            (joined
+              (portRef I1 (instanceRef i280))
+              (portRef Q (instanceRef I_i9))
+              (portRef I0 (instanceRef i3))
+              (portRef I1 (instanceRef i1_adj_29))
+            )
+          )
+          (net I_8
+            (joined
+              (portRef I1 (instanceRef i272))
+              (portRef Q (instanceRef I_i8))
+              (portRef I0 (instanceRef i9))
+              (portRef I1 (instanceRef i1_adj_7))
+            )
+          )
+          (net I_7
+            (joined
+              (portRef I1 (instanceRef i264))
+              (portRef Q (instanceRef I_i7))
+              (portRef I1 (instanceRef i9))
+              (portRef I1 (instanceRef i1_adj_5))
+            )
+          )
+          (net I_6
+            (joined
+              (portRef I1 (instanceRef i256))
+              (portRef Q (instanceRef I_i6))
+              (portRef I0 (instanceRef i14))
+              (portRef I1 (instanceRef i1_adj_17))
+            )
+          )
+          (net I_5
+            (joined
+              (portRef I1 (instanceRef i248))
+              (portRef Q (instanceRef I_i5))
+              (portRef I0 (instanceRef i8))
+              (portRef I1 (instanceRef i1_adj_22))
+            )
+          )
+          (net I_4
+            (joined
+              (portRef I1 (instanceRef i240))
+              (portRef Q (instanceRef I_i4))
+              (portRef I1 (instanceRef i14))
+              (portRef I1 (instanceRef i1_adj_27))
+            )
+          )
+          (net I_3
+            (joined
+              (portRef I1 (instanceRef i232))
+              (portRef Q (instanceRef I_i3))
+              (portRef I0 (instanceRef i13))
+              (portRef I1 (instanceRef i1_adj_10))
+            )
+          )
+          (net I_2
+            (joined
+              (portRef I1 (instanceRef i562))
+              (portRef I1 (instanceRef i224))
+              (portRef I1 (instanceRef i1_adj_4))
+              (portRef Q (instanceRef I_i2))
+              (portRef I5 (instanceRef i30))
+              (portRef I0 (instanceRef i560))
+            )
+          )
+          (net I_1
+            (joined
+              (portRef I1 (instanceRef i1_adj_16))
+              (portRef Q (instanceRef I_i1))
+              (portRef I1 (instanceRef i216))
+              (portRef I1 (instanceRef i1_adj_8))
+              (portRef I0 (instanceRef i568))
+              (portRef I0 (instanceRef i152))
+            )
+          )
+          (net I_0
+            (joined
+              (portRef I0 (instanceRef i1_adj_16))
+              (portRef I0 (instanceRef i554))
+              (portRef Q (instanceRef I_i0))
+              (portRef I0 (instanceRef i558))
+              (portRef I0 (instanceRef i565))
+              (portRef I0 (instanceRef i571))
+              (portRef I0 (instanceRef i216))
+              (portRef I1 (instanceRef i3))
+            )
+          )
+          (net PRE_2
+            (joined
+              (portRef Q (instanceRef PRE_i2))
+              (portRef I1 (instanceRef i1_adj_34))
+              (portRef I0 (instanceRef i127))
+              (portRef I0 (instanceRef i1_adj_2))
+              (portRef I0 (instanceRef i577))
+              (portRef I0 (instanceRef i583))
+            )
+          )
+          (net PRE_1
+            (joined
+              (portRef Q (instanceRef PRE_i1))
+              (portRef I0 (instanceRef i4))
+              (portRef I2 (instanceRef i582))
+              (portRef I1 (instanceRef i127))
+              (portRef I0 (instanceRef i574))
+              (portRef I0 (instanceRef i585))
+              (portRef I0 (instanceRef i580))
+              (portRef I0 (instanceRef i138))
+            )
+          )
+          (net PRE_0
+            (joined
+              (portRef I0 (instanceRef i573))
+              (portRef Q (instanceRef PRE_i0))
+              (portRef I0 (instanceRef i548))
+              (portRef I0 (instanceRef i148))
+              (portRef I0 (instanceRef i190))
+              (portRef I0 (instanceRef i124))
+            )
+          )
+          (net FUT_2
+            (joined
+              (portRef O (instanceRef i584))
+              (portRef D (instanceRef PRE_i2))
+            )
+          )
+          (net FUT_1
+            (joined
+              (portRef O (instanceRef i578))
+              (portRef D (instanceRef PRE_i1))
+            )
+          )
+          (net FUT_0
+            (joined
+              (portRef O (instanceRef i587))
+              (portRef D (instanceRef PRE_i0))
+            )
+          )
+          (net n12
+            (joined
+              (portRef I0 (instanceRef i256))
+              (portRef I0 (instanceRef i1_adj_17))
+              (portRef O (instanceRef i248))
+            )
+          )
+          (net I_31__N_85
+            (joined
+              (portRef I0 (instanceRef i156))
+              (portRef I0 (instanceRef i154))
+              (portRef I0 (instanceRef i555))
+              (portRef I0 (instanceRef i187))
+              (portRef I0 (instanceRef i184))
+              (portRef I0 (instanceRef i183))
+              (portRef I0 (instanceRef i182))
+              (portRef I0 (instanceRef i181))
+              (portRef I0 (instanceRef i180))
+              (portRef I0 (instanceRef i179))
+              (portRef I0 (instanceRef i178))
+              (portRef I0 (instanceRef i177))
+              (portRef I0 (instanceRef i176))
+              (portRef I0 (instanceRef i175))
+              (portRef I0 (instanceRef i174))
+              (portRef I0 (instanceRef i173))
+              (portRef I0 (instanceRef i172))
+              (portRef I0 (instanceRef i171))
+              (portRef I0 (instanceRef i170))
+              (portRef I0 (instanceRef i169))
+              (portRef I0 (instanceRef i166))
+              (portRef I0 (instanceRef i165))
+              (portRef I0 (instanceRef i164))
+              (portRef I0 (instanceRef i163))
+              (portRef I0 (instanceRef i162))
+              (portRef I0 (instanceRef i161))
+              (portRef I0 (instanceRef i160))
+              (portRef I0 (instanceRef i159))
+              (portRef I0 (instanceRef i158))
+              (portRef I0 (instanceRef i157))
+              (portRef O (instanceRef i168))
+              (portRef I0 (instanceRef i155))
+              (portRef I0 (instanceRef i552))
+            )
+          )
+          (net I_31_N_53_31
+            (joined
+              (portRef O (instanceRef i524))
+              (portRef I1 (instanceRef i154))
+            )
+          )
+          (net I_31_N_53_30
+            (joined
+              (portRef O (instanceRef i522))
+              (portRef I1 (instanceRef i155))
+            )
+          )
+          (net I_31_N_53_29
+            (joined
+              (portRef O (instanceRef i520))
+              (portRef I1 (instanceRef i156))
+            )
+          )
+          (net I_31_N_53_28
+            (joined
+              (portRef O (instanceRef i518))
+              (portRef I1 (instanceRef i157))
+            )
+          )
+          (net I_31_N_53_27
+            (joined
+              (portRef O (instanceRef i516))
+              (portRef I1 (instanceRef i158))
+            )
+          )
+          (net I_31_N_53_26
+            (joined
+              (portRef O (instanceRef i514))
+              (portRef I1 (instanceRef i159))
+            )
+          )
+          (net I_31_N_53_25
+            (joined
+              (portRef O (instanceRef i512))
+              (portRef I1 (instanceRef i160))
+            )
+          )
+          (net I_31_N_53_24
+            (joined
+              (portRef O (instanceRef i510))
+              (portRef I1 (instanceRef i161))
+            )
+          )
+          (net I_31_N_53_23
+            (joined
+              (portRef O (instanceRef i508))
+              (portRef I1 (instanceRef i162))
+            )
+          )
+          (net I_31_N_53_22
+            (joined
+              (portRef O (instanceRef i506))
+              (portRef I1 (instanceRef i163))
+            )
+          )
+          (net I_31_N_53_21
+            (joined
+              (portRef O (instanceRef i504))
+              (portRef I1 (instanceRef i164))
+            )
+          )
+          (net I_31_N_53_20
+            (joined
+              (portRef O (instanceRef i502))
+              (portRef I1 (instanceRef i165))
+            )
+          )
+          (net I_31_N_53_19
+            (joined
+              (portRef O (instanceRef i500))
+              (portRef I1 (instanceRef i166))
+            )
+          )
+          (net I_31_N_53_18
+            (joined
+              (portRef O (instanceRef i498))
+              (portRef I1 (instanceRef i169))
+            )
+          )
+          (net I_31_N_53_17
+            (joined
+              (portRef O (instanceRef i496))
+              (portRef I1 (instanceRef i170))
+            )
+          )
+          (net I_31_N_53_16
+            (joined
+              (portRef O (instanceRef i494))
+              (portRef I1 (instanceRef i171))
+            )
+          )
+          (net I_31_N_53_15
+            (joined
+              (portRef O (instanceRef i492))
+              (portRef I1 (instanceRef i172))
+            )
+          )
+          (net I_31_N_53_14
+            (joined
+              (portRef O (instanceRef i490))
+              (portRef I1 (instanceRef i173))
+            )
+          )
+          (net I_31_N_53_13
+            (joined
+              (portRef O (instanceRef i488))
+              (portRef I1 (instanceRef i174))
+            )
+          )
+          (net I_31_N_53_12
+            (joined
+              (portRef O (instanceRef i486))
+              (portRef I1 (instanceRef i175))
+            )
+          )
+          (net I_31_N_53_11
+            (joined
+              (portRef O (instanceRef i484))
+              (portRef I1 (instanceRef i176))
+            )
+          )
+          (net I_31_N_53_10
+            (joined
+              (portRef O (instanceRef i482))
+              (portRef I1 (instanceRef i177))
+            )
+          )
+          (net I_31_N_53_9
+            (joined
+              (portRef O (instanceRef i480))
+              (portRef I1 (instanceRef i178))
+            )
+          )
+          (net I_31_N_53_8
+            (joined
+              (portRef O (instanceRef i478))
+              (portRef I1 (instanceRef i179))
+            )
+          )
+          (net I_31_N_53_7
+            (joined
+              (portRef O (instanceRef i476))
+              (portRef I1 (instanceRef i180))
+            )
+          )
+          (net I_31_N_53_6
+            (joined
+              (portRef O (instanceRef i474))
+              (portRef I1 (instanceRef i181))
+            )
+          )
+          (net I_31_N_53_5
+            (joined
+              (portRef O (instanceRef i472))
+              (portRef I1 (instanceRef i182))
+            )
+          )
+          (net I_31_N_53_4
+            (joined
+              (portRef O (instanceRef i470))
+              (portRef I1 (instanceRef i183))
+            )
+          )
+          (net I_31_N_53_3
+            (joined
+              (portRef O (instanceRef i468))
+              (portRef I1 (instanceRef i184))
+            )
+          )
+          (net n688
+            (joined
+              (portRef O (instanceRef i549))
+              (portRef I0 (instanceRef i550))
+            )
+          )
+          (net I_31_N_53_1
+            (joined
+              (portRef O (instanceRef i466))
+              (portRef I1 (instanceRef i187))
+            )
+          )
+          (net I_31_N_1_31
+            (joined
+              (portRef O (instanceRef i154))
+              (portRef D (instanceRef I_i31))
+            )
+          )
+          (net I_31_N_1_30
+            (joined
+              (portRef O (instanceRef i155))
+              (portRef D (instanceRef I_i30))
+            )
+          )
+          (net I_31_N_1_29
+            (joined
+              (portRef O (instanceRef i156))
+              (portRef D (instanceRef I_i29))
+            )
+          )
+          (net I_31_N_1_28
+            (joined
+              (portRef O (instanceRef i157))
+              (portRef D (instanceRef I_i28))
+            )
+          )
+          (net I_31_N_1_27
+            (joined
+              (portRef O (instanceRef i158))
+              (portRef D (instanceRef I_i27))
+            )
+          )
+          (net I_31_N_1_26
+            (joined
+              (portRef O (instanceRef i159))
+              (portRef D (instanceRef I_i26))
+            )
+          )
+          (net I_31_N_1_25
+            (joined
+              (portRef O (instanceRef i160))
+              (portRef D (instanceRef I_i25))
+            )
+          )
+          (net I_31_N_1_24
+            (joined
+              (portRef O (instanceRef i161))
+              (portRef D (instanceRef I_i24))
+            )
+          )
+          (net I_31_N_1_23
+            (joined
+              (portRef O (instanceRef i162))
+              (portRef D (instanceRef I_i23))
+            )
+          )
+          (net I_31_N_1_22
+            (joined
+              (portRef O (instanceRef i163))
+              (portRef D (instanceRef I_i22))
+            )
+          )
+          (net I_31_N_1_21
+            (joined
+              (portRef O (instanceRef i164))
+              (portRef D (instanceRef I_i21))
+            )
+          )
+          (net I_31_N_1_20
+            (joined
+              (portRef O (instanceRef i165))
+              (portRef D (instanceRef I_i20))
+            )
+          )
+          (net I_31_N_1_19
+            (joined
+              (portRef O (instanceRef i166))
+              (portRef D (instanceRef I_i19))
+            )
+          )
+          (net I_31_N_1_18
+            (joined
+              (portRef O (instanceRef i169))
+              (portRef D (instanceRef I_i18))
+            )
+          )
+          (net I_31_N_1_17
+            (joined
+              (portRef O (instanceRef i170))
+              (portRef D (instanceRef I_i17))
+            )
+          )
+          (net I_31_N_1_16
+            (joined
+              (portRef O (instanceRef i171))
+              (portRef D (instanceRef I_i16))
+            )
+          )
+          (net I_31_N_1_15
+            (joined
+              (portRef O (instanceRef i172))
+              (portRef D (instanceRef I_i15))
+            )
+          )
+          (net I_31_N_1_14
+            (joined
+              (portRef O (instanceRef i173))
+              (portRef D (instanceRef I_i14))
+            )
+          )
+          (net I_31_N_1_13
+            (joined
+              (portRef O (instanceRef i174))
+              (portRef D (instanceRef I_i13))
+            )
+          )
+          (net I_31_N_1_12
+            (joined
+              (portRef O (instanceRef i175))
+              (portRef D (instanceRef I_i12))
+            )
+          )
+          (net I_31_N_1_11
+            (joined
+              (portRef O (instanceRef i176))
+              (portRef D (instanceRef I_i11))
+            )
+          )
+          (net I_31_N_1_10
+            (joined
+              (portRef O (instanceRef i177))
+              (portRef D (instanceRef I_i10))
+            )
+          )
+          (net I_31_N_1_9
+            (joined
+              (portRef O (instanceRef i178))
+              (portRef D (instanceRef I_i9))
+            )
+          )
+          (net I_31_N_1_8
+            (joined
+              (portRef O (instanceRef i179))
+              (portRef D (instanceRef I_i8))
+            )
+          )
+          (net I_31_N_1_7
+            (joined
+              (portRef O (instanceRef i180))
+              (portRef D (instanceRef I_i7))
+            )
+          )
+          (net I_31_N_1_6
+            (joined
+              (portRef O (instanceRef i181))
+              (portRef D (instanceRef I_i6))
+            )
+          )
+          (net I_31_N_1_5
+            (joined
+              (portRef O (instanceRef i182))
+              (portRef D (instanceRef I_i5))
+            )
+          )
+          (net I_31_N_1_4
+            (joined
+              (portRef O (instanceRef i183))
+              (portRef D (instanceRef I_i4))
+            )
+          )
+          (net I_31_N_1_3
+            (joined
+              (portRef O (instanceRef i184))
+              (portRef D (instanceRef I_i3))
+            )
+          )
+          (net I_31_N_1_2
+            (joined
+              (portRef O (instanceRef i553))
+              (portRef D (instanceRef I_i2))
+            )
+          )
+          (net I_31_N_1_1
+            (joined
+              (portRef O (instanceRef i187))
+              (portRef D (instanceRef I_i1))
+            )
+          )
+          (net I_31_N_1_0
+            (joined
+              (portRef O (instanceRef i556))
+              (portRef D (instanceRef I_i0))
+            )
+          )
+          (net n16
+            (joined
+              (portRef I0 (instanceRef i272))
+              (portRef I0 (instanceRef i1_adj_7))
+              (portRef O (instanceRef i264))
+            )
+          )
+          (net n716
+            (joined
+              (portRef I0 (instanceRef i578))
+              (portRef O (instanceRef i577))
+            )
+          )
+          (net n714
+            (joined
+              (portRef I1 (instanceRef i577))
+              (portRef O (instanceRef i575))
+            )
+          )
+          (net n713
+            (joined
+              (portRef O (instanceRef i574))
+              (portRef I0 (instanceRef i575))
+            )
+          )
+          (net n711
+            (joined
+              (portRef I1 (instanceRef i568))
+              (portRef O (instanceRef i572))
+            )
+          )
+          (net n14
+            (joined
+              (portRef I0 (instanceRef i264))
+              (portRef I0 (instanceRef i1_adj_5))
+              (portRef O (instanceRef i256))
+            )
+          )
+          (net n10
+            (joined
+              (portRef I0 (instanceRef i248))
+              (portRef I0 (instanceRef i1_adj_22))
+              (portRef O (instanceRef i240))
+            )
+          )
+          (net n58
+            (joined
+              (portRef O (instanceRef i27))
+              (portRef I0 (instanceRef i30))
+            )
+          )
+          (net n8
+            (joined
+              (portRef I0 (instanceRef i240))
+              (portRef I0 (instanceRef i1_adj_27))
+              (portRef O (instanceRef i232))
+            )
+          )
+          (net n6
+            (joined
+              (portRef I0 (instanceRef i232))
+              (portRef I0 (instanceRef i1_adj_10))
+              (portRef O (instanceRef i224))
+            )
+          )
+          (net n57
+            (joined
+              (portRef O (instanceRef i26))
+              (portRef I4 (instanceRef i30))
+            )
+          )
+          (net FUT_2_N_38_2
+            (joined
+              (portRef I1 (instanceRef i190))
+              (portRef I1 (instanceRef i586))
+              (portRef O (instanceRef i563))
+              (portRef I0 (instanceRef FUT_2__N_86_I_0_37))
+              (portRef I1 (instanceRef i148))
+            )
+          )
+          (net n4
+            (joined
+              (portRef I0 (instanceRef i224))
+              (portRef I0 (instanceRef i1_adj_4))
+              (portRef O (instanceRef i216))
+            )
+          )
+          (net n710
+            (joined
+              (portRef O (instanceRef i571))
+              (portRef I0 (instanceRef i572))
+            )
+          )
+          (net n690
+            (joined
+              (portRef O (instanceRef i551))
+              (portRef I1 (instanceRef i553))
+            )
+          )
+          (net n56
+            (joined
+              (portRef O (instanceRef i25))
+              (portRef I3 (instanceRef i30))
+            )
+          )
+          (net FUT_2_N_35_1
+            (joined
+              (portRef O (instanceRef FUT_2__N_86_I_0_37))
+              (portRef I2 (instanceRef i573))
+              (portRef I1 (instanceRef i585))
+            )
+          )
+          (net n708
+            (joined
+              (portRef O (instanceRef i569))
+              (portRef I1 (instanceRef i561))
+            )
+          )
+          (net n687
+            (joined
+              (portRef O (instanceRef i548))
+              (portRef I1 (instanceRef i550))
+            )
+          )
+          (net (rename DISPLAY_6_ "DISPLAY[6]")
+            (joined
+              (portRef (member DISPLAY_c 0))
+              (portRef O (instanceRef DISPLAY_pad_6))
+            )
+          )
+          (net n62
+            (joined
+              (portRef I0 (instanceRef i1_adj_12))
+              (portRef O (instanceRef i448))
+            )
+          )
+          (net n308
+            (joined
+              (portRef O (instanceRef i167))
+              (portRef I0 (instanceRef i168))
+            )
+          )
+          (net n293
+            (joined
+              (portRef O (instanceRef i152))
+              (portRef I0 (instanceRef i562))
+              (portRef I0 (instanceRef i567))
+            )
+          )
+          (net n60
+            (joined
+              (portRef I0 (instanceRef i448))
+              (portRef I0 (instanceRef i1_adj_13))
+              (portRef O (instanceRef i440))
+            )
+          )
+          (net n58_adj_1
+            (joined
+              (portRef I0 (instanceRef i440))
+              (portRef I0 (instanceRef i1_adj_14))
+              (portRef O (instanceRef i432))
+            )
+          )
+          (net n56_adj_2
+            (joined
+              (portRef I0 (instanceRef i432))
+              (portRef I0 (instanceRef i1_adj_15))
+              (portRef O (instanceRef i424))
+            )
+          )
+          (net n655
+            (joined
+              (portRef I0 (instanceRef i516))
+              (portRef O (instanceRef i1_adj_18))
+            )
+          )
+          (net n54
+            (joined
+              (portRef I0 (instanceRef i424))
+              (portRef I0 (instanceRef i1_adj_18))
+              (portRef O (instanceRef i416))
+            )
+          )
+          (net n653
+            (joined
+              (portRef I0 (instanceRef i514))
+              (portRef O (instanceRef i1_adj_20))
+            )
+          )
+          (net n52
+            (joined
+              (portRef I0 (instanceRef i416))
+              (portRef I0 (instanceRef i1_adj_20))
+              (portRef O (instanceRef i408))
+            )
+          )
+          (net n651
+            (joined
+              (portRef I0 (instanceRef i512))
+              (portRef O (instanceRef i1_adj_21))
+            )
+          )
+          (net n50
+            (joined
+              (portRef I0 (instanceRef i408))
+              (portRef I0 (instanceRef i1_adj_21))
+              (portRef O (instanceRef i400))
+            )
+          )
+          (net n649
+            (joined
+              (portRef I0 (instanceRef i510))
+              (portRef O (instanceRef i1_adj_23))
+            )
+          )
+          (net n48
+            (joined
+              (portRef I0 (instanceRef i400))
+              (portRef I0 (instanceRef i1_adj_23))
+              (portRef O (instanceRef i392))
+            )
+          )
+          (net n647
+            (joined
+              (portRef I0 (instanceRef i508))
+              (portRef O (instanceRef i1_adj_24))
+            )
+          )
+          (net n46
+            (joined
+              (portRef I0 (instanceRef i392))
+              (portRef I0 (instanceRef i1_adj_24))
+              (portRef O (instanceRef i384))
+            )
+          )
+          (net n645
+            (joined
+              (portRef I0 (instanceRef i506))
+              (portRef O (instanceRef i1_adj_25))
+            )
+          )
+          (net n643
+            (joined
+              (portRef I0 (instanceRef i504))
+              (portRef O (instanceRef i1_adj_26))
+            )
+          )
+          (net n641
+            (joined
+              (portRef I0 (instanceRef i502))
+              (portRef O (instanceRef i1_adj_30))
+            )
+          )
+          (net n44
+            (joined
+              (portRef I0 (instanceRef i384))
+              (portRef I0 (instanceRef i1_adj_25))
+              (portRef O (instanceRef i376))
+            )
+          )
+          (net n639
+            (joined
+              (portRef I0 (instanceRef i500))
+              (portRef O (instanceRef i1_adj_31))
+            )
+          )
+          (net n42
+            (joined
+              (portRef I0 (instanceRef i376))
+              (portRef I0 (instanceRef i1_adj_26))
+              (portRef O (instanceRef i368))
+            )
+          )
+          (net n637
+            (joined
+              (portRef I0 (instanceRef i498))
+              (portRef O (instanceRef i1_adj_32))
+            )
+          )
+          (net n635
+            (joined
+              (portRef I0 (instanceRef i496))
+              (portRef O (instanceRef i1_adj_33))
+            )
+          )
+          (net n633
+            (joined
+              (portRef I0 (instanceRef i494))
+              (portRef O (instanceRef i1_adj_28))
+            )
+          )
+          (net n40
+            (joined
+              (portRef I0 (instanceRef i368))
+              (portRef I0 (instanceRef i1_adj_30))
+              (portRef O (instanceRef i360))
+            )
+          )
+          (net n631
+            (joined
+              (portRef I0 (instanceRef i492))
+              (portRef O (instanceRef i1_adj_1))
+            )
+          )
+          (net n629
+            (joined
+              (portRef I0 (instanceRef i490))
+              (portRef O (instanceRef i1_adj_6))
+            )
+          )
+          (net n627
+            (joined
+              (portRef I0 (instanceRef i488))
+              (portRef O (instanceRef i1_adj_35))
+            )
+          )
+          (net n38
+            (joined
+              (portRef I0 (instanceRef i360))
+              (portRef I0 (instanceRef i1_adj_31))
+              (portRef O (instanceRef i352))
+            )
+          )
+          (net n625
+            (joined
+              (portRef I0 (instanceRef i486))
+              (portRef O (instanceRef i1_adj_19))
+            )
+          )
+          (net n721
+            (joined
+              (portRef I1 (instanceRef i584))
+              (portRef O (instanceRef i582))
+            )
+          )
+          (net n623
+            (joined
+              (portRef I0 (instanceRef i484))
+              (portRef O (instanceRef i1_adj_11))
+            )
+          )
+          (net n621
+            (joined
+              (portRef I0 (instanceRef i482))
+              (portRef O (instanceRef i1_adj_9))
+            )
+          )
+          (net n619
+            (joined
+              (portRef I0 (instanceRef i480))
+              (portRef O (instanceRef i1_adj_29))
+            )
+          )
+          (net n4_adj_3
+            (joined
+              (portRef I1 (instanceRef i579))
+              (portRef O (instanceRef i190))
+            )
+          )
+          (net n617
+            (joined
+              (portRef I0 (instanceRef i478))
+              (portRef O (instanceRef i1_adj_7))
+            )
+          )
+          (net n602
+            (joined
+              (portRef O (instanceRef i30))
+              (portRef I1 (instanceRef i168))
+            )
+          )
+          (net n20
+            (joined
+              (portRef I0 (instanceRef i288))
+              (portRef I0 (instanceRef i1_adj_9))
+              (portRef O (instanceRef i280))
+            )
+          )
+          (net n30
+            (joined
+              (portRef I0 (instanceRef i328))
+              (portRef I0 (instanceRef i1_adj_1))
+              (portRef O (instanceRef i320))
+            )
+          )
+          (net n54_adj_4
+            (joined
+              (portRef O (instanceRef i23))
+              (portRef I0 (instanceRef i27))
+            )
+          )
+          (net n1
+            (joined
+              (portRef I0 (instanceRef i582))
+              (portRef O (instanceRef i148))
+              (portRef I1 (instanceRef i138))
+            )
+          )
+          (net n707
+            (joined
+              (portRef O (instanceRef i568))
+              (portRef I0 (instanceRef i569))
+            )
+          )
+          (net n615
+            (joined
+              (portRef I0 (instanceRef i476))
+              (portRef O (instanceRef i1_adj_5))
+            )
+          )
+          (net n36
+            (joined
+              (portRef I0 (instanceRef i352))
+              (portRef I0 (instanceRef i1_adj_32))
+              (portRef O (instanceRef i344))
+            )
+          )
+          (net n705
+            (joined
+              (portRef I2 (instanceRef i562))
+              (portRef O (instanceRef i566))
+            )
+          )
+          (net n613
+            (joined
+              (portRef I0 (instanceRef i474))
+              (portRef O (instanceRef i1_adj_17))
+            )
+          )
+          (net n53
+            (joined
+              (portRef O (instanceRef i22))
+              (portRef I1 (instanceRef i27))
+            )
+          )
+          (net n34
+            (joined
+              (portRef I0 (instanceRef i344))
+              (portRef I0 (instanceRef i1_adj_33))
+              (portRef O (instanceRef i336))
+            )
+          )
+          (net n706
+            (joined
+              (portRef I1 (instanceRef i569))
+              (portRef O (instanceRef i567))
+            )
+          )
+          (net n709
+            (joined
+              (portRef I1 (instanceRef i572))
+              (portRef O (instanceRef i570))
+            )
+          )
+          (net n715
+            (joined
+              (portRef I1 (instanceRef i578))
+              (portRef O (instanceRef i576))
+            )
+          )
+          (net n699
+            (joined
+              (portRef O (instanceRef i560))
+              (portRef I0 (instanceRef i561))
+            )
+          )
+          (net (rename ENTRADA_0_ "ENTRADA[0]")
+            (joined
+              (portRef (member ENTRADA 5))
+              (portRef I0 (instanceRef ENTRADA_pad_0))
+            )
+          )
+          (net (rename ENTRADA_1_ "ENTRADA[1]")
+            (joined
+              (portRef (member ENTRADA 4))
+              (portRef I0 (instanceRef ENTRADA_pad_1))
+            )
+          )
+          (net n611
+            (joined
+              (portRef I0 (instanceRef i472))
+              (portRef O (instanceRef i1_adj_22))
+            )
+          )
+          (net n28
+            (joined
+              (portRef I0 (instanceRef i320))
+              (portRef I0 (instanceRef i1_adj_6))
+              (portRef O (instanceRef i312))
+            )
+          )
+          (net n609
+            (joined
+              (portRef I0 (instanceRef i470))
+              (portRef O (instanceRef i1_adj_27))
+            )
+          )
+          (net (rename ENTRADA_2_ "ENTRADA[2]")
+            (joined
+              (portRef (member ENTRADA 3))
+              (portRef I0 (instanceRef ENTRADA_pad_2))
+            )
+          )
+          (net (rename ENTRADA_3_ "ENTRADA[3]")
+            (joined
+              (portRef (member ENTRADA 2))
+              (portRef I0 (instanceRef ENTRADA_pad_3))
+            )
+          )
+          (net (rename ENTRADA_4_ "ENTRADA[4]")
+            (joined
+              (portRef (member ENTRADA 1))
+              (portRef I0 (instanceRef ENTRADA_pad_4))
+            )
+          )
+          (net n5
+            (joined
+              (portRef O (instanceRef i124))
+              (portRef I1 (instanceRef i580))
+              (portRef I1 (instanceRef i574))
+              (portRef I0 (instanceRef i1_adj_34))
+              (portRef I1 (instanceRef i151))
+            )
+          )
+          (net n26
+            (joined
+              (portRef I0 (instanceRef i312))
+              (portRef O (instanceRef i304))
+              (portRef I0 (instanceRef i1_adj_35))
+            )
+          )
+          (net (rename ENTRADA_5_ "ENTRADA[5]")
+            (joined
+              (portRef (member ENTRADA 0))
+              (portRef I0 (instanceRef ENTRADA_pad_5))
+            )
+          )
+          (net CLK
+            (joined
+              (portRef CLK)
+              (portRef I0 (instanceRef CLK_pad))
+            )
+          )
+          (net CLR
+            (joined
+              (portRef CLR)
+              (portRef I0 (instanceRef CLR_pad))
+            )
+          )
+          (net n607
+            (joined
+              (portRef I0 (instanceRef i468))
+              (portRef O (instanceRef i1_adj_10))
+            )
+          )
+          (net n24
+            (joined
+              (portRef I0 (instanceRef i304))
+              (portRef I0 (instanceRef i1_adj_19))
+              (portRef O (instanceRef i296))
+            )
+          )
+          (net n3
+            (joined
+              (portRef I1 (instanceRef i576))
+              (portRef O (instanceRef i138))
+            )
+          )
+          (net (rename DISPLAY_0_ "DISPLAY[0]")
+            (joined
+              (portRef (member DISPLAY_c 6))
+              (portRef O (instanceRef DISPLAY_pad_0))
+            )
+          )
+          (net (rename DISPLAY_1_ "DISPLAY[1]")
+            (joined
+              (portRef (member DISPLAY_c 5))
+              (portRef O (instanceRef DISPLAY_pad_1))
+            )
+          )
+          (net (rename DISPLAY_2_ "DISPLAY[2]")
+            (joined
+              (portRef (member DISPLAY_c 4))
+              (portRef O (instanceRef DISPLAY_pad_2))
+            )
+          )
+          (net n605
+            (joined
+              (portRef I0 (instanceRef i466))
+              (portRef O (instanceRef i1_adj_16))
+            )
+          )
+          (net n22
+            (joined
+              (portRef I0 (instanceRef i296))
+              (portRef I0 (instanceRef i1_adj_11))
+              (portRef O (instanceRef i288))
+            )
+          )
+          (net n32
+            (joined
+              (portRef I0 (instanceRef i336))
+              (portRef I0 (instanceRef i1_adj_28))
+              (portRef O (instanceRef i328))
+            )
+          )
+          (net (rename DISPLAY_3_ "DISPLAY[3]")
+            (joined
+              (portRef (member DISPLAY_c 3))
+              (portRef O (instanceRef DISPLAY_pad_3))
+            )
+          )
+          (net (rename DISPLAY_4_ "DISPLAY[4]")
+            (joined
+              (portRef (member DISPLAY_c 2))
+              (portRef O (instanceRef DISPLAY_pad_4))
+            )
+          )
+          (net (rename DISPLAY_5_ "DISPLAY[5]")
+            (joined
+              (portRef (member DISPLAY_c 1))
+              (portRef O (instanceRef DISPLAY_pad_5))
+            )
+          )
+          (net n603
+            (joined
+              (portRef I0 (instanceRef i551))
+              (portRef O (instanceRef i1_adj_4))
+            )
+          )
+          (net n663
+            (joined
+              (portRef I0 (instanceRef i524))
+              (portRef O (instanceRef i1_adj_12))
+            )
+          )
+          (net n52_adj_5
+            (joined
+              (portRef O (instanceRef i21))
+              (portRef I0 (instanceRef i26))
+            )
+          )
+          (net n51
+            (joined
+              (portRef O (instanceRef i20))
+              (portRef I1 (instanceRef i26))
+            )
+          )
+          (net n704
+            (joined
+              (portRef O (instanceRef i565))
+              (portRef I0 (instanceRef i566))
+            )
+          )
+          (net n50_adj_6
+            (joined
+              (portRef O (instanceRef i19))
+              (portRef I0 (instanceRef i25))
+            )
+          )
+          (net n49
+            (joined
+              (portRef O (instanceRef i18))
+              (portRef I1 (instanceRef i25))
+            )
+          )
+          (net n40_adj_7
+            (joined
+              (portRef O (instanceRef i9))
+              (portRef I0 (instanceRef i20))
+            )
+          )
+          (net n39
+            (joined
+              (portRef O (instanceRef i8))
+              (portRef I1 (instanceRef i20))
+            )
+          )
+          (net n33
+            (joined
+              (portRef O (instanceRef i2))
+              (portRef I1 (instanceRef i17))
+            )
+          )
+          (net n38_adj_8
+            (joined
+              (portRef O (instanceRef i7))
+              (portRef I0 (instanceRef i19))
+            )
+          )
+          (net n703
+            (joined
+              (portRef I1 (instanceRef i566))
+              (portRef O (instanceRef i564))
+            )
+          )
+          (net n48_adj_9
+            (joined
+              (portRef O (instanceRef i17))
+              (portRef I2 (instanceRef i30))
+            )
+          )
+          (net n701
+            (joined
+              (portRef O (instanceRef i562))
+              (portRef I0 (instanceRef i563))
+            )
+          )
+          (net n698
+            (joined
+              (portRef I1 (instanceRef i567))
+              (portRef O (instanceRef i559))
+            )
+          )
+          (net n694
+            (joined
+              (portRef O (instanceRef i555))
+              (portRef I0 (instanceRef i556))
+            )
+          )
+          (net n46_adj_10
+            (joined
+              (portRef O (instanceRef i15))
+              (portRef I0 (instanceRef i23))
+            )
+          )
+          (net n697
+            (joined
+              (portRef O (instanceRef i558))
+              (portRef I0 (instanceRef i559))
+            )
+          )
+          (net n45
+            (joined
+              (portRef O (instanceRef i14))
+              (portRef I1 (instanceRef i23))
+            )
+          )
+          (net n691
+            (joined
+              (portRef O (instanceRef i552))
+              (portRef I0 (instanceRef i553))
+            )
+          )
+          (net n696
+            (joined
+              (portRef O (instanceRef i557))
+              (portRef I1 (instanceRef i559))
+            )
+          )
+          (net n44_adj_11
+            (joined
+              (portRef O (instanceRef i13))
+              (portRef I0 (instanceRef i22))
+            )
+          )
+          (net n37
+            (joined
+              (portRef O (instanceRef i6))
+              (portRef I1 (instanceRef i19))
+            )
+          )
+          (net n32_adj_12
+            (joined
+              (portRef O (instanceRef i1_adj_8))
+              (portRef I1 (instanceRef i30))
+            )
+          )
+          (net n36_adj_13
+            (joined
+              (portRef O (instanceRef i5))
+              (portRef I0 (instanceRef i18))
+            )
+          )
+          (net n693
+            (joined
+              (portRef O (instanceRef i554))
+              (portRef I0 (instanceRef i557))
+              (portRef I0 (instanceRef i570))
+              (portRef I1 (instanceRef i556))
+              (portRef I0 (instanceRef i564))
+            )
+          )
+          (net n43
+            (joined
+              (portRef O (instanceRef i12))
+              (portRef I1 (instanceRef i22))
+            )
+          )
+          (net n42_adj_14
+            (joined
+              (portRef O (instanceRef i11))
+              (portRef I0 (instanceRef i21))
+            )
+          )
+          (net n725
+            (joined
+              (portRef O (instanceRef i586))
+              (portRef I0 (instanceRef i587))
+            )
+          )
+          (net n41
+            (joined
+              (portRef O (instanceRef i10))
+              (portRef I1 (instanceRef i21))
+            )
+          )
+          (net n9
+            (joined
+              (portRef I0 (instanceRef i586))
+              (portRef O (instanceRef i1_adj_34))
+            )
+          )
+          (net n35
+            (joined
+              (portRef O (instanceRef i4_adj_3))
+              (portRef I1 (instanceRef i18))
+            )
+          )
+          (net n4_adj_15
+            (joined
+              (portRef O (instanceRef i4))
+              (portRef I0 (instanceRef i579))
+              (portRef I2 (instanceRef i586))
+              (portRef I1 (instanceRef i573))
+            )
+          )
+          (net n34_adj_16
+            (joined
+              (portRef O (instanceRef i3))
+              (portRef I0 (instanceRef i17))
+            )
+          )
+          (net n724
+            (joined
+              (portRef I1 (instanceRef i587))
+              (portRef O (instanceRef i585))
+            )
+          )
+          (net n1_adj_17
+            (joined
+              (portRef O (instanceRef i1_adj_2))
+              (portRef I1 (instanceRef i582))
+              (portRef I2 (instanceRef i585))
+              (portRef I0 (instanceRef i576))
+            )
+          )
+          (net n722
+            (joined
+              (portRef O (instanceRef i583))
+              (portRef I0 (instanceRef i584))
+            )
+          )
+          (net n720
+            (joined
+              (portRef I1 (instanceRef i583))
+              (portRef O (instanceRef i581))
+            )
+          )
+          (net n719
+            (joined
+              (portRef O (instanceRef i580))
+              (portRef I0 (instanceRef i581))
+            )
+          )
+          (net n718
+            (joined
+              (portRef I1 (instanceRef i581))
+              (portRef O (instanceRef i579))
+            )
+          )
+          (net n700
+            (joined
+              (portRef O (instanceRef i561))
+              (portRef I1 (instanceRef i563))
+            )
+          )
+        )
+      )
+    )
+  )
+  (design TECH
+    (cellRef SEC (libraryref work))
+  )
+)

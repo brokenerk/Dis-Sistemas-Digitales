@@ -1,0 +1,102 @@
+#PLAFILE     contreg.bl5
+#DATE        Thu May 24 19:35:10 2018
+
+#DESIGN      contreg
+#DEVICE      MACH4S-256
+
+
+// Default settings.
+DATA GLOBAL tINDIO:0
+
+
+// Signal locations
+DATA LOCATION clk:*_*_128
+DATA LOCATION clr:C_*_4
+DATA LOCATION i_7_:D_*_13
+DATA LOCATION e_3_:D_*_14
+DATA LOCATION i_6_:D_*_12
+DATA LOCATION i_5_:D_*_11
+DATA LOCATION i_4_:C_*_9
+DATA LOCATION i_3_:C_*_8
+DATA LOCATION i_2_:C_*_7
+DATA LOCATION i_1_:C_*_6
+DATA LOCATION i_0_:C_*_5
+DATA LOCATION e_2_:D_*_15
+DATA LOCATION e_1_:D_*_16
+DATA LOCATION e_0_:*_*_17
+DATA LOCATION q_2_:K_7_79
+DATA LOCATION q_1_:K_11_78
+DATA LOCATION q_0_:K_1_77
+DATA LOCATION q_3_:K_5_80
+DATA LOCATION contador_i0_i2:E_4
+DATA LOCATION contador_i0_i1:F_4
+DATA LOCATION contador_i0_i0:G_4
+DATA LOCATION n110:O_2
+DATA LOCATION c_2_N_13_0:A_7
+DATA LOCATION c_2_N_4_2:B_3
+DATA LOCATION c_2_N_4_1:B_9
+DATA LOCATION n304:O_5
+DATA LOCATION n326:O_10
+DATA LOCATION n413:K_3
+
+// Signals direction
+DATA IO_DIR clk:IN
+DATA IO_DIR clr:IN
+DATA IO_DIR i_7_:IN
+DATA IO_DIR e_3_:IN
+DATA IO_DIR i_6_:IN
+DATA IO_DIR i_5_:IN
+DATA IO_DIR i_4_:IN
+DATA IO_DIR i_3_:IN
+DATA IO_DIR i_2_:IN
+DATA IO_DIR i_1_:IN
+DATA IO_DIR i_0_:IN
+DATA IO_DIR e_2_:IN
+DATA IO_DIR e_1_:IN
+DATA IO_DIR e_0_:IN
+DATA IO_DIR q_2_:OUT
+DATA IO_DIR q_1_:OUT
+DATA IO_DIR q_0_:OUT
+DATA IO_DIR q_3_:OUT
+
+// Global Clocks
+DATA GLB_CLOCK clk:0
+
+// Signals using Shared Clock or CE
+DATA tBCLK q_3_.CE
+DATA tBCLK contador_i0_i2.CE
+DATA tBCLK contador_i0_i1.CE
+DATA tBCLK contador_i0_i0.CE
+
+// Signals using Shared Init Pterm
+DATA tBSR q_3_.AR
+DATA tBSR contador_i0_i2.AR
+DATA tBSR contador_i0_i1.AR
+DATA tBSR contador_i0_i0.AR
+
+// Block Load Adders
+DATA tBLA i_1_:5
+DATA tBLA c_2_N_13_0:4
+DATA tBLA i_0_:4
+DATA tBLA n413:3
+DATA tBLA n326:3
+DATA tBLA n304:3
+DATA tBLA contador_i0_i0:3
+DATA tBLA contador_i0_i1:3
+DATA tBLA clr:3
+DATA tBLA n110:2
+DATA tBLA contador_i0_i2:2
+DATA tBLA q_3_:2
+DATA tBLA c_2_N_4_1:1
+DATA tBLA c_2_N_4_2:1
+DATA tBLA i_6_:1
+DATA tBLA i_5_:1
+DATA tBLA i_4_:1
+DATA tBLA i_3_:1
+DATA tBLA i_2_:1
+
+// Signals using OSM or fast 5-PTs path
+DATA tOSM q_2_
+DATA tOSM q_1_
+DATA tOSM q_0_
+DATA tOSM q_3_

@@ -1,0 +1,1 @@
+project -fileorder "C:/users/yakertaker/desktop/cpld/Sumador.vhd" 

@@ -1,0 +1,26 @@
+Design: 08:57 p.m., Martes, 27 de Febrero de 2018
+Design: Opening design "F:\Diseño S Digitales\P2DSD\FFD\vhd\FFD\FFD.adf"
+Compilation with file reorder...
+File: F:\Diseño S Digitales\P2DSD\FFD\vhd\FFD.vhd
+Compile Entity "ffd"
+Compile Architecture "DSMB" of Entity "ffd"
+Top-Level unit detected
+Entity  =>   ffd
+Compile success 0 Errors 0 Warnings  Analysis time :  4.0 [s]
+ELBREAD: Elaboration process.
+ELBREAD: Elaboration time 0.8 [s].
+ELBREAD: Elaboration process.
+ELBREAD: Elaboration time 0.6 [s].
+KERNEL: Main thread initiated.
+KERNEL: Kernel process initialization phase.
+ELAB2: Elaboration final pass...
+ELAB2: Elaboration final pass complete - time: 0.4 [s].
+KERNEL: Kernel process initialization done.
+09:00 p.m., Martes, 27 de Febrero de 2018
+Simulation has been initialized
+Selected Top-Level: ffd (DSMB)
+KERNEL: stopped at time: 100 ns
+KERNEL: stopped at time: 200 ns
+KERNEL: stopped at time: 300 ns
+KERNEL: stopped at time: 400 ns
+Simulation has been stopped

@@ -1,0 +1,185 @@
+ ispLEVER Classic 2.0.00.17.20.15 Linked Equations File
+Copyright(C), 1992-2015, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design contador created  Mon Apr 16 17:02:02 2018
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1/1        1        1    Pin   Q_9_.CE 
+   1          1        1    Pin   Q_9_.AR 
+   1         10        1    Pin   Q_9_.T 
+   1/1        1        1    Pin   Q_9_.C 
+   1/1        1        1    Pin   Q_8_.CE 
+   1          1        1    Pin   Q_8_.AR 
+   1          9        1    Pin   Q_8_.T 
+   1/1        1        1    Pin   Q_8_.C 
+   1/1        1        1    Pin   Q_7_.CE 
+   1          1        1    Pin   Q_7_.AR 
+   1          8        1    Pin   Q_7_.T 
+   1/1        1        1    Pin   Q_7_.C 
+   1/1        1        1    Pin   Q_6_.CE 
+   1          1        1    Pin   Q_6_.AR 
+   1          7        1    Pin   Q_6_.T 
+   1/1        1        1    Pin   Q_6_.C 
+   1/1        1        1    Pin   Q_5_.CE 
+   1          1        1    Pin   Q_5_.AR 
+   1          6        1    Pin   Q_5_.T 
+   1/1        1        1    Pin   Q_5_.C 
+   1/1        1        1    Pin   Q_4_.CE 
+   1          1        1    Pin   Q_4_.AR 
+   1          5        1    Pin   Q_4_.T 
+   1/1        1        1    Pin   Q_4_.C 
+   1          5        1    PinX1  Q_3_.D.X1 
+   1          5        1    PinX2  Q_3_.D.X2 
+   1/1        1        1    Pin   Q_3_.CE 
+   1          1        1    Pin   Q_3_.AR 
+   1/1        1        1    Pin   Q_3_.C 
+   1/1        1        1    Pin   Q_2_.CE 
+   1          1        1    Pin   Q_2_.AR 
+   4          4        1    Pin   Q_2_.D 
+   1/1        1        1    Pin   Q_2_.C 
+   1/1        1        1    Pin   Q_1_.CE 
+   1          1        1    Pin   Q_1_.AR 
+   3          3        1    Pin   Q_1_.D 
+   1/1        1        1    Pin   Q_1_.C 
+   1          1        1    Pin   Q_0_.AR 
+   2          2        1    Pin   Q_0_.D 
+   1/1        1        1    Pin   Q_0_.C 
+=========
+  46/19         Best P-Term Total: 46
+                       Total Pins: 13
+                      Total Nodes: 0
+            Average P-Term/Output: 1
+
+
+Equations:
+
+Q_9_.CE = (C);
+
+Q_9_.AR = (!CLR);
+
+Q_9_.T = (C & Q_8_.Q & Q_7_.Q & Q_6_.Q & Q_5_.Q & Q_4_.Q & Q_3_.Q & Q_2_.Q & Q_1_.Q & Q_0_.Q);
+
+Q_9_.C = (CLK);
+
+Q_8_.CE = (C);
+
+Q_8_.AR = (!CLR);
+
+Q_8_.T = (C & Q_7_.Q & Q_6_.Q & Q_5_.Q & Q_4_.Q & Q_3_.Q & Q_2_.Q & Q_1_.Q & Q_0_.Q);
+
+Q_8_.C = (CLK);
+
+Q_7_.CE = (C);
+
+Q_7_.AR = (!CLR);
+
+Q_7_.T = (C & Q_6_.Q & Q_5_.Q & Q_4_.Q & Q_3_.Q & Q_2_.Q & Q_1_.Q & Q_0_.Q);
+
+Q_7_.C = (CLK);
+
+Q_6_.CE = (C);
+
+Q_6_.AR = (!CLR);
+
+Q_6_.T = (C & Q_5_.Q & Q_4_.Q & Q_3_.Q & Q_2_.Q & Q_1_.Q & Q_0_.Q);
+
+Q_6_.C = (CLK);
+
+Q_5_.CE = (C);
+
+Q_5_.AR = (!CLR);
+
+Q_5_.T = (C & Q_4_.Q & Q_3_.Q & Q_2_.Q & Q_1_.Q & Q_0_.Q);
+
+Q_5_.C = (CLK);
+
+Q_4_.CE = (C);
+
+Q_4_.AR = (!CLR);
+
+Q_4_.T = (C & Q_3_.Q & Q_2_.Q & Q_1_.Q & Q_0_.Q);
+
+Q_4_.C = (CLK);
+
+Q_3_.D.X1 = (Q_3_.Q);
+
+Q_3_.D.X2 = (C & Q_2_.Q & Q_1_.Q & Q_0_.Q);
+
+Q_3_.CE = (C);
+
+Q_3_.AR = (!CLR);
+
+Q_3_.C = (CLK);
+
+Q_2_.CE = (C);
+
+Q_2_.AR = (!CLR);
+
+Q_2_.D = (C & !Q_2_.Q & Q_1_.Q & Q_0_.Q
+     # Q_2_.Q & !Q_1_.Q
+     # !C & Q_2_.Q
+     # Q_2_.Q & !Q_0_.Q);
+
+Q_2_.C = (CLK);
+
+Q_1_.CE = (C);
+
+Q_1_.AR = (!CLR);
+
+Q_1_.D = (C & !Q_1_.Q & Q_0_.Q
+     # !C & Q_1_.Q
+     # Q_1_.Q & !Q_0_.Q);
+
+Q_1_.C = (CLK);
+
+Q_0_.AR = (!CLR);
+
+Q_0_.D = (C & !Q_0_.Q
+     # !C & Q_0_.Q);
+
+Q_0_.C = (CLK);
+
+
+Reverse-Polarity Equations:
+
+!Q_9_.CE = (!C);
+
+!Q_9_.C = (!CLK);
+
+!Q_8_.CE = (!C);
+
+!Q_8_.C = (!CLK);
+
+!Q_7_.CE = (!C);
+
+!Q_7_.C = (!CLK);
+
+!Q_6_.CE = (!C);
+
+!Q_6_.C = (!CLK);
+
+!Q_5_.CE = (!C);
+
+!Q_5_.C = (!CLK);
+
+!Q_4_.CE = (!C);
+
+!Q_4_.C = (!CLK);
+
+!Q_3_.CE = (!C);
+
+!Q_3_.C = (!CLK);
+
+!Q_2_.CE = (!C);
+
+!Q_2_.C = (!CLK);
+
+!Q_1_.CE = (!C);
+
+!Q_1_.C = (!CLK);
+
+!Q_0_.C = (!CLK);
+

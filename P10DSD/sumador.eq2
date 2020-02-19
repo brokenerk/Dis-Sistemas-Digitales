@@ -1,0 +1,347 @@
+ ispLEVER Classic 2.0.00.17.20.15 Linked Equations File
+Copyright(C), 1992-2015, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design reg10 created  Sun Jun 03 14:03:41 2018
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1          3        1    Pin   q_3_.CE 
+   1          1        1    Pin   q_3_.AR 
+   1/1        1        1    Pin   q_3_.D 
+   1/1        1        1    Pin   q_3_.C 
+   1/1        1        1    Pin   Carry.CE- 
+   1          1        1    Pin   Carry.AR 
+   3          3        1    Pin   Carry.D 
+   1/1        1        1    Pin   Carry.C 
+   1          3        1    Pin   q_2_.CE 
+   1          1        1    Pin   q_2_.AR 
+   1/1        1        1    Pin   q_2_.D 
+   1/1        1        1    Pin   q_2_.C 
+   1          3        1    Pin   q_1_.CE 
+   1          1        1    Pin   q_1_.AR 
+   1/1        1        1    Pin   q_1_.D 
+   1/1        1        1    Pin   q_1_.C 
+   1          3        1    Pin   q_0_.CE 
+   1          1        1    Pin   q_0_.AR 
+   1/1        1        1    Pin   q_0_.D 
+   1/1        1        1    Pin   q_0_.C 
+   2          2        1    Node  un4_c 
+   1/1        1        1    Node  contador_0_.CE- 
+   1          1        1    Node  contador_0_.AR 
+   1          1        1    Node  contador_0_.D 
+   1/1        1        1    Node  contador_0_.C 
+   1/1        1        1    Node  contador_1_.CE- 
+   1          1        1    Node  contador_1_.AR 
+   2          2        1    Node  contador_1_.D 
+   1/1        1        1    Node  contador_1_.C 
+   1/1        1        1    Node  contador_3_.CE- 
+   1          1        1    Node  contador_3_.AR 
+   4          4        1    Node  contador_3_.D 
+   1/1        1        1    Node  contador_3_.C 
+   1          1        1    Node  inst_detener.AR 
+   2          5        1    Node  inst_detener.D 
+   1/1        1        1    Node  inst_detener.C 
+   1/1        1        1    Node  SalidaB_0_.CE 
+   1          1        1    Node  SalidaB_0_.AR 
+   2          3        1    Node  SalidaB_0_.D 
+   1/1        1        1    Node  SalidaB_0_.C 
+   1/1        1        1    Node  SalidaA_0_.CE 
+   1          1        1    Node  SalidaA_0_.AR 
+   2          3        1    Node  SalidaA_0_.D 
+   1/1        1        1    Node  SalidaA_0_.C 
+   1/1        1        1    Node  contador_2_.CE- 
+   1          1        1    Node  contador_2_.AR 
+   3          3        1    Node  contador_2_.D 
+   1/1        1        1    Node  contador_2_.C 
+   1/1        1        1    Node  SalidaA_1_.CE 
+   1          1        1    Node  SalidaA_1_.AR 
+   2          3        1    Node  SalidaA_1_.D 
+   1/1        1        1    Node  SalidaA_1_.C 
+   1/1        1        1    Node  SalidaA_2_.CE 
+   1          1        1    Node  SalidaA_2_.AR 
+   2          3        1    Node  SalidaA_2_.D 
+   1/1        1        1    Node  SalidaA_2_.C 
+   1/1        1        1    Node  SalidaA_3_.CE 
+   1          1        1    Node  SalidaA_3_.AR 
+   1          2        1    Node  SalidaA_3_.D 
+   1/1        1        1    Node  SalidaA_3_.C 
+   1/1        1        1    Node  SalidaB_1_.CE 
+   1          1        1    Node  SalidaB_1_.AR 
+   2          3        1    Node  SalidaB_1_.D 
+   1/1        1        1    Node  SalidaB_1_.C 
+   1/1        1        1    Node  SalidaB_2_.CE 
+   1          1        1    Node  SalidaB_2_.AR 
+   2          3        1    Node  SalidaB_2_.D 
+   1/1        1        1    Node  SalidaB_2_.C 
+   1/1        1        1    Node  SalidaB_3_.CE 
+   1          1        1    Node  SalidaB_3_.AR 
+   1          2        1    Node  SalidaB_3_.D 
+   1/1        1        1    Node  SalidaB_3_.C 
+   1/1        1        1    Node  inst_Suma.CE- 
+   1          1        1    Node  inst_Suma.AR 
+   4          3        1    Node  inst_Suma.D 
+   1/1        1        1    Node  inst_Suma.C 
+   3          6        1    Node  Carry_0 
+=========
+  98/37         Best P-Term Total: 98
+                       Total Pins: 17
+                      Total Nodes: 16
+            Average P-Term/Output: 2
+
+
+Equations:
+
+q_3_.CE = (C_1_ & !C_0_ & !inst_detener.Q);
+
+q_3_.AR = (!clr);
+
+q_3_.D = (inst_Suma.Q);
+
+q_3_.C = (clk);
+
+!Carry.CE = (Carry_0);
+
+Carry.AR = (!clr);
+
+Carry.D = (SalidaB_0_.Q & SalidaA_0_.Q
+     # SalidaA_0_.Q & Carry.Q
+     # SalidaB_0_.Q & Carry.Q);
+
+Carry.C = (clk);
+
+q_2_.CE = (C_1_ & !C_0_ & !inst_detener.Q);
+
+q_2_.AR = (!clr);
+
+q_2_.D = (q_3_.Q);
+
+q_2_.C = (clk);
+
+q_1_.CE = (C_1_ & !C_0_ & !inst_detener.Q);
+
+q_1_.AR = (!clr);
+
+q_1_.D = (q_2_.Q);
+
+q_1_.C = (clk);
+
+q_0_.CE = (C_1_ & !C_0_ & !inst_detener.Q);
+
+q_0_.AR = (!clr);
+
+q_0_.D = (q_1_.Q);
+
+q_0_.C = (clk);
+
+un4_c = (C_1_ & !C_0_
+     # !C_1_ & C_0_);
+
+!contador_0_.CE = (Carry_0);
+
+contador_0_.AR = (!clr);
+
+contador_0_.D = (!contador_0_.Q);
+
+contador_0_.C = (clk);
+
+!contador_1_.CE = (Carry_0);
+
+contador_1_.AR = (!clr);
+
+contador_1_.D = (contador_0_.Q & !contador_1_.Q
+     # !contador_0_.Q & contador_1_.Q);
+
+contador_1_.C = (clk);
+
+!contador_3_.CE = (Carry_0);
+
+contador_3_.AR = (!clr);
+
+contador_3_.D = (contador_0_.Q & contador_1_.Q & !contador_3_.Q & contador_2_.Q
+     # !contador_1_.Q & contador_3_.Q
+     # !contador_0_.Q & contador_3_.Q
+     # contador_3_.Q & !contador_2_.Q);
+
+contador_3_.C = (clk);
+
+inst_detener.AR = (!clr);
+
+inst_detener.D = (!contador_0_.Q & !contador_1_.Q & !contador_3_.Q & contador_2_.Q
+     # inst_detener.Q);
+
+inst_detener.C = (clk);
+
+SalidaB_0_.CE = (un4_c);
+
+SalidaB_0_.AR = (!clr);
+
+SalidaB_0_.D = (C_0_ & B_0_
+     # !C_0_ & SalidaB_1_.Q);
+
+SalidaB_0_.C = (clk);
+
+SalidaA_0_.CE = (un4_c);
+
+SalidaA_0_.AR = (!clr);
+
+SalidaA_0_.D = (C_0_ & A_0_
+     # !C_0_ & SalidaA_1_.Q);
+
+SalidaA_0_.C = (clk);
+
+!contador_2_.CE = (Carry_0);
+
+contador_2_.AR = (!clr);
+
+contador_2_.D = (contador_0_.Q & contador_1_.Q & !contador_2_.Q
+     # !contador_1_.Q & contador_2_.Q
+     # !contador_0_.Q & contador_2_.Q);
+
+contador_2_.C = (clk);
+
+SalidaA_1_.CE = (un4_c);
+
+SalidaA_1_.AR = (!clr);
+
+SalidaA_1_.D = (C_0_ & A_1_
+     # !C_0_ & SalidaA_2_.Q);
+
+SalidaA_1_.C = (clk);
+
+SalidaA_2_.CE = (un4_c);
+
+SalidaA_2_.AR = (!clr);
+
+SalidaA_2_.D = (C_0_ & A_2_
+     # !C_0_ & SalidaA_3_.Q);
+
+SalidaA_2_.C = (clk);
+
+SalidaA_3_.CE = (un4_c);
+
+SalidaA_3_.AR = (!clr);
+
+SalidaA_3_.D = (A_3_ & C_0_);
+
+SalidaA_3_.C = (clk);
+
+SalidaB_1_.CE = (un4_c);
+
+SalidaB_1_.AR = (!clr);
+
+SalidaB_1_.D = (C_0_ & B_1_
+     # !C_0_ & SalidaB_2_.Q);
+
+SalidaB_1_.C = (clk);
+
+SalidaB_2_.CE = (un4_c);
+
+SalidaB_2_.AR = (!clr);
+
+SalidaB_2_.D = (C_0_ & B_2_
+     # !C_0_ & SalidaB_3_.Q);
+
+SalidaB_2_.C = (clk);
+
+SalidaB_3_.CE = (un4_c);
+
+SalidaB_3_.AR = (!clr);
+
+SalidaB_3_.D = (B_3_ & C_0_);
+
+SalidaB_3_.C = (clk);
+
+!inst_Suma.CE = (Carry_0);
+
+inst_Suma.AR = (!clr);
+
+inst_Suma.D = (SalidaB_0_.Q & !SalidaA_0_.Q & !Carry.Q
+     # !SalidaB_0_.Q & SalidaA_0_.Q & !Carry.Q
+     # !SalidaB_0_.Q & !SalidaA_0_.Q & Carry.Q
+     # SalidaB_0_.Q & SalidaA_0_.Q & Carry.Q);
+
+inst_Suma.C = (clk);
+
+Carry_0 = (!C_1_
+     # C_0_
+     # !contador_0_.Q & !contador_1_.Q & !contador_3_.Q & contador_2_.Q);
+
+
+Reverse-Polarity Equations:
+
+!q_3_.D = (!inst_Suma.Q);
+
+!q_3_.C = (!clk);
+
+Carry.CE = (!Carry_0);
+
+!Carry.C = (!clk);
+
+!q_2_.D = (!q_3_.Q);
+
+!q_2_.C = (!clk);
+
+!q_1_.D = (!q_2_.Q);
+
+!q_1_.C = (!clk);
+
+!q_0_.D = (!q_1_.Q);
+
+!q_0_.C = (!clk);
+
+contador_0_.CE = (!Carry_0);
+
+!contador_0_.C = (!clk);
+
+contador_1_.CE = (!Carry_0);
+
+!contador_1_.C = (!clk);
+
+contador_3_.CE = (!Carry_0);
+
+!contador_3_.C = (!clk);
+
+!inst_detener.C = (!clk);
+
+!SalidaB_0_.CE = (!un4_c);
+
+!SalidaB_0_.C = (!clk);
+
+!SalidaA_0_.CE = (!un4_c);
+
+!SalidaA_0_.C = (!clk);
+
+contador_2_.CE = (!Carry_0);
+
+!contador_2_.C = (!clk);
+
+!SalidaA_1_.CE = (!un4_c);
+
+!SalidaA_1_.C = (!clk);
+
+!SalidaA_2_.CE = (!un4_c);
+
+!SalidaA_2_.C = (!clk);
+
+!SalidaA_3_.CE = (!un4_c);
+
+!SalidaA_3_.C = (!clk);
+
+!SalidaB_1_.CE = (!un4_c);
+
+!SalidaB_1_.C = (!clk);
+
+!SalidaB_2_.CE = (!un4_c);
+
+!SalidaB_2_.C = (!clk);
+
+!SalidaB_3_.CE = (!un4_c);
+
+!SalidaB_3_.C = (!clk);
+
+inst_Suma.CE = (!Carry_0);
+
+!inst_Suma.C = (!clk);
+

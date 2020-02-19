@@ -1,0 +1,129 @@
+|--------------------------------------------------- ----------|
+|- ispLEVER Classic 2.0.00.17.20.15 Equations File            -|
+|- Copyright(C), 1992-2012, Lattice Semiconductor Corporation -|
+|- All Rights Reserved.                                       -|
+|--------------------------------------------------------------|
+
+
+Equations:
+
+Carry.D = SalidaB_0_.Q & SalidaA_0_.Q
+    # Carry.Q & SalidaA_0_.Q
+    # Carry.Q & SalidaB_0_.Q ; (3 pterms, 3 signals)
+Carry.C = clk ; (1 pterm, 1 signal)
+Carry.CE = !( Carry_0 ) ; (1 pterm, 1 signal)
+Carry.AR = !clr ; (1 pterm, 1 signal)
+
+Carry_0 = !C_1_
+    # C_0_
+    # !contador_0_.Q & !contador_1_.Q & !contador_3_.Q & contador_2_.Q ; (3 pterms, 6 signals)
+
+SalidaA_0_.D = C_0_ & A_0_
+    # !C_0_ & SalidaA_1_.Q ; (2 pterms, 3 signals)
+SalidaA_0_.C = clk ; (1 pterm, 1 signal)
+SalidaA_0_.CE = un4_c ; (1 pterm, 1 signal)
+SalidaA_0_.AR = !clr ; (1 pterm, 1 signal)
+
+SalidaA_1_.D = C_0_ & A_1_
+    # !C_0_ & SalidaA_2_.Q ; (2 pterms, 3 signals)
+SalidaA_1_.C = clk ; (1 pterm, 1 signal)
+SalidaA_1_.CE = un4_c ; (1 pterm, 1 signal)
+SalidaA_1_.AR = !clr ; (1 pterm, 1 signal)
+
+SalidaA_2_.D = C_0_ & A_2_
+    # !C_0_ & SalidaA_3_.Q ; (2 pterms, 3 signals)
+SalidaA_2_.C = clk ; (1 pterm, 1 signal)
+SalidaA_2_.CE = un4_c ; (1 pterm, 1 signal)
+SalidaA_2_.AR = !clr ; (1 pterm, 1 signal)
+
+SalidaA_3_.D = A_3_ & C_0_ ; (1 pterm, 2 signals)
+SalidaA_3_.C = clk ; (1 pterm, 1 signal)
+SalidaA_3_.CE = un4_c ; (1 pterm, 1 signal)
+SalidaA_3_.AR = !clr ; (1 pterm, 1 signal)
+
+SalidaB_0_.D = C_0_ & B_0_
+    # !C_0_ & SalidaB_1_.Q ; (2 pterms, 3 signals)
+SalidaB_0_.C = clk ; (1 pterm, 1 signal)
+SalidaB_0_.CE = un4_c ; (1 pterm, 1 signal)
+SalidaB_0_.AR = !clr ; (1 pterm, 1 signal)
+
+SalidaB_1_.D = C_0_ & B_1_
+    # !C_0_ & SalidaB_2_.Q ; (2 pterms, 3 signals)
+SalidaB_1_.C = clk ; (1 pterm, 1 signal)
+SalidaB_1_.CE = un4_c ; (1 pterm, 1 signal)
+SalidaB_1_.AR = !clr ; (1 pterm, 1 signal)
+
+SalidaB_2_.D = C_0_ & B_2_
+    # !C_0_ & SalidaB_3_.Q ; (2 pterms, 3 signals)
+SalidaB_2_.C = clk ; (1 pterm, 1 signal)
+SalidaB_2_.CE = un4_c ; (1 pterm, 1 signal)
+SalidaB_2_.AR = !clr ; (1 pterm, 1 signal)
+
+SalidaB_3_.D = B_3_ & C_0_ ; (1 pterm, 2 signals)
+SalidaB_3_.C = clk ; (1 pterm, 1 signal)
+SalidaB_3_.CE = un4_c ; (1 pterm, 1 signal)
+SalidaB_3_.AR = !clr ; (1 pterm, 1 signal)
+
+contador_0_.D = !contador_0_.Q ; (1 pterm, 1 signal)
+contador_0_.C = clk ; (1 pterm, 1 signal)
+contador_0_.CE = !( Carry_0 ) ; (1 pterm, 1 signal)
+contador_0_.AR = !clr ; (1 pterm, 1 signal)
+
+contador_1_.D = contador_0_.Q & !contador_1_.Q
+    # !contador_0_.Q & contador_1_.Q ; (2 pterms, 2 signals)
+contador_1_.C = clk ; (1 pterm, 1 signal)
+contador_1_.CE = !( Carry_0 ) ; (1 pterm, 1 signal)
+contador_1_.AR = !clr ; (1 pterm, 1 signal)
+
+contador_2_.D = contador_0_.Q & contador_1_.Q & !contador_2_.Q
+    # !contador_1_.Q & contador_2_.Q
+    # !contador_0_.Q & contador_2_.Q ; (3 pterms, 3 signals)
+contador_2_.C = clk ; (1 pterm, 1 signal)
+contador_2_.CE = !( Carry_0 ) ; (1 pterm, 1 signal)
+contador_2_.AR = !clr ; (1 pterm, 1 signal)
+
+contador_3_.D = contador_0_.Q & contador_1_.Q & !contador_3_.Q & contador_2_.Q
+    # !contador_1_.Q & contador_3_.Q
+    # !contador_0_.Q & contador_3_.Q
+    # contador_3_.Q & !contador_2_.Q ; (4 pterms, 4 signals)
+contador_3_.C = clk ; (1 pterm, 1 signal)
+contador_3_.CE = !( Carry_0 ) ; (1 pterm, 1 signal)
+contador_3_.AR = !clr ; (1 pterm, 1 signal)
+
+inst_Suma.D = !Carry.Q & SalidaB_0_.Q & !SalidaA_0_.Q
+    # !Carry.Q & !SalidaB_0_.Q & SalidaA_0_.Q
+    # Carry.Q & !SalidaB_0_.Q & !SalidaA_0_.Q
+    # Carry.Q & SalidaB_0_.Q & SalidaA_0_.Q ; (4 pterms, 3 signals)
+inst_Suma.C = clk ; (1 pterm, 1 signal)
+inst_Suma.CE = !( Carry_0 ) ; (1 pterm, 1 signal)
+inst_Suma.AR = !clr ; (1 pterm, 1 signal)
+
+inst_detener.D = !contador_0_.Q & !contador_1_.Q & !contador_3_.Q
+       & contador_2_.Q
+    # inst_detener.Q ; (2 pterms, 5 signals)
+inst_detener.C = clk ; (1 pterm, 1 signal)
+inst_detener.AR = !clr ; (1 pterm, 1 signal)
+
+q_0_.D = q_1_.Q ; (1 pterm, 1 signal)
+q_0_.C = clk ; (1 pterm, 1 signal)
+q_0_.CE = C_1_ & !C_0_ & !inst_detener.Q ; (1 pterm, 3 signals)
+q_0_.AR = !clr ; (1 pterm, 1 signal)
+
+q_1_.D = q_2_.Q ; (1 pterm, 1 signal)
+q_1_.C = clk ; (1 pterm, 1 signal)
+q_1_.CE = C_1_ & !C_0_ & !inst_detener.Q ; (1 pterm, 3 signals)
+q_1_.AR = !clr ; (1 pterm, 1 signal)
+
+q_2_.D = q_3_.Q ; (1 pterm, 1 signal)
+q_2_.C = clk ; (1 pterm, 1 signal)
+q_2_.CE = C_1_ & !C_0_ & !inst_detener.Q ; (1 pterm, 3 signals)
+q_2_.AR = !clr ; (1 pterm, 1 signal)
+
+q_3_.D = inst_Suma.Q ; (1 pterm, 1 signal)
+q_3_.C = clk ; (1 pterm, 1 signal)
+q_3_.CE = C_1_ & !C_0_ & !inst_detener.Q ; (1 pterm, 3 signals)
+q_3_.AR = !clr ; (1 pterm, 1 signal)
+
+un4_c = C_1_ & !C_0_
+    # !C_1_ & C_0_ ; (2 pterms, 2 signals)
+

@@ -1,0 +1,1 @@
+-global -lci secuencia.lct -touch secuencia.imp
