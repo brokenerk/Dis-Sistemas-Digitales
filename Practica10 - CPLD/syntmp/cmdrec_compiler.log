@@ -1,0 +1,7 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe  -osyn  C:\users\yakertaker\desktop\p10dsd\synwork\Reg10_comp.srs  -top  Reg10  -prodtype  synplify_pro  -nostructver -encrypt  -pro  -dmgen  C:\users\yakertaker\desktop\p10dsd\dm  -lite -compiler_compatible -ui -fid2 -ram -sharing on -ll 2000 -autosm -ignore_undefined_lib  -lib work C:\users\yakertaker\desktop\p10dsd\Sumador.vhd -loga  C:\users\yakertaker\desktop\p10dsd\Reg10.srr 
+rc:0 success:1
+C:\users\yakertaker\desktop\p10dsd\synwork\Reg10_comp.srs|o|1582072273|2498
+C:\users\yakertaker\desktop\p10dsd\Sumador.vhd|i|1582072257|2133
+C:\users\yakertaker\desktop\p10dsd\Reg10.srr|o|1582072273|1909
+C:\ispLEVER_Classic2_0\synpbase\bin\c_vhdl.exe|i|1401245498|2046976
+C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe|i|1401245704|5533184

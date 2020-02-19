@@ -1,8 +1,0 @@
-ENTITY sec IS
-    PORT (
-	clr : in std_logic  ; 
-	clk : in std_logic  ; 
-	ent : in std_logic_vector (5 downto 0) ; 
-	display : inout std_logic_vector (6 downto 0)
-    ) ;
-END sec ;

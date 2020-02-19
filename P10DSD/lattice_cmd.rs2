@@ -1,1 +1,0 @@
--src sumador.tt4 -type PLA -devfile "C:/ispLEVER_Classic2_0/ispcpld/dat/lc4k/m4e_256_96.dev" -postfit -lci sumador.lco

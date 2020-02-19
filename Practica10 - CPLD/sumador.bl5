@@ -1,0 +1,203 @@
+#$ TOOL  ispLEVER Classic 2.0.00.17.20.15
+#$ DATE  Tue Feb 18 18:31:20 2020
+#$ MODULE  Reg10
+#$ PINS 17 C_1_ A_3_ B_3_ clk clr C_0_ A_2_ A_1_ A_0_ B_2_ B_1_ B_0_ q_3_ Carry
+ q_2_ q_1_ q_0_
+#$ NODES 16 un4_c contador_0_ contador_1_ contador_3_ inst_detener SalidaB_0_
+ SalidaA_0_ contador_2_ SalidaA_1_ SalidaA_2_ SalidaA_3_ SalidaB_1_ SalidaB_2_
+ SalidaB_3_ inst_Suma Carry_0
+.model reg10 
+.inputs C_1_.BLIF A_3_.BLIF B_3_.BLIF clk.BLIF clr.BLIF C_0_.BLIF A_2_.BLIF \
+ A_1_.BLIF A_0_.BLIF B_2_.BLIF B_1_.BLIF B_0_.BLIF un4_c.BLIF contador_0_.Q \
+ contador_1_.Q contador_3_.Q inst_detener.Q SalidaB_0_.Q SalidaA_0_.Q \
+ contador_2_.Q SalidaA_1_.Q SalidaA_2_.Q SalidaA_3_.Q SalidaB_1_.Q SalidaB_2_.Q \
+ SalidaB_3_.Q inst_Suma.Q Carry.Q q_1_.Q q_2_.Q q_3_.Q Carry_0.BLIF
+.outputs q_3_.D q_3_.C q_3_.CE q_3_.AR Carry.D Carry.C Carry.CE- Carry.AR q_2_.D \
+ q_2_.C q_2_.CE q_2_.AR q_1_.D q_1_.C q_1_.CE q_1_.AR q_0_.D q_0_.C q_0_.CE \
+ q_0_.AR un4_c contador_0_.D contador_0_.C contador_0_.CE- contador_0_.AR \
+ contador_1_.D contador_1_.C contador_1_.CE- contador_1_.AR contador_3_.D \
+ contador_3_.C contador_3_.CE- contador_3_.AR inst_detener.D inst_detener.C \
+ inst_detener.AR SalidaB_0_.D SalidaB_0_.C SalidaB_0_.CE SalidaB_0_.AR \
+ SalidaA_0_.D SalidaA_0_.C SalidaA_0_.CE SalidaA_0_.AR contador_2_.D \
+ contador_2_.C contador_2_.CE- contador_2_.AR SalidaA_1_.D SalidaA_1_.C \
+ SalidaA_1_.CE SalidaA_1_.AR SalidaA_2_.D SalidaA_2_.C SalidaA_2_.CE \
+ SalidaA_2_.AR SalidaA_3_.D SalidaA_3_.C SalidaA_3_.CE SalidaA_3_.AR SalidaB_1_.D \
+ SalidaB_1_.C SalidaB_1_.CE SalidaB_1_.AR SalidaB_2_.D SalidaB_2_.C SalidaB_2_.CE \
+ SalidaB_2_.AR SalidaB_3_.D SalidaB_3_.C SalidaB_3_.CE SalidaB_3_.AR inst_Suma.D \
+ inst_Suma.C inst_Suma.CE- inst_Suma.AR Carry_0
+.names inst_Suma.Q q_3_.D
+1 1
+.names clk.BLIF q_3_.C
+1 1
+.names C_1_.BLIF C_0_.BLIF inst_detener.Q q_3_.CE
+100 1
+.names clr.BLIF q_3_.AR
+0 1
+.names SalidaB_0_.Q SalidaA_0_.Q Carry.Q Carry.D
+11- 1
+-11 1
+1-1 1
+.names clk.BLIF Carry.C
+1 1
+.names Carry_0.BLIF Carry.CE-
+1 1
+.names clr.BLIF Carry.AR
+0 1
+.names q_3_.Q q_2_.D
+1 1
+.names clk.BLIF q_2_.C
+1 1
+.names C_1_.BLIF C_0_.BLIF inst_detener.Q q_2_.CE
+100 1
+.names clr.BLIF q_2_.AR
+0 1
+.names q_2_.Q q_1_.D
+1 1
+.names clk.BLIF q_1_.C
+1 1
+.names C_1_.BLIF C_0_.BLIF inst_detener.Q q_1_.CE
+100 1
+.names clr.BLIF q_1_.AR
+0 1
+.names q_1_.Q q_0_.D
+1 1
+.names clk.BLIF q_0_.C
+1 1
+.names C_1_.BLIF C_0_.BLIF inst_detener.Q q_0_.CE
+100 1
+.names clr.BLIF q_0_.AR
+0 1
+.names C_1_.BLIF C_0_.BLIF un4_c
+10 1
+01 1
+.names contador_0_.Q contador_0_.D
+0 1
+.names clk.BLIF contador_0_.C
+1 1
+.names Carry_0.BLIF contador_0_.CE-
+1 1
+.names clr.BLIF contador_0_.AR
+0 1
+.names contador_0_.Q contador_1_.Q contador_1_.D
+10 1
+01 1
+.names clk.BLIF contador_1_.C
+1 1
+.names Carry_0.BLIF contador_1_.CE-
+1 1
+.names clr.BLIF contador_1_.AR
+0 1
+.names contador_0_.Q contador_1_.Q contador_3_.Q contador_2_.Q contador_3_.D
+1101 1
+-01- 1
+0-1- 1
+--10 1
+.names clk.BLIF contador_3_.C
+1 1
+.names Carry_0.BLIF contador_3_.CE-
+1 1
+.names clr.BLIF contador_3_.AR
+0 1
+.names contador_0_.Q contador_1_.Q contador_3_.Q inst_detener.Q contador_2_.Q inst_detener.D
+000-1 1
+---1- 1
+.names clk.BLIF inst_detener.C
+1 1
+.names clr.BLIF inst_detener.AR
+0 1
+.names C_0_.BLIF B_0_.BLIF SalidaB_1_.Q SalidaB_0_.D
+11- 1
+0-1 1
+.names clk.BLIF SalidaB_0_.C
+1 1
+.names un4_c.BLIF SalidaB_0_.CE
+1 1
+.names clr.BLIF SalidaB_0_.AR
+0 1
+.names C_0_.BLIF A_0_.BLIF SalidaA_1_.Q SalidaA_0_.D
+11- 1
+0-1 1
+.names clk.BLIF SalidaA_0_.C
+1 1
+.names un4_c.BLIF SalidaA_0_.CE
+1 1
+.names clr.BLIF SalidaA_0_.AR
+0 1
+.names contador_0_.Q contador_1_.Q contador_2_.Q contador_2_.D
+110 1
+-01 1
+0-1 1
+.names clk.BLIF contador_2_.C
+1 1
+.names Carry_0.BLIF contador_2_.CE-
+1 1
+.names clr.BLIF contador_2_.AR
+0 1
+.names C_0_.BLIF A_1_.BLIF SalidaA_2_.Q SalidaA_1_.D
+11- 1
+0-1 1
+.names clk.BLIF SalidaA_1_.C
+1 1
+.names un4_c.BLIF SalidaA_1_.CE
+1 1
+.names clr.BLIF SalidaA_1_.AR
+0 1
+.names C_0_.BLIF A_2_.BLIF SalidaA_3_.Q SalidaA_2_.D
+11- 1
+0-1 1
+.names clk.BLIF SalidaA_2_.C
+1 1
+.names un4_c.BLIF SalidaA_2_.CE
+1 1
+.names clr.BLIF SalidaA_2_.AR
+0 1
+.names A_3_.BLIF C_0_.BLIF SalidaA_3_.D
+11 1
+.names clk.BLIF SalidaA_3_.C
+1 1
+.names un4_c.BLIF SalidaA_3_.CE
+1 1
+.names clr.BLIF SalidaA_3_.AR
+0 1
+.names C_0_.BLIF B_1_.BLIF SalidaB_2_.Q SalidaB_1_.D
+11- 1
+0-1 1
+.names clk.BLIF SalidaB_1_.C
+1 1
+.names un4_c.BLIF SalidaB_1_.CE
+1 1
+.names clr.BLIF SalidaB_1_.AR
+0 1
+.names C_0_.BLIF B_2_.BLIF SalidaB_3_.Q SalidaB_2_.D
+11- 1
+0-1 1
+.names clk.BLIF SalidaB_2_.C
+1 1
+.names un4_c.BLIF SalidaB_2_.CE
+1 1
+.names clr.BLIF SalidaB_2_.AR
+0 1
+.names B_3_.BLIF C_0_.BLIF SalidaB_3_.D
+11 1
+.names clk.BLIF SalidaB_3_.C
+1 1
+.names un4_c.BLIF SalidaB_3_.CE
+1 1
+.names clr.BLIF SalidaB_3_.AR
+0 1
+.names SalidaB_0_.Q SalidaA_0_.Q Carry.Q inst_Suma.D
+100 1
+010 1
+001 1
+111 1
+.names clk.BLIF inst_Suma.C
+1 1
+.names Carry_0.BLIF inst_Suma.CE-
+1 1
+.names clr.BLIF inst_Suma.AR
+0 1
+.names C_1_.BLIF C_0_.BLIF contador_0_.Q contador_1_.Q contador_3_.Q contador_2_.Q Carry_0
+0----- 1
+-1---- 1
+--0001 1
+.end

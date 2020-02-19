@@ -1,0 +1,177 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      C(1:0)                        C                  1          2            -1
+      Port          2      A(3:0)                        A                  3          4            -1
+      Port          3      B(3:0)                        B                  3          4            -1
+      Port          4      q(3:0)                        q                  3          4            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      C_1_                        C[1]                       1            0            
+        Port      C_0_                        C[0]                       1            1            
+        Port      A_3_                        A[3]                       2            0            
+        Port      A_2_                        A[2]                       2            1            
+        Port      A_1_                        A[1]                       2            2            
+        Port      A_0_                        A[0]                       2            3            
+        Port      B_3_                        B[3]                       3            0            
+        Port      B_2_                        B[2]                       3            1            
+        Port      B_1_                        B[1]                       3            2            
+        Port      B_0_                        B[0]                       3            3            
+        Port      q_3_                        q[3]                       4            0            
+        Port      q_2_                        q[2]                       4            1            
+        Port      q_1_                        q[1]                       4            2            
+        Port      q_0_                        q[0]                       4            3            
+End
+Section Cross Reference File
+Design 'Reg10' created Tue Feb 18 18:31:20 2020
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst             qDFFCRH_0_                                qDFFCRH[0]
+   Inst             qDFFCRH_1_                                qDFFCRH[1]
+   Inst             qDFFCRH_2_                                qDFFCRH[2]
+   Inst             qDFFCRH_3_                                qDFFCRH[3]
+   Inst             SalidaB_0_                                SalidaB[0]
+   Inst             SalidaB_1_                                SalidaB[1]
+   Inst             SalidaB_2_                                SalidaB[2]
+   Inst             SalidaB_3_                                SalidaB[3]
+   Inst             SalidaA_0_                                SalidaA[0]
+   Inst             SalidaA_1_                                SalidaA[1]
+   Inst             SalidaA_2_                                SalidaA[2]
+   Inst             SalidaA_3_                                SalidaA[3]
+   Inst            contador_2_                               contador[2]
+   Inst            contador_3_                               contador[3]
+   Inst            contador_0_                               contador[0]
+   Inst            contador_1_                               contador[1]
+   Inst                   C_0_                                      C[0]
+   Inst                   C_1_                                      C[1]
+   Inst                   A_0_                                      A[0]
+   Inst                   A_1_                                      A[1]
+   Inst                   A_2_                                      A[2]
+   Inst                   A_3_                                      A[3]
+   Inst                   B_0_                                      B[0]
+   Inst                   B_1_                                      B[1]
+   Inst                   B_2_                                      B[2]
+   Inst                   B_3_                                      B[3]
+   Inst                   q_0_                                      q[0]
+   Inst                   q_1_                                      q[1]
+   Inst                   q_2_                                      q[2]
+   Inst                   q_3_                                      q[3]
+   Inst          contador_i_1_                             contador_i[1]
+   Inst          contador_i_3_                             contador_i[3]
+   Inst          contador_i_0_                             contador_i[0]
+   Inst                 C_i_0_                                    C_i[0]
+   Inst                 C_i_1_                                    C_i[1]
+   Inst           SalidaA_4_3_                              SalidaA_4[3]
+   Inst           SalidaB_3_3_                              SalidaB_3[3]
+   Inst         SalidaA_4_0__r                            SalidaA_4_0_.r
+   Inst         SalidaA_4_0__m                            SalidaA_4_0_.m
+   Inst         SalidaA_4_0__n                            SalidaA_4_0_.n
+   Inst         SalidaA_4_0__p                            SalidaA_4_0_.p
+   Inst         SalidaA_4_1__r                            SalidaA_4_1_.r
+   Inst         SalidaA_4_1__m                            SalidaA_4_1_.m
+   Inst         SalidaA_4_1__n                            SalidaA_4_1_.n
+   Inst         SalidaA_4_1__p                            SalidaA_4_1_.p
+   Inst         SalidaA_4_2__r                            SalidaA_4_2_.r
+   Inst         SalidaA_4_2__m                            SalidaA_4_2_.m
+   Inst         SalidaA_4_2__n                            SalidaA_4_2_.n
+   Inst         SalidaA_4_2__p                            SalidaA_4_2_.p
+   Inst         SalidaB_3_0__r                            SalidaB_3_0_.r
+   Inst         SalidaB_3_0__m                            SalidaB_3_0_.m
+   Inst         SalidaB_3_0__n                            SalidaB_3_0_.n
+   Inst         SalidaB_3_0__p                            SalidaB_3_0_.p
+   Inst         SalidaB_3_1__r                            SalidaB_3_1_.r
+   Inst         SalidaB_3_1__m                            SalidaB_3_1_.m
+   Inst         SalidaB_3_1__n                            SalidaB_3_1_.n
+   Inst         SalidaB_3_1__p                            SalidaB_3_1_.p
+   Inst         SalidaB_3_2__r                            SalidaB_3_2_.r
+   Inst         SalidaB_3_2__m                            SalidaB_3_2_.m
+   Inst         SalidaB_3_2__n                            SalidaB_3_2_.n
+   Inst         SalidaB_3_2__p                            SalidaB_3_2_.p
+   Net           contador_0__n                               contador[0]
+   Net           contador_1__n                               contador[1]
+   Net           contador_3__n                               contador[3]
+   Net            salidab_0__n                                SalidaB[0]
+   Net            salidaa_0__n                                SalidaA[0]
+   Net           contador_2__n                               contador[2]
+   Net          salidaa_4_3__n                              SalidaA_4[3]
+   Net            salidaa_1__n                                SalidaA[1]
+   Net            salidaa_2__n                                SalidaA[2]
+   Net            salidaa_3__n                                SalidaA[3]
+   Net          salidab_3_3__n                              SalidaB_3[3]
+   Net            salidab_1__n                                SalidaB[1]
+   Net            salidab_2__n                                SalidaB[2]
+   Net            salidab_3__n                                SalidaB[3]
+   Net          salidaa_4_0__n                              SalidaA_4[0]
+   Net          salidaa_4_1__n                              SalidaA_4[1]
+   Net          salidaa_4_2__n                              SalidaA_4[2]
+   Net          salidab_3_0__n                              SalidaB_3[0]
+   Net          salidab_3_1__n                              SalidaB_3[1]
+   Net          salidab_3_2__n                              SalidaB_3[2]
+   Net                c_i_1__n                                    C_i[1]
+   Net                c_i_0__n                                    C_i[0]
+   Net         contador_i_0__n                             contador_i[0]
+   Net         contador_i_1__n                             contador_i[1]
+   Net         contador_i_3__n                             contador_i[3]
+   Net                c_c_0__n                                    C_c[0]
+   Net                  c_0__n                                      C[0]
+   Net                c_c_1__n                                    C_c[1]
+   Net                a_c_0__n                                    A_c[0]
+   Net                  a_0__n                                      A[0]
+   Net                a_c_1__n                                    A_c[1]
+   Net                  a_1__n                                      A[1]
+   Net                a_c_2__n                                    A_c[2]
+   Net                  a_2__n                                      A[2]
+   Net                a_c_3__n                                    A_c[3]
+   Net                b_c_0__n                                    B_c[0]
+   Net                  b_0__n                                      B[0]
+   Net                b_c_1__n                                    B_c[1]
+   Net                  b_1__n                                      B[1]
+   Net                b_c_2__n                                    B_c[2]
+   Net                  b_2__n                                      B[2]
+   Net                b_c_3__n                                    B_c[3]
+   Net                q_c_0__n                                    q_c[0]
+   Net                  q_0__n                                      q[0]
+   Net                q_c_1__n                                    q_c[1]
+   Net                  q_1__n                                      q[1]
+   Net                q_c_2__n                                    q_c[2]
+   Net                  q_2__n                                      q[2]
+   Net                q_c_3__n                                    q_c[3]
+   Net      salidaa_4_0__un3_n                          SalidaA_4_0_.un3
+   Net      salidaa_4_0__un1_n                          SalidaA_4_0_.un1
+   Net      salidaa_4_0__un0_n                          SalidaA_4_0_.un0
+   Net      salidaa_4_1__un3_n                          SalidaA_4_1_.un3
+   Net      salidaa_4_1__un1_n                          SalidaA_4_1_.un1
+   Net      salidaa_4_1__un0_n                          SalidaA_4_1_.un0
+   Net      salidaa_4_2__un3_n                          SalidaA_4_2_.un3
+   Net      salidaa_4_2__un1_n                          SalidaA_4_2_.un1
+   Net      salidaa_4_2__un0_n                          SalidaA_4_2_.un0
+   Net      salidab_3_0__un3_n                          SalidaB_3_0_.un3
+   Net      salidab_3_0__un1_n                          SalidaB_3_0_.un1
+   Net      salidab_3_0__un0_n                          SalidaB_3_0_.un0
+   Net      salidab_3_1__un3_n                          SalidaB_3_1_.un3
+   Net      salidab_3_1__un1_n                          SalidaB_3_1_.un1
+   Net      salidab_3_1__un0_n                          SalidaB_3_1_.un0
+   Net      salidab_3_2__un3_n                          SalidaB_3_2_.un3
+   Net      salidab_3_2__un1_n                          SalidaB_3_2_.un1
+   Net      salidab_3_2__un0_n                          SalidaB_3_2_.un0
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     C_1_
+        Input     A_3_
+        Input     B_3_
+        Input     clk
+        Input     clr
+        Input     C_0_
+        Input     A_2_
+        Input     A_1_
+        Input     A_0_
+        Input     B_2_
+        Input     B_1_
+        Input     B_0_
+        Output     q_3_
+        Output     Carry
+        Output     q_2_
+        Output     q_1_
+        Output     q_0_
+End

@@ -1,0 +1,7 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe  -link  -top  Reg10  -multisrs  C:\users\yakertaker\desktop\p10dsd\synwork\Reg10_comp.srs  -osyn  C:\users\yakertaker\desktop\p10dsd\synwork\Reg10_mult.srs  -log  C:\users\yakertaker\desktop\p10dsd\synlog\Reg10_multi_srs_gen.srr 
+rc:0 success:1
+C:\users\yakertaker\desktop\p10dsd\synwork\Reg10_comp.srs|i|1582072273|2498
+C:\users\yakertaker\desktop\p10dsd\synwork\Reg10_mult.srs|o|1582072275|2781
+C:\users\yakertaker\desktop\p10dsd\synlog\Reg10_multi_srs_gen.srr|o|1582072275|376
+C:\ispLEVER_Classic2_0\synpbase\bin\syn_nfilter.exe|i|1401245536|2741760
+C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe|i|1401245732|6337536

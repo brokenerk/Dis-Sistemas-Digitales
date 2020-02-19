@@ -1,0 +1,1 @@
+-nodal -src sumador.bl5 -type BLIF -presrc sumador.bl3 -crf sumador.crf -sif sumador.sif -devfile "C:/ispLEVER_Classic2_0/ispcpld/dat/lc4k/m4e_256_96.dev" -lci sumador.lct

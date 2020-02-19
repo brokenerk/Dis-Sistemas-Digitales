@@ -1,3 +1,0 @@
-@E: CD242 :"C:\users\yakertaker\desktop\cpld\Sumador.vhd":17:7:17:13|Expecting ;
-@E|Parse errors encountered - exiting
-

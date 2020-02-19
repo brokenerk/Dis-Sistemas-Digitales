@@ -1,0 +1,902 @@
+// Node Statistic Information File
+// Tool:  ispLEVER Classic 2.0.00.17.20.15
+// Design 'reg10' created   Tue Feb 18 18:31:20 2020
+
+// Fmax Logic Level: 2.
+
+// Path: contador_0_.Q
+//    -> Carry_0
+//    -> inst_Suma.CE-
+
+// Signal Name: q_3_.D
+// Type: Output_reg
+BEGIN q_3_.D
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	inst_Suma.Q         	4
+END
+
+// Signal Name: q_3_.C
+// Type: Output_reg
+BEGIN q_3_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clk.BLIF            	0
+END
+
+// Signal Name: q_3_.CE
+// Type: Output_reg
+BEGIN q_3_.CE
+Fanin Number		3
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Input     	C_1_.BLIF           	0
+Fanin Input     	C_0_.BLIF           	0
+Fanin Node      	inst_detener.Q      	2
+END
+
+// Signal Name: q_3_.AR
+// Type: Output_reg
+BEGIN q_3_.AR
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clr.BLIF            	0
+END
+
+// Signal Name: Carry.D
+// Type: Output_reg
+BEGIN Carry.D
+Fanin Number		3
+Pterm Number		3
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	SalidaB_0_.Q        	2
+Fanin Node      	SalidaA_0_.Q        	2
+Fanin Output    	Carry.Q             	3
+END
+
+// Signal Name: Carry.C
+// Type: Output_reg
+BEGIN Carry.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clk.BLIF            	0
+END
+
+// Signal Name: Carry.CE-
+// Type: Output_reg
+BEGIN Carry.CE
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		2
+Fanin Node      	Carry_0.BLIF        	3
+END
+
+// Signal Name: Carry.AR
+// Type: Output_reg
+BEGIN Carry.AR
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clr.BLIF            	0
+END
+
+// Signal Name: q_2_.D
+// Type: Output_reg
+BEGIN q_2_.D
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Output    	q_3_.Q              	1
+END
+
+// Signal Name: q_2_.C
+// Type: Output_reg
+BEGIN q_2_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clk.BLIF            	0
+END
+
+// Signal Name: q_2_.CE
+// Type: Output_reg
+BEGIN q_2_.CE
+Fanin Number		3
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Input     	C_1_.BLIF           	0
+Fanin Input     	C_0_.BLIF           	0
+Fanin Node      	inst_detener.Q      	2
+END
+
+// Signal Name: q_2_.AR
+// Type: Output_reg
+BEGIN q_2_.AR
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clr.BLIF            	0
+END
+
+// Signal Name: q_1_.D
+// Type: Output_reg
+BEGIN q_1_.D
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Output    	q_2_.Q              	1
+END
+
+// Signal Name: q_1_.C
+// Type: Output_reg
+BEGIN q_1_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clk.BLIF            	0
+END
+
+// Signal Name: q_1_.CE
+// Type: Output_reg
+BEGIN q_1_.CE
+Fanin Number		3
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Input     	C_1_.BLIF           	0
+Fanin Input     	C_0_.BLIF           	0
+Fanin Node      	inst_detener.Q      	2
+END
+
+// Signal Name: q_1_.AR
+// Type: Output_reg
+BEGIN q_1_.AR
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clr.BLIF            	0
+END
+
+// Signal Name: q_0_.D
+// Type: Output_reg
+BEGIN q_0_.D
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Output    	q_1_.Q              	1
+END
+
+// Signal Name: q_0_.C
+// Type: Output_reg
+BEGIN q_0_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clk.BLIF            	0
+END
+
+// Signal Name: q_0_.CE
+// Type: Output_reg
+BEGIN q_0_.CE
+Fanin Number		3
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Input     	C_1_.BLIF           	0
+Fanin Input     	C_0_.BLIF           	0
+Fanin Node      	inst_detener.Q      	2
+END
+
+// Signal Name: q_0_.AR
+// Type: Output_reg
+BEGIN q_0_.AR
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clr.BLIF            	0
+END
+
+// Signal Name: un4_c
+// Type: Node
+BEGIN un4_c
+Fanin Number		2
+Pterm Number		2
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	C_1_.BLIF           	0
+Fanin Input     	C_0_.BLIF           	0
+END
+
+// Signal Name: contador_0_.D
+// Type: Node_reg
+BEGIN contador_0_.D
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	contador_0_.Q       	1
+END
+
+// Signal Name: contador_0_.C
+// Type: Node_reg
+BEGIN contador_0_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clk.BLIF            	0
+END
+
+// Signal Name: contador_0_.CE-
+// Type: Node_reg
+BEGIN contador_0_.CE
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		2
+Fanin Node      	Carry_0.BLIF        	3
+END
+
+// Signal Name: contador_0_.AR
+// Type: Node_reg
+BEGIN contador_0_.AR
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clr.BLIF            	0
+END
+
+// Signal Name: contador_1_.D
+// Type: Node_reg
+BEGIN contador_1_.D
+Fanin Number		2
+Pterm Number		2
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	contador_0_.Q       	1
+Fanin Node      	contador_1_.Q       	2
+END
+
+// Signal Name: contador_1_.C
+// Type: Node_reg
+BEGIN contador_1_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clk.BLIF            	0
+END
+
+// Signal Name: contador_1_.CE-
+// Type: Node_reg
+BEGIN contador_1_.CE
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		2
+Fanin Node      	Carry_0.BLIF        	3
+END
+
+// Signal Name: contador_1_.AR
+// Type: Node_reg
+BEGIN contador_1_.AR
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clr.BLIF            	0
+END
+
+// Signal Name: contador_3_.D
+// Type: Node_reg
+BEGIN contador_3_.D
+Fanin Number		4
+Pterm Number		4
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	contador_0_.Q       	1
+Fanin Node      	contador_1_.Q       	2
+Fanin Node      	contador_3_.Q       	4
+Fanin Node      	contador_2_.Q       	3
+END
+
+// Signal Name: contador_3_.C
+// Type: Node_reg
+BEGIN contador_3_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clk.BLIF            	0
+END
+
+// Signal Name: contador_3_.CE-
+// Type: Node_reg
+BEGIN contador_3_.CE
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		2
+Fanin Node      	Carry_0.BLIF        	3
+END
+
+// Signal Name: contador_3_.AR
+// Type: Node_reg
+BEGIN contador_3_.AR
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clr.BLIF            	0
+END
+
+// Signal Name: inst_detener.D
+// Type: Node_reg
+BEGIN inst_detener.D
+Fanin Number		5
+Pterm Number		2
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	contador_0_.Q       	1
+Fanin Node      	contador_1_.Q       	2
+Fanin Node      	contador_3_.Q       	4
+Fanin Node      	inst_detener.Q      	2
+Fanin Node      	contador_2_.Q       	3
+END
+
+// Signal Name: inst_detener.C
+// Type: Node_reg
+BEGIN inst_detener.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clk.BLIF            	0
+END
+
+// Signal Name: inst_detener.AR
+// Type: Node_reg
+BEGIN inst_detener.AR
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clr.BLIF            	0
+END
+
+// Signal Name: SalidaB_0_.D
+// Type: Node_reg
+BEGIN SalidaB_0_.D
+Fanin Number		3
+Pterm Number		2
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Input     	C_0_.BLIF           	0
+Fanin Input     	B_0_.BLIF           	0
+Fanin Node      	SalidaB_1_.Q        	2
+END
+
+// Signal Name: SalidaB_0_.C
+// Type: Node_reg
+BEGIN SalidaB_0_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clk.BLIF            	0
+END
+
+// Signal Name: SalidaB_0_.CE
+// Type: Node_reg
+BEGIN SalidaB_0_.CE
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Node      	un4_c.BLIF          	2
+END
+
+// Signal Name: SalidaB_0_.AR
+// Type: Node_reg
+BEGIN SalidaB_0_.AR
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clr.BLIF            	0
+END
+
+// Signal Name: SalidaA_0_.D
+// Type: Node_reg
+BEGIN SalidaA_0_.D
+Fanin Number		3
+Pterm Number		2
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Input     	C_0_.BLIF           	0
+Fanin Input     	A_0_.BLIF           	0
+Fanin Node      	SalidaA_1_.Q        	2
+END
+
+// Signal Name: SalidaA_0_.C
+// Type: Node_reg
+BEGIN SalidaA_0_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clk.BLIF            	0
+END
+
+// Signal Name: SalidaA_0_.CE
+// Type: Node_reg
+BEGIN SalidaA_0_.CE
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Node      	un4_c.BLIF          	2
+END
+
+// Signal Name: SalidaA_0_.AR
+// Type: Node_reg
+BEGIN SalidaA_0_.AR
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clr.BLIF            	0
+END
+
+// Signal Name: contador_2_.D
+// Type: Node_reg
+BEGIN contador_2_.D
+Fanin Number		3
+Pterm Number		3
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	contador_0_.Q       	1
+Fanin Node      	contador_1_.Q       	2
+Fanin Node      	contador_2_.Q       	3
+END
+
+// Signal Name: contador_2_.C
+// Type: Node_reg
+BEGIN contador_2_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clk.BLIF            	0
+END
+
+// Signal Name: contador_2_.CE-
+// Type: Node_reg
+BEGIN contador_2_.CE
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		2
+Fanin Node      	Carry_0.BLIF        	3
+END
+
+// Signal Name: contador_2_.AR
+// Type: Node_reg
+BEGIN contador_2_.AR
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clr.BLIF            	0
+END
+
+// Signal Name: SalidaA_1_.D
+// Type: Node_reg
+BEGIN SalidaA_1_.D
+Fanin Number		3
+Pterm Number		2
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Input     	C_0_.BLIF           	0
+Fanin Input     	A_1_.BLIF           	0
+Fanin Node      	SalidaA_2_.Q        	2
+END
+
+// Signal Name: SalidaA_1_.C
+// Type: Node_reg
+BEGIN SalidaA_1_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clk.BLIF            	0
+END
+
+// Signal Name: SalidaA_1_.CE
+// Type: Node_reg
+BEGIN SalidaA_1_.CE
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Node      	un4_c.BLIF          	2
+END
+
+// Signal Name: SalidaA_1_.AR
+// Type: Node_reg
+BEGIN SalidaA_1_.AR
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clr.BLIF            	0
+END
+
+// Signal Name: SalidaA_2_.D
+// Type: Node_reg
+BEGIN SalidaA_2_.D
+Fanin Number		3
+Pterm Number		2
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Input     	C_0_.BLIF           	0
+Fanin Input     	A_2_.BLIF           	0
+Fanin Node      	SalidaA_3_.Q        	1
+END
+
+// Signal Name: SalidaA_2_.C
+// Type: Node_reg
+BEGIN SalidaA_2_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clk.BLIF            	0
+END
+
+// Signal Name: SalidaA_2_.CE
+// Type: Node_reg
+BEGIN SalidaA_2_.CE
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Node      	un4_c.BLIF          	2
+END
+
+// Signal Name: SalidaA_2_.AR
+// Type: Node_reg
+BEGIN SalidaA_2_.AR
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clr.BLIF            	0
+END
+
+// Signal Name: SalidaA_3_.D
+// Type: Node_reg
+BEGIN SalidaA_3_.D
+Fanin Number		2
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	A_3_.BLIF           	0
+Fanin Input     	C_0_.BLIF           	0
+END
+
+// Signal Name: SalidaA_3_.C
+// Type: Node_reg
+BEGIN SalidaA_3_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clk.BLIF            	0
+END
+
+// Signal Name: SalidaA_3_.CE
+// Type: Node_reg
+BEGIN SalidaA_3_.CE
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Node      	un4_c.BLIF          	2
+END
+
+// Signal Name: SalidaA_3_.AR
+// Type: Node_reg
+BEGIN SalidaA_3_.AR
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clr.BLIF            	0
+END
+
+// Signal Name: SalidaB_1_.D
+// Type: Node_reg
+BEGIN SalidaB_1_.D
+Fanin Number		3
+Pterm Number		2
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Input     	C_0_.BLIF           	0
+Fanin Input     	B_1_.BLIF           	0
+Fanin Node      	SalidaB_2_.Q        	2
+END
+
+// Signal Name: SalidaB_1_.C
+// Type: Node_reg
+BEGIN SalidaB_1_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clk.BLIF            	0
+END
+
+// Signal Name: SalidaB_1_.CE
+// Type: Node_reg
+BEGIN SalidaB_1_.CE
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Node      	un4_c.BLIF          	2
+END
+
+// Signal Name: SalidaB_1_.AR
+// Type: Node_reg
+BEGIN SalidaB_1_.AR
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clr.BLIF            	0
+END
+
+// Signal Name: SalidaB_2_.D
+// Type: Node_reg
+BEGIN SalidaB_2_.D
+Fanin Number		3
+Pterm Number		2
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Input     	C_0_.BLIF           	0
+Fanin Input     	B_2_.BLIF           	0
+Fanin Node      	SalidaB_3_.Q        	1
+END
+
+// Signal Name: SalidaB_2_.C
+// Type: Node_reg
+BEGIN SalidaB_2_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clk.BLIF            	0
+END
+
+// Signal Name: SalidaB_2_.CE
+// Type: Node_reg
+BEGIN SalidaB_2_.CE
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Node      	un4_c.BLIF          	2
+END
+
+// Signal Name: SalidaB_2_.AR
+// Type: Node_reg
+BEGIN SalidaB_2_.AR
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clr.BLIF            	0
+END
+
+// Signal Name: SalidaB_3_.D
+// Type: Node_reg
+BEGIN SalidaB_3_.D
+Fanin Number		2
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	B_3_.BLIF           	0
+Fanin Input     	C_0_.BLIF           	0
+END
+
+// Signal Name: SalidaB_3_.C
+// Type: Node_reg
+BEGIN SalidaB_3_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clk.BLIF            	0
+END
+
+// Signal Name: SalidaB_3_.CE
+// Type: Node_reg
+BEGIN SalidaB_3_.CE
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Node      	un4_c.BLIF          	2
+END
+
+// Signal Name: SalidaB_3_.AR
+// Type: Node_reg
+BEGIN SalidaB_3_.AR
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clr.BLIF            	0
+END
+
+// Signal Name: inst_Suma.D
+// Type: Node_reg
+BEGIN inst_Suma.D
+Fanin Number		3
+Pterm Number		4
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	SalidaB_0_.Q        	2
+Fanin Node      	SalidaA_0_.Q        	2
+Fanin Output    	Carry.Q             	3
+END
+
+// Signal Name: inst_Suma.C
+// Type: Node_reg
+BEGIN inst_Suma.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clk.BLIF            	0
+END
+
+// Signal Name: inst_Suma.CE-
+// Type: Node_reg
+BEGIN inst_Suma.CE
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		2
+Fanin Node      	Carry_0.BLIF        	3
+END
+
+// Signal Name: inst_Suma.AR
+// Type: Node_reg
+BEGIN inst_Suma.AR
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	clr.BLIF            	0
+END
+
+// Signal Name: Carry_0
+// Type: Node
+BEGIN Carry_0
+Fanin Number		6
+Pterm Number		3
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	C_1_.BLIF           	0
+Fanin Input     	C_0_.BLIF           	0
+Fanin Node      	contador_0_.Q       	1
+Fanin Node      	contador_1_.Q       	2
+Fanin Node      	contador_3_.Q       	4
+Fanin Node      	contador_2_.Q       	3
+END
+
+// Design 'reg10' used clock signal list:
+CLOCK	clk
+

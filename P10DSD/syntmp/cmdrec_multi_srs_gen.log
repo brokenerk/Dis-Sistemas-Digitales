@@ -1,7 +1,0 @@
-C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe  -link  -top  Reg10  -multisrs  C:\users\yakertaker\desktop\cpld\synwork\Reg10_comp.srs  -osyn  C:\users\yakertaker\desktop\cpld\synwork\Reg10_mult.srs  -log  C:\users\yakertaker\desktop\cpld\synlog\Reg10_multi_srs_gen.srr 
-rc:0 success:1
-C:\users\yakertaker\desktop\cpld\synwork\Reg10_comp.srs|i|1528417200|2500
-C:\users\yakertaker\desktop\cpld\synwork\Reg10_mult.srs|o|1528417202|2768
-C:\users\yakertaker\desktop\cpld\synlog\Reg10_multi_srs_gen.srr|o|1528417202|460
-C:\ispLEVER_Classic2_0\synpbase\bin\syn_nfilter.exe|i|1401249136|2741760
-C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe|i|1401249332|6337536

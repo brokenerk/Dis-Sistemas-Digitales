@@ -1,0 +1,1 @@
+-global -lci sumador.lct -touch sumador.imp
